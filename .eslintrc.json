@@ -21,6 +21,8 @@
     {
       "files": ["**/*.test.js", "**/*.test.jsx"],
       "env": {
+        "browser": true,
+        "node": true,
         "jest": true
       }
     }
