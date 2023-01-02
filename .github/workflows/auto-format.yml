@@ -1,0 +1,28 @@
+name: auto-format
+on:
+  push:
+    branches:
+      - main
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: prettier
+        run: npx prettier --write .
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
+      - name: Commit files
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          git commit -m "Automated Code Formatting" -a
+      - name: Push changes
+        if: steps.git-check.outputs.modified == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
