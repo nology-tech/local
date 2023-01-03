@@ -1,7 +1,13 @@
 import React from "react";
 import "./FavouritesCard.scss";
+import { useEffect } from "react";
 
 const FavouritesCard = () => {
+  useEffect(() => {
+    // only runs once
+    newFav();
+  }, []);
+
   const array_fav = [
     {
       name: "Smith & Sons",
@@ -20,13 +26,10 @@ const FavouritesCard = () => {
     },
   ];
 
-  console.log(array_fav);
-  return (
-    <div>
-      <button>Save</button>
-      <button>Detail</button>
-    </div>
-  );
+  const newFav = array_fav.map((card) => {
+    return card;
+    console.log(newFav);
+  });
 };
 
 export default FavouritesCard;
