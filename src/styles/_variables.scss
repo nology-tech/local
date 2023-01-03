@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
 // breakpoints
 $mobile-breakpoint: 320px;
 $tablet-breakpoint: 768px;
@@ -19,8 +21,8 @@ $green-color-palette: #5bb27c;
 
 // font families
 
-$header-Font-Family: "Roboto";
-$text-Font-Family: "Inter";
+$header-Font-Family: "Roboto", "sans-serif";
+$text-Font-Family: "Inter", "sans-serif";
 
 // Font weights
 $very-bold-font: 800;

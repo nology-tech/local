@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
   height: 100vh;
 
   &__description {
@@ -13,10 +12,20 @@
     justify-content: end;
     align-items: center;
     text-align: center;
+    font-size: 1.3rem;
     height: 50%;
-    width: 100%;
+    width: 80%;
   }
   &__logo {
-    width: 40%;
+    width: 50%;
+  }
+
+  &__buttons {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
