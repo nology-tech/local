@@ -10,7 +10,7 @@ const getData = async (url) => {
   }
 };
 
-export const getInRadius = async (postcode = "B3 2NP", radius = 0.2) => {
+export const getInRadius = async (postcode = "B186NF", radius = 0.2) => {
   const url = `${baseURL}/places/locationsearch/${postcode}/${radius}`;
   return getData(url);
 };
