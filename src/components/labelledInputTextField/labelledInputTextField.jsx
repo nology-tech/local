@@ -4,7 +4,16 @@ const LabelledInputTextField = ({
   uniqueInputFieldHtmlName,
   inputType,
   labelHeader,
+  inputLarge,
 }) => {
+  let inputClassName = "labelled-input-text-field__input";
+
+  if (inputLarge) {
+    inputClassName = "labelled-input-text-field__input input-large";
+  } else {
+    inputClassName = "labelled-input-text-field__input";
+  }
+
   return (
     <>
       <div className="labelled-input-text-field">
@@ -17,7 +26,7 @@ const LabelledInputTextField = ({
         <input
           id={uniqueInputFieldHtmlName}
           type={inputType}
-          className="labelled-input-text-field__input"
+          className={inputClassName}
         />
       </div>
     </>

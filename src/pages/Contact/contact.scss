@@ -1,0 +1,26 @@
+@use "../../../src/styles/reset" as *;
+@use "../../../src/styles/variables" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/mixins" as *;
+
+.contact-container {
+  height: 100vh;
+  background-color: orangered;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  .contact-form {
+    width: 100%;
+    padding: 0 1rem 0.5rem 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &__header,
+    &__paragraph {
+      padding-left: 1rem;
+    }
+  }
+}

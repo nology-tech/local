@@ -18,20 +18,18 @@
 }
 
 .button-contact {
+  margin: auto;
+  width: 12rem;
   font-family: $text-Font-Family;
-  color: $text-color;
+  color: $white;
+  margin-top: 10px;
+  padding: 0.5rem 0.9rem;
 
   background-color: $green-color-palette;
-
-  width: 14rem;
-
-  height: 4.75rem;
 
   font-size: 3rem;
 
   font-weight: $default-font-weight;
-
-  padding: 10px 20px;
 
   border-radius: 25px;
 
