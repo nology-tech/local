@@ -1,4 +1,3 @@
-import React from "react";
 import "./FavouritesCard.scss";
 import { useEffect } from "react";
 
@@ -27,8 +26,8 @@ const FavouritesCard = () => {
   ];
 
   const newFav = array_fav.map((card) => {
+    console.log(card);
     return card;
-    console.log(newFav);
   });
 };
 
