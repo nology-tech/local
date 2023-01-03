@@ -27,10 +27,14 @@ const FavouritesCard = () => {
         <h2>{card.name}</h2>
         <p>{card.paragraph}</p>
         <p>{card.place}</p>
+        <div> 
+          <button> Details </button>
+        </div>
       </div>
     );
   });
   return newFav;
+  
 };
 
 export default FavouritesCard;
