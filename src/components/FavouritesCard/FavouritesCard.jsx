@@ -1,4 +1,3 @@
-import "./FavouritesCard.scss";
 
 const FavouritesCard = () => {
   const arrayFav = [
