@@ -1,10 +1,10 @@
 import "./textField.scss";
 
-const TextField = ({ uniqueId, inputType, labelHeader, inputLarge }) => {
+const TextField = ({ uniqueId, inputType, labelHeader, modifier }) => {
   let inputClassName = "text-field__input";
 
-  if (inputLarge) {
-    inputClassName = "text-field__input text-field__input--large";
+  if (modifier) {
+    inputClassName = `text-field__input text-field__input--${modifier}`;
   }
 
   return (

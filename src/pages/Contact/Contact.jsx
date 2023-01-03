@@ -13,18 +13,18 @@ const Contact = () => {
           <TextField
             uniqueInputFieldName="contactName"
             inputType="text"
-            labelHeader="name"
+            labelHeader="Name"
           />
           <TextField
             uniqueInputFieldName="contactEmail"
             inputType="email"
-            labelHeader="email"
+            labelHeader="Email"
           />
           <TextField
             uniqueInputFieldName="contactMessage"
             inputType="text"
-            labelHeader="message"
-            inputLarge={true}
+            labelHeader="Message"
+            modifier="large"
           />
           <Button buttonText={"SEND"} buttonName="contact" />
         </form>

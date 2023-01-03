@@ -6,10 +6,8 @@
 .text-field {
   font-family: $text-font-family;
   width: 100%;
-  margin: auto;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
   padding: 0.4rem;
   &__label,
@@ -32,7 +30,7 @@
     border-style: none;
     border: 0.125rem solid $black;
     border-radius: 2rem;
-    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
     &--large {
       height: 7rem;
     }
