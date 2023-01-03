@@ -20,20 +20,11 @@ const FavouritesCard = () => {
     },
   ];
 
+  console.log(array_fav);
   return (
     <div>
-      <div>
-        <div>
-          <h2>{array_fav.name}</h2>
-          <img src="" alt="" />
-        </div>
-      </div>
-      <p>description</p>
-      <h2>Address</h2>
-      <div>
-        <button>Save</button>
-        <button>Detail</button>
-      </div>
+      <button>Save</button>
+      <button>Detail</button>
     </div>
   );
 };
