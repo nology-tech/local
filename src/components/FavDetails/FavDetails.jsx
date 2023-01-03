@@ -1,9 +1,7 @@
-const  = () => {
-  return (
-    <div>
-        <h1> </h1>
-    </div>
-  )
-}
+import React from "react";
 
-export default FavDetails
+const FavDetails = () => {
+  return <div>FavDetails</div>;
+};
+
+export default FavDetails;
