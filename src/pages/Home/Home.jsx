@@ -1,5 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import LabelledInputTextField from "../../components/labelledInputTextField/labelledInputTextField";
+import Button from "../../components/button/Button";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         inputType="text"
         labelHeader="name"
       />
+      <Button buttonText={"SEND"} buttonContact={true} />
     </>
   );
 };
