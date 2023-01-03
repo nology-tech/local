@@ -1,22 +1,23 @@
 import "./labelledInputTextField.scss";
 
-const LabelledInputTextField = () => {
+const LabelledInputTextField = ({
+  uniqueInputFieldHtmlName,
+  inputType,
+  labelHeader,
+}) => {
   return (
     <>
       <div className="labelled-input-text-field">
         <label
-          htmlFor="InputFieldName"
+          htmlFor={uniqueInputFieldHtmlName}
           className="labelled-input-text-field__label"
         >
-          name
+          {labelHeader}
         </label>
         <input
-          id="InputFieldName"
-          type="text"
+          id={uniqueInputFieldHtmlName}
+          type={inputType}
           className="labelled-input-text-field__input"
-          name="InputFieldName"
-          onChange="do this"
-          value=""
         />
       </div>
     </>

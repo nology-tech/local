@@ -15,7 +15,11 @@ const Home = () => {
           Dignissimos, necessitatibus.
         </p>
       </Layout>
-      <LabelledInputTextField />
+      <LabelledInputTextField
+        uniqueInputFieldName="contactName"
+        inputType="text"
+        labelHeader="name"
+      />
     </>
   );
 };
