@@ -1,7 +1,7 @@
 import "./FavouritesCard.scss";
 
 const FavouritesCard = () => {
-  const array_fav = [
+  const arrayFav = [
     {
       id: "0",
       name: "Smith & Sons",
@@ -22,7 +22,7 @@ const FavouritesCard = () => {
     },
   ];
 
-  const newFav = array_fav.map((card) => {
+  const newFav = arrayFav.map((card) => {
     return (
       <div key={card.id}>
         <h2>{card.name}</h2>

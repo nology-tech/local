@@ -3,9 +3,7 @@ import { customRender } from "../../utils/testUtils";
 
 it("should render the text on the display", () => {
   const { container } = customRender(
-    <FavouritesCard>
-      <p>Hello there</p>
-    </FavouritesCard>
+    <FavouritesCard/>
   );
 
   expect(container).toMatchSnapshot();
