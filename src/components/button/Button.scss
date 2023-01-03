@@ -4,6 +4,7 @@
 @use "../../styles/mixins" as *;
 
 .button {
+  font-family: $text-font-family;
   background-color: $background-color;
 
   width: 9rem;
@@ -12,26 +13,21 @@
 
   font-size: $default-text-size;
 
-  padding: 10px 20px;
-
-  border: solid black;
+  border: 0.2rem solid $button-border;
 }
 
-.button-contact {
+.button--contact {
+  height: 4rem;
   margin: auto;
   width: 12rem;
-  font-family: $text-Font-Family;
   color: $white;
-  margin-top: 10px;
-  padding: 0.5rem 0.9rem;
-
   background-color: $green-color-palette;
 
   font-size: 3rem;
 
   font-weight: $default-font-weight;
 
-  border-radius: 25px;
+  border-radius: 1.7rem;
 
   border: none;
 }

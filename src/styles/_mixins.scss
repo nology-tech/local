@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 @mixin text-normal {
-  font-family: $text-Font-Family;
+  font-family: $text-font-family;
   font-weight: $default-font-weight;
   font-size: $default-text-size;
 }

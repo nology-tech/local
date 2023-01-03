@@ -1,15 +1,13 @@
 import "./Button.scss";
 
-const Button = ({ buttonText, buttonContact }) => {
-  let buttonStyle = "button";
+const Button = ({ buttonText, buttonName, functionToCall }) => {
+  let buttonClass = `button button--${buttonName}`;
 
-  if (buttonContact) {
-    buttonStyle = "button-contact";
-  } else {
-    buttonStyle = "button";
-  }
-
-  return <button className={buttonStyle}>{buttonText}</button>;
+  return (
+    <button className={buttonClass} onClick={functionToCall}>
+      {buttonText}
+    </button>
+  );
 };
 
 export default Button;
