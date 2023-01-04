@@ -4,7 +4,7 @@ import { useDocument } from "react-firebase-hooks/firestore";
 import { loginUser } from "../api/userService";
 import { auth, db } from "../firebase";
 
-const UserContext = new createContext({ user: null });
+export const UserContext = new createContext({ user: null });
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
