@@ -1,9 +1,10 @@
 import { useState } from "react";
-import DetailsButton from "../DetailsButton/DetailsButton";
+import Button from "../Button/Button";
+import FavDetails from "../FavDetails/FavDetails";
+import "./FavouritesCard.scss";
 
 const FavouritesCard = () => {
-
-  const [showDetails, setShowDetails] = useState(false)
+  const [showDetails, setShowDetails] = useState(false);
 
   const arrayFav = [
     {
@@ -33,7 +34,12 @@ const FavouritesCard = () => {
         <p>{card.paragraph}</p>
         <p>{card.place}</p>
         <div>
-          <DetailsButton />
+          <Button
+            buttonName="Details"
+            buttonText="Details"
+            onClick={() => setShowDetails(!showDetails)}
+          />
+          {showDetails && <FavDetails />}
         </div>
       </div>
     );
