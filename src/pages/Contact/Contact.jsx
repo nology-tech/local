@@ -1,5 +1,5 @@
 import Layout from "../../components/Layout/Layout";
-import Button from "../../components/button/Button";
+import Button from "../../components/Button/Button";
 import "./Contact.scss";
 import TextField from "../../components/TextField/TextField";
 
