@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout/Layout";
+import menu from "../../images/menu.svg";
 
 const Home = () => {
   return (

@@ -7,7 +7,6 @@ import contact from "../../images/contact.svg";
 import discover from "../../images/discover.svg";
 import favourites from "../../images/favourites.svg";
 import home from "../../images/home.svg";
-import menu from "../../images/menu.svg";
 
 const Menu = () => {
   return (
@@ -21,16 +20,16 @@ const Menu = () => {
       <h2>Discover</h2>
       <img src={arrow} alt="Arrow" />
       <img src={favourites} alt="Home Logo" />
-      <h2>Home</h2>
+      <h2>Favourites</h2>
       <img src={arrow} alt="Arrow" />
-      <img src={home} alt="Home Logo" />
-      <h2>Home</h2>
+      <img src={account} alt="Account Logo" />
+      <h2>Manage Account</h2>
       <img src={arrow} alt="Arrow" />
-      <img src={home} alt="Home Logo" />
-      <h2>Home</h2>
+      <img src={about} alt="About Logo" />
+      <h2>About</h2>
       <img src={arrow} alt="Arrow" />
-      <img src={home} alt="Home Logo" />
-      <h2>Home</h2>
+      <img src={contact} alt="Contact Logo" />
+      <h2>Contact</h2>
       <img src={arrow} alt="Arrow" />
     </div>
   );
