@@ -11,19 +11,31 @@ const FavouritesCard = () => {
       id: "0",
       name: "Smith & Sons",
       paragraph: "Mom and Pop chain serving sandwhiches",
+      weekdayOpening: "MON-FRI : 9:00 - 19:00",
+      weekendOpening: "Sat : 10:00 - 15:00",
+      price: "££",
       place: "32 Camden Hill, Eeling, London",
+      image: " IMAGE INSERT HERE ",
     },
     {
       id: "1",
       name: "Dirty Onion",
       paragraph: "Irish Bar, Great guines on tap. Live music on saturdays.",
+      weekdayOpening: "MON-FRI : 9:00 - 19:00",
+      weekendOpening: "Sat : 10:00 - 15:00",
       place: "36 Lamden Hill, Eeling, London",
+      price: "££",
+      image: " IMAGE INSERT HERE ",
     },
     {
       id: "2",
       name: "Gunners art gallery",
       paragraph: "Mom and Pop chain serving sandwhiches",
+      weekdayOpening: "MON-FRI : 9:00 - 19:00",
+      weekendOpening: "Sat : 10:00 - 15:00",
       place: "112 Backden Hill, Eeling, London",
+      price: "££",
+      image: " IMAGE INSERT HERE ",
     },
   ];
 
@@ -39,7 +51,9 @@ const FavouritesCard = () => {
             buttonText="Details"
             onClick={() => setShowDetails(!showDetails)}
           />
-          {showDetails && <FavDetails />}
+          {showDetails && (
+            <FavDetails onClick={() => setShowDetails(!showDetails)} />
+          )}
         </div>
       </div>
     );

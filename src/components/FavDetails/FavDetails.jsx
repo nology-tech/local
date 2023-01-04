@@ -1,6 +1,6 @@
 import "./FavDetails.scss";
 import Button from "../Button/Button";
-const FavDetails = () => {
+const FavDetails = ({ onClick }) => {
   const arrayDetails = [
     {
       id: "0",
@@ -43,7 +43,7 @@ const FavDetails = () => {
         <div className="favDetails__Container">
           <div className="favDetails__Header">
             <h2>{modal.name}</h2>
-            <Button buttonText="X" buttonName="Close" oncli />
+            <Button buttonText="X" buttonName="Close" onClick={onClick} />
           </div>
           <p>{modal.paragraph}</p>
           <p>{modal.weekdayOpening}</p>
