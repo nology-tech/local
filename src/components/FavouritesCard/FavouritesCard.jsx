@@ -1,3 +1,4 @@
+import DetailsButton from "../DetailsButton/DetailsButton";
 
 const FavouritesCard = () => {
   const arrayFav = [
@@ -27,14 +28,13 @@ const FavouritesCard = () => {
         <h2>{card.name}</h2>
         <p>{card.paragraph}</p>
         <p>{card.place}</p>
-        <div> 
-          <button> Details </button>
+        <div>
+          <DetailsButton />
         </div>
       </div>
     );
   });
   return newFav;
-  
 };
 
 export default FavouritesCard;
