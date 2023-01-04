@@ -7,19 +7,19 @@
   width: 9rem;
   height: 3rem;
   font-size: 1rem;
-  padding: 10px 20px;
+  padding: 0.8rem 2rem;
   border: solid black;
 }
 
-.button-enter {
+.button--enter {
   margin: 15px;
   color: $text-color;
   width: 16rem;
   height: 3rem;
   font-size: 1.2rem;
   font-weight: 300;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
   border: none;
   background-color: #393636;
 }

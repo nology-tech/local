@@ -1,10 +1,10 @@
 import "./Button.scss";
 
-const Button = ({ buttonText, isEnterBtn }) => {
+const Button = ({ buttonText, isSecondary }) => {
   let buttonStyle = "button";
 
-  if (isEnterBtn) {
-    buttonStyle += "-enter";
+  if (isSecondary) {
+    buttonStyle += "--enter";
   } else {
     buttonStyle = "button";
   }
