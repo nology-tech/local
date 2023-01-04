@@ -23,16 +23,12 @@ $pink: rgba(249, 184, 188, 1);
 $red: rgba(218, 71, 79, 1);
 $purple: rgba(113, 121, 184, 1);
 $yellow: rgba(255, 238, 120, 1);
-
+$grey: rgb(57, 54, 54);
 //colors
 
-$text-color: #000000;
-$background-color: #1f1b1b;
-
-// button coloration
-
-$button-border: black;
-
+$background-color: rgb(31, 27, 27);
+$text-color: black;
+$alternate-text-color: rgba(246, 251, 249, 1);
 /*                          Font stuff              */
 
 // font families
@@ -52,4 +48,3 @@ $light-font: 300;
 $default-text-size: 1rem;
 $sub-header-text-size: 1.5rem;
 $header-text-size: 2rem;
-$local-title-text-size: 3rem;

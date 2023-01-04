@@ -1,14 +1,11 @@
-@use "../../../src/styles/reset" as *;
 @use "../../../src/styles/variables" as *;
 @use "../../styles/mixins" as *;
 
 .button {
-  font-family: $text-font-family;
   background-color: $background-color;
   width: 9rem;
   height: 3rem;
-  font-size: $default-text-size;
-  border: 0.1rem solid $button-border;
+  border: 0.1rem solid $black;
   border-radius: 1.7rem;
   opacity: 0.9;
   &:hover {
@@ -29,5 +26,17 @@
   background-color: $green;
   border-color: $green;
   font-size: 3rem;
-  font-weight: $default-font-weight;
+}
+
+.button--enter {
+  margin: 0.8rem;
+  color: $alternate-text-color;
+  width: 16rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $grey;
 }
