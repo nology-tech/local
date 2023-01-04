@@ -1,19 +1,15 @@
 @use "../../../src/styles/reset" as *;
 @use "../../../src/styles/variables" as *;
-@use "../../styles/typography" as *;
 @use "../../styles/mixins" as *;
 
 .button {
   font-family: $text-font-family;
   background-color: $background-color;
-
   width: 9rem;
-
   height: 3rem;
-
   font-size: $default-text-size;
-
   border: 0.1rem solid $button-border;
+  border-radius: 1.7rem;
   opacity: 0.9;
   &:hover {
     opacity: 1;
@@ -30,11 +26,8 @@
   margin: auto;
   width: 12rem;
   color: $white;
-  background-color: $green-color-palette;
-  border-color: $green-color-palette;
+  background-color: $green;
+  border-color: $green;
   font-size: 3rem;
-
   font-weight: $default-font-weight;
-
-  border-radius: 1.7rem;
 }
