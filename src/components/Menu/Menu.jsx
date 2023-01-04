@@ -30,12 +30,12 @@ const Menu = ({ toggleMenu }) => {
           <img className="menu-arrow" src={arrow} alt="Arrow" />
         </div>
         <div className="menu-search">
-          <div>
+          <div className="menu-search_discover">
             <img className="menu-logo" src={discover} alt="Discover Logo" />
             <h2>Discover</h2>
             <img className="menu-arrow" src={arrow} alt="Arrow" />
           </div>
-          <div>
+          <div className="menu-search_favourites">
             <img className="menu-logo" src={favourites} alt="Home Logo" />
             <h2>Favourites</h2>
             <img className="menu-arrow" src={arrow} alt="Arrow" />
