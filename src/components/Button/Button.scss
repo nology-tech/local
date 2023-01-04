@@ -1,0 +1,42 @@
+@use "../../../src/styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.button {
+  background-color: $background-color;
+  width: 9rem;
+  height: 3rem;
+  border: 0.1rem solid $black;
+  border-radius: 1.7rem;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  &:active {
+    border: 0.2rem solid $white;
+    opacity: 0.4;
+  }
+}
+
+.button--contact {
+  height: 4rem;
+  margin: auto;
+  width: 12rem;
+  color: $white;
+  background-color: $green;
+  border-color: $green;
+  font-size: 3rem;
+}
+
+.button--enter {
+  margin: 0.8rem;
+  color: $alternate-text-color;
+  width: 16rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $grey;
+}
