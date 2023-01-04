@@ -4,8 +4,9 @@ import arrowIcon from "../../assets/icons/Vector.svg";
 const DropDown = () => {
   return (
     <div className="dropdown">
-      <a href="#" className="dropdown__link">
-        All <img src={arrowIcon} alt="" className="dropdown__icon" />
+      <a href="#" className="dropdown__link dropdown__link--primary">
+        <p>All</p>
+        <img src={arrowIcon} alt="" className="dropdown__icon" />
       </a>
 
       <div className="dropdown_content">
