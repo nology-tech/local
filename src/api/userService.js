@@ -39,9 +39,7 @@ export const registerUser = async (
 
 export const loginUser = async (email, password) => {
   try {
-    // sign in with firebase
     await signInWithEmailAndPassword(auth, email, password);
-    // navigate to the dashboard
   } catch (error) {
     console.log({ error });
   }
