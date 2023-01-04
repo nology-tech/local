@@ -1,0 +1,19 @@
+@use "../../../src/styles/reset" as *;
+@use "../../../src/styles/variables" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/mixins" as *;
+
+.contact {
+  height: 100%;
+  padding: 1rem;
+  .contact__form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+    > *:last-child {
+      margin-top: 1rem;
+    }
+  }
+}

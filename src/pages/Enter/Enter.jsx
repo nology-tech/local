@@ -15,10 +15,10 @@ const Enter = () => {
         </div>
         <div className="enter__buttons">
           <Link to="/enter/signin">
-            <Button buttonText={"Sign in"} isSecondary={true} />
+            <Button buttonText={"Sign in"} buttonName="enter" />
           </Link>
           <Link to="/enter/signup">
-            <Button buttonText={"Sign up"} isSecondary={true} />
+            <Button buttonText={"Sign up"} buttonName="enter" />
           </Link>
         </div>
       </div>

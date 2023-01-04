@@ -5,6 +5,7 @@ import "./styles/main.scss";
 import Enter from "./pages/Enter/Enter";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Route path="/enter" element={<Enter />} />
       <Route path="/enter/signin" element={<SignIn />} />
       <Route path="/enter/signup" element={<SignUp />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/favourites" element={<Favourites />} />
     </Routes>
   );

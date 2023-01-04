@@ -2,7 +2,7 @@ import Layout from "../../components/Layout/Layout";
 const SignIn = () => {
   return (
     <Layout>
-      <p>Sign In</p>;
+      <p>Sign In</p>
     </Layout>
   );
 };

@@ -1,19 +1,47 @@
-@use "../../styles/variables" as *;
+@use "../../../src/styles/reset" as *;
+@use "../../../src/styles/variables" as *;
 @use "../../styles/typography" as *;
-@use "../../styles/reset" as *;
+@use "../../styles/mixins" as *;
 
 .button {
+  font-family: $text-font-family;
   background-color: $background-color;
+
   width: 9rem;
+
   height: 3rem;
-  font-size: 1rem;
-  padding: 0.8rem 2rem;
-  border: solid black;
+
+  font-size: $default-text-size;
+
+  border: 0.1rem solid $button-border;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  &:active {
+    border: 0.2rem solid $white;
+    opacity: 0.4;
+  }
+}
+
+.button--contact {
+  height: 4rem;
+  margin: auto;
+  width: 12rem;
+  color: $white;
+  background-color: $green-color-palette;
+  border-color: $green-color-palette;
+  font-size: 3rem;
+
+  font-weight: $default-font-weight;
+
+  border-radius: 1.7rem;
 }
 
 .button--enter {
   margin: 15px;
-  color: $text-color;
+  color: $button-text-color;
   width: 16rem;
   height: 3rem;
   font-size: 1.2rem;

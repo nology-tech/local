@@ -7,22 +7,34 @@ $desktop-breakpoint: 1024px;
 $large-desktop-breakpoint: 1440px;
 $extra-large-desktop-breakpoint: 2560px;
 
-//colors
-$text-color: #f3f2e8;
-$background-color: linear-gradient(to bottom right, #ec9472, #e0551e);
+/*                          Colours                         */
 
+//colors
+$button-text-color: #f3f2e8;
+$text-color: #000000;
+
+// Background Gradient color - SEE MIXINS FOR EASY USE
+$background: rgb(236, 148, 114);
+$background-gradient: linear-gradient(
+  152deg,
+  rgba(236, 148, 114, 1) 0%,
+  rgba(224, 95, 30, 1) 100%
+);
 // base Colours
 $white: #f3f2e8;
 $black: #1f1b1b;
 
 $green-color-palette: #5bb27c;
 
+// button coloration
+$button-border: black;
+
 /*                          Font stuff              */
 
 // font families
 
-$header-Font-Family: "Roboto", "sans-serif";
-$text-Font-Family: "Inter", "sans-serif";
+$header-font-family: "Roboto";
+$text-font-family: "Inter";
 
 // Font weights
 $very-bold-font: 800;
