@@ -10,10 +10,9 @@ const Home = () => {
     setShowMenu(!showMenu);
   };
 
-  return (
-    <Layout>
+  const homePage = (
+    <div>
       <img src={menu} alt="Menu icon" onClick={toggleMenu} />
-      {showMenu && <Menu toggleMenu={toggleMenu} />}
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
       <h3>Panel Heading</h3>
@@ -23,7 +22,11 @@ const Home = () => {
         maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos,
         necessitatibus.
       </p>
-    </Layout>
+    </div>
+  );
+
+  return (
+    <Layout>{showMenu ? <Menu toggleMenu={toggleMenu} /> : homePage}</Layout>
   );
 };
 
