@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Layout>
       <img src={menu} alt="Menu icon" onClick={toggleMenu} />
-      {showMenu && <Menu />}
+      {showMenu && <Menu toggleMenu={toggleMenu} />}
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
       <h3>Panel Heading</h3>

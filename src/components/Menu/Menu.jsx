@@ -8,11 +8,13 @@ import contact from "../../images/contact.svg";
 import discover from "../../images/discover.svg";
 import favourites from "../../images/favourites.svg";
 import home from "../../images/home.svg";
+import closeBtn from "../../images/close-btn.svg";
 
-const Menu = () => {
+const Menu = ({ toggleMenu }) => {
   return (
     <Layout>
       <div>
+        <img src={closeBtn} alt="Close Button" onClick={toggleMenu} />
         <img src={logo} alt="App Logo" />
         <h1>LOCAL</h1>
         <img src={home} alt="Home Logo" />
