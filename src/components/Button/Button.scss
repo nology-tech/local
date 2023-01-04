@@ -38,3 +38,16 @@
 
   border-radius: 1.7rem;
 }
+
+.button--enter {
+  margin: 0.8rem;
+  color: $button-text-color;
+  width: 16rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $button-colour-secondary;
+}
