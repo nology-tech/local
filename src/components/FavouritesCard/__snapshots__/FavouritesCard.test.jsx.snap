@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the text on the display 1`] = `
+<div>
+  <div>
+    <h2>
+      Smith & Sons
+    </h2>
+    <p>
+      Mom and Pop chain serving sandwhiches
+    </p>
+    <p>
+      32 Camden Hill, Eeling, London
+    </p>
+  </div>
+  <div>
+    <h2>
+      Dirty Onion
+    </h2>
+    <p>
+      Irish Bar, Great guines on tap. Live music on saturdays.
+    </p>
+    <p>
+      36 Lamden Hill, Eeling, London
+    </p>
+  </div>
+  <div>
+    <h2>
+      Gunners art gallery
+    </h2>
+    <p>
+      Mom and Pop chain serving sandwhiches
+    </p>
+    <p>
+      112 Backden Hill, Eeling, London
+    </p>
+  </div>
+</div>
+`;
