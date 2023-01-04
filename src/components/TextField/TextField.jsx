@@ -1,6 +1,12 @@
-import "./textField.scss";
+import "./TextField.scss";
 
-const TextField = ({ uniqueId, inputType, labelHeader, modifier }) => {
+const TextField = ({
+  uniqueId,
+  inputType,
+  labelHeader,
+  modifier,
+  onChange,
+}) => {
   let inputClassName = "text-field__input";
 
   if (modifier) {
@@ -12,7 +18,12 @@ const TextField = ({ uniqueId, inputType, labelHeader, modifier }) => {
       <label htmlFor={uniqueId} className="text-field__label">
         {labelHeader}
       </label>
-      <input id={uniqueId} type={inputType} className={inputClassName} />
+      <input
+        id={uniqueId}
+        type={inputType}
+        className={inputClassName}
+        onChange={onChange}
+      />
     </div>
   );
 };

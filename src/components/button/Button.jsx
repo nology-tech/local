@@ -1,10 +1,10 @@
 import "./Button.scss";
 
-const Button = ({ buttonText, buttonName, functionToCall }) => {
+const Button = ({ buttonText, buttonName, onClick }) => {
   let buttonClass = `button button--${buttonName}`;
 
   return (
-    <button className={buttonClass} onClick={functionToCall}>
+    <button className={buttonClass} onClick={onClick}>
       {buttonText}
     </button>
   );
