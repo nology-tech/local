@@ -1,6 +1,10 @@
+import { useState } from "react";
 import DetailsButton from "../DetailsButton/DetailsButton";
 
 const FavouritesCard = () => {
+
+  const [showDetails, setShowDetails] = useState(false)
+
   const arrayFav = [
     {
       id: "0",
