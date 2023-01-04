@@ -40,7 +40,7 @@
 }
 
 .button--enter {
-  margin: 15px;
+  margin: 0.8rem;
   color: $button-text-color;
   width: 16rem;
   height: 3rem;
@@ -49,5 +49,5 @@
   padding: 0.8rem 2rem;
   border-radius: 1rem;
   border: none;
-  background-color: #393636;
+  background-color: $button-colour-secondary;
 }
