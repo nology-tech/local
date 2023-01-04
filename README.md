@@ -22,3 +22,14 @@
 ## Code Quality 🌟
 
 - This project uses prettier and ESlint to increase code readability and consistency.
+
+## Context
+
+- The UserContext connects our frontend project to the Firestore backend.
+- You can access the logged in "user" object by adding this to the top of any component:
+
+```jsx
+const { user } = useContext(UserContext);
+```
+
+- You can then access any of the user's properties, including firstName, lastName, favourites etc.
