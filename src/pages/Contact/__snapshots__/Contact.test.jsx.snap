@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render contact page 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    <main
+      class="contact"
+    >
+      <h1>
+        Contact
+      </h1>
+      <p>
+        We would love to hear from you and take your feedback on board.
+      </p>
+      <form
+        class="contact__form"
+      >
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Name
+          </label>
+          <input
+            class="text-field__input"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Email
+          </label>
+          <input
+            class="text-field__input"
+            type="email"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Message
+          </label>
+          <input
+            class="text-field__input text-field__input--large"
+            type="text"
+          />
+        </div>
+        <button
+          class="button button--contact"
+        >
+          SEND
+        </button>
+      </form>
+    </main>
+  </div>
+</div>
+`;
