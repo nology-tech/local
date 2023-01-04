@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout/Layout";
 import Button from "../../components/button/Button";
-import "./contact.scss";
+import "./Contact.scss";
 import TextField from "../../components/TextField/TextField";
 
 const Contact = () => {
