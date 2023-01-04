@@ -4,6 +4,7 @@ const mockUser = {
   lastName: "Smith",
   username: "TheOG",
   email: "barrysmith@fake-emails.com",
+  password: "password123",
   favourites: [
     { id: "63acbe82e9f5e8160675818d", slug: "medicine-bakery" },
     { id: "63acbe82e9f5e816067581b3", slug: "la-m-c" },
