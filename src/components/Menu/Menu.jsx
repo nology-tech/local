@@ -13,28 +13,51 @@ import closeBtn from "../../images/close-btn.svg";
 const Menu = ({ toggleMenu }) => {
   return (
     <Layout>
-      <div>
-        <img src={closeBtn} alt="Close Button" onClick={toggleMenu} />
-        <img src={logo} alt="App Logo" />
-        <h1>LOCAL</h1>
-        <img src={home} alt="Home Logo" />
-        <h2>Home</h2>
-        <img src={arrow} alt="Arrow" />
-        <img src={discover} alt="Discover Logo" />
-        <h2>Discover</h2>
-        <img src={arrow} alt="Arrow" />
-        <img src={favourites} alt="Home Logo" />
-        <h2>Favourites</h2>
-        <img src={arrow} alt="Arrow" />
-        <img src={account} alt="Account Logo" />
-        <h2>Manage Account</h2>
-        <img src={arrow} alt="Arrow" />
-        <img src={about} alt="About Logo" />
-        <h2>About</h2>
-        <img src={arrow} alt="Arrow" />
-        <img src={contact} alt="Contact Logo" />
-        <h2>Contact</h2>
-        <img src={arrow} alt="Arrow" />
+      <div className="menu">
+        <div className="menu-header">
+          <img className="menu-appLogo" src={logo} alt="App Logo" />
+          <h1 className="h1">LOCAL</h1>
+          <img
+            className="menu-close"
+            src={closeBtn}
+            alt="Close Button"
+            onClick={toggleMenu}
+          />
+        </div>
+        <div className="menu-home">
+          <img className="menu-logo" src={home} alt="Home Logo" />
+          <h2>Home</h2>
+          <img className="menu-arrow" src={arrow} alt="Arrow" />
+        </div>
+        <div className="menu-search">
+          <div>
+            <img className="menu-logo" src={discover} alt="Discover Logo" />
+            <h2>Discover</h2>
+            <img className="menu-arrow" src={arrow} alt="Arrow" />
+          </div>
+          <div>
+            <img className="menu-logo" src={favourites} alt="Home Logo" />
+            <h2>Favourites</h2>
+            <img className="menu-arrow" src={arrow} alt="Arrow" />
+          </div>
+        </div>
+        <div className="menu-info">
+          <div>
+            <img className="menu-logo" src={account} alt="Account Logo" />
+            <h2>Manage Account</h2>
+            <img className="menu-arrow" src={arrow} alt="Arrow" />
+          </div>
+          <div>
+            <img className="menu-logo" src={about} alt="About Logo" />
+            <h2>About</h2>
+            <img className="menu-arrow" src={arrow} alt="Arrow" />
+          </div>
+        </div>
+        <div className="menu-contact">
+          <img className="menu-logo" src={contact} alt="Contact Logo" />
+          <h2>Contact</h2>
+          <img className="menu-arrow" src={arrow} alt="Arrow" />
+        </div>
       </div>
     </Layout>
   );

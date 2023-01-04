@@ -1,0 +1,11 @@
+@use "../../styles/variables" as *;
+
+.menu {
+  border: 2px solid red;
+  border-radius: 1rem;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+  }
+}
