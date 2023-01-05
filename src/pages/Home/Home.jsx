@@ -1,7 +1,4 @@
-import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
-import Menu from "../../components/Menu/Menu";
-import MenuIcon from "../../components/MenuIcon/MenuIcon";
 
 const Home = () => {
   return (

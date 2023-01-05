@@ -9,7 +9,7 @@
 }
 
 .layout__menu {
-  position: relative;
+  position: absolute;
   z-index: 100000;
   margin-top: 8%;
   margin-left: 10%;
@@ -17,4 +17,15 @@
   width: 90%;
   height: 90%;
   @include set-background;
+}
+
+.menu__shadow {
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
 }

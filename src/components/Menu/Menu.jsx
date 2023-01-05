@@ -1,5 +1,4 @@
 import "./Menu.scss";
-import Layout from "../../components/Layout/Layout";
 import logo from "../../images/logo.svg";
 import about from "../../images/about.svg";
 import account from "../../images/account.svg";
@@ -68,7 +67,6 @@ const Menu = ({ toggleMenu }) => {
           </div>
         </div>
       </div>
-      <div className="menu__shadow"></div>
     </>
   );
 };
