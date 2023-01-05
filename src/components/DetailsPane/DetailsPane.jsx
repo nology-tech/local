@@ -1,11 +1,11 @@
-import "./FavDetails.scss";
+import "./DetailsPane.scss";
 import Button from "../Button/Button";
 
-const FavDetails = ({ onClick, card }) => {
+const DetailsPane = ({ onClick, card }) => {
   return (
-    <div className="favDetails" key={card.id}>
-      <div className="favDetails__Container">
-        <div className="favDetails__Header">
+    <div className="detailsPane" key={card.id}>
+      <div className="detailsPane__Container">
+        <div className="detailsPane__Header">
           <h2>{card.name}</h2>
           <Button buttonText="✖" buttonName="Close" onClick={onClick} />
         </div>
@@ -15,7 +15,7 @@ const FavDetails = ({ onClick, card }) => {
         <p>{card.address}</p>
         <p>{card.price}</p>
         <p>{card.image}</p>
-        <div className="favDetails__SaveBtnContainer">
+        <div className="detailsPane__SaveBtnContainer">
           <Button buttonText="Save" buttonName="Save" />
         </div>
       </div>
@@ -23,4 +23,4 @@ const FavDetails = ({ onClick, card }) => {
   );
 };
 
-export default FavDetails;
+export default DetailsPane;

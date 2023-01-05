@@ -1,5 +1,5 @@
 @use "../../styles/variables.scss" as *;
-.favDetails{
+.detailsPane{
 position: fixed;
 top: 0;
 left: 0;
@@ -10,7 +10,7 @@ align-items: center;
 justify-content: center;
 background-color: rgba(0, 128, 0, 0);
 }
-.favDetails__Container{
+.detailsPane__Container{
     width: 96vw;
     height: 96vh;
     background-color: rgb(255, 255, 255);
@@ -20,7 +20,7 @@ background-color: rgba(0, 128, 0, 0);
     flex-direction: column;
     padding: 1rem;
 }
-.favDetails__Header{
+.detailsPane__Header{
     display: flex;
 }
 .button--Close{
@@ -28,7 +28,7 @@ background-color: rgba(0, 128, 0, 0);
     background-color: rgba(255, 0, 0, 0);
     width: 3rem;
 }
-.favDetails__SaveBtnContainer{
+.detailsPane__SaveBtnContainer{
     display: flex;
     justify-content: center;
 }

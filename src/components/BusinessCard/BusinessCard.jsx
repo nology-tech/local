@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Button from "../Button/Button";
-import FavDetails from "../FavDetails/FavDetails";
-import "./FavouritesCard.scss";
+import DetailsPane from "../DetailsPane/DetailsPane";
+import "./BusinessCard.scss";
 
-const FavouritesCard = () => {
+const BusinessCard = () => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const favArray = [
@@ -39,7 +39,7 @@ const FavouritesCard = () => {
     },
   ];
 
-  const newFav = favArray.map((card) => {
+  const showCards = favArray.map((card) => {
     return (
       <div key={card.id}>
         <h2>{card.name}</h2>
@@ -57,9 +57,9 @@ const FavouritesCard = () => {
   });
   return (
     <>
-      {newFav}
+      {showCards}
       {activeDetails && (
-        <FavDetails
+        <DetailsPane
           card={activeDetails}
           onClick={() => setActiveDetails(null)}
         />
@@ -69,4 +69,4 @@ const FavouritesCard = () => {
   );
 };
 
-export default FavouritesCard;
+export default BusinessCard;

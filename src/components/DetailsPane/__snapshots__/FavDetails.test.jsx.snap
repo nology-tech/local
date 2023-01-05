@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the details pane on the display 1`] = `
+<div>
+  <div
+    class="favDetails"
+  >
+    <div
+      class="favDetails__Container"
+    >
+      <div
+        class="favDetails__Header"
+      >
+        <h2>
+          Smith and Sons
+        </h2>
+        <button
+          class="button button--Close"
+        >
+          ✖
+        </button>
+      </div>
+      <p>
+        A restaurant
+      </p>
+      <p>
+        2
+      </p>
+      <p />
+      <p>
+        A street
+      </p>
+      <p>
+        £
+      </p>
+      <p>
+        insert here
+      </p>
+      <div
+        class="favDetails__SaveBtnContainer"
+      >
+        <button
+          class="button button--Save"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
