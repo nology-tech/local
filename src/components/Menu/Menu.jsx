@@ -12,7 +12,7 @@ import closeBtn from "../../images/close-btn.svg";
 
 const Menu = ({ toggleMenu }) => {
   return (
-    <Layout menuLayout={true}>
+    <>
       <div className="menu">
         <div className="menu__header">
           <img className="menu-appLogo" src={logo} alt="App Logo" />
@@ -63,7 +63,8 @@ const Menu = ({ toggleMenu }) => {
           </div>
         </div>
       </div>
-    </Layout>
+      <div className="menu__shadow"></div>
+    </>
   );
 };
 

@@ -1,15 +1,23 @@
 import "./Layout.scss";
+import Menu from "../Menu/Menu";
 
-const Layout = ({ children, menuLayout }) => {
-  let className = "layout";
-
-  if (menuLayout) {
-    className += "__menu";
-  } else {
-    className = "layout";
+const Layout = ({ children, isWithMenu }) => {
+  if (!isWithMenu) {
+    return <div className="layout">{children}</div>;
   }
 
-  return <div className={className}>{children}</div>;
-};
+  //Layout with Menu Icon
+  const [showMenu, setShowMenu] = useState(false);
 
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  return (
+    <div className="layout__menu">
+      <Menu toggleMenu={toggleMenu} />
+      {children}
+    </div>
+  );
+};
 export default Layout;

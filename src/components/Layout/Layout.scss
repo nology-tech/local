@@ -9,6 +9,8 @@
 }
 
 .layout__menu {
+  position: relative;
+  z-index: 100000;
   margin-top: 8%;
   margin-left: 10%;
   border-radius: 1rem 0 0 1rem;
