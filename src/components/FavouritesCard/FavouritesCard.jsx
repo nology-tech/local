@@ -4,7 +4,7 @@ import FavDetails from "../FavDetails/FavDetails";
 import "./FavouritesCard.scss";
 
 const FavouritesCard = () => {
-  const [showDetails, setShowDetails] = useState(false);
+  const [activeDetails, setActiveDetails] = useState(null);
 
   const favArray = [
     {
@@ -15,7 +15,7 @@ const FavouritesCard = () => {
       weekendOpening: "Sat : 10:00 - 15:00",
       address: "32 Camden Hill, Eeling, London",
       price: "£££££",
-      image: " IMAGE INSERT HERE ",
+      image: " INSERT IMAGE HERE ",
     },
     {
       id: "1",
@@ -25,7 +25,7 @@ const FavouritesCard = () => {
       weekendOpening: "Sat : 10:00 - 15:00",
       address: "36 Lamden Hill, Eeling, London",
       price: "£",
-      image: " IMAGE INSERT HERE ",
+      image: " INSERT IMAGE HERE ",
     },
     {
       id: "2",
@@ -35,7 +35,7 @@ const FavouritesCard = () => {
       weekendOpening: "Sat : 10:00 - 15:00",
       address: "112 Backden Hill, Eeling, London",
       price: "£££",
-      image: " IMAGE INSERT HERE ",
+      image: " INSERT IMAGE HERE ",
     },
   ];
 
@@ -43,20 +43,30 @@ const FavouritesCard = () => {
     return (
       <div key={card.id}>
         <h2>{card.name}</h2>
-        <p>{card.paragraph}</p>
-        <p>{card.place}</p>
+        <p>{card.description}</p>
+        <p>{card.address}</p>
         <div>
           <Button
             buttonName="Details"
             buttonText="Details"
-            onClick={() => setShowDetails(!showDetails)}
+            onClick={() => setActiveDetails(card)}
           />
-          {showDetails && <FavDetails favArray={favArray} />}
         </div>
       </div>
     );
   });
-  return newFav;
+  return (
+    <>
+      {newFav}
+      {activeDetails && (
+        <FavDetails
+          card={activeDetails}
+          onClick={() => setActiveDetails(null)}
+        />
+      )}
+      ;
+    </>
+  );
 };
 
 export default FavouritesCard;

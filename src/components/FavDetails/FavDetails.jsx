@@ -1,30 +1,26 @@
 import "./FavDetails.scss";
 import Button from "../Button/Button";
-// import { useEffect } from "react";
 
-const FavDetails = ({ onClick, favArray }) => {
-  const showDetails = favArray.map((modal) => {
-    return (
-      <div className="favDetails" key={modal.id}>
-        <div className="favDetails__Container">
-          <div className="favDetails__Header">
-            <h2>{modal.name}</h2>
-            <Button buttonText="✖" buttonName="Close" onClick={onClick} />
-          </div>
-          <p>{modal.description}</p>
-          <p>{modal.weekdayOpening}</p>
-          <p>{modal.weekendOpening}</p>
-          <p>{modal.address}</p>
-          <p>{modal.price}</p>
-          <p>{modal.image}</p>
-          <div className="favDetails__SaveBtnContainer">
-            <Button buttonText="Save" buttonName="Save" />
-          </div>
+const FavDetails = ({ onClick, card }) => {
+  return (
+    <div className="favDetails" key={card.id}>
+      <div className="favDetails__Container">
+        <div className="favDetails__Header">
+          <h2>{card.name}</h2>
+          <Button buttonText="✖" buttonName="Close" onClick={onClick} />
+        </div>
+        <p>{card.description}</p>
+        <p>{card.weekdayOpening}</p>
+        <p>{card.weekendOpening}</p>
+        <p>{card.address}</p>
+        <p>{card.price}</p>
+        <p>{card.image}</p>
+        <div className="favDetails__SaveBtnContainer">
+          <Button buttonText="Save" buttonName="Save" />
         </div>
       </div>
-    );
-  });
-  return showDetails;
+    </div>
+  );
 };
 
 export default FavDetails;
