@@ -9,6 +9,7 @@ import discover from "../../images/discover.svg";
 import favourites from "../../images/favourites.svg";
 import home from "../../images/home.svg";
 import closeBtn from "../../images/close-btn.svg";
+import { Link } from "react-router-dom";
 
 const Menu = ({ toggleMenu }) => {
   return (
@@ -40,7 +41,9 @@ const Menu = ({ toggleMenu }) => {
           <div className="menu__page">
             <img className="menu-logo" src={favourites} alt="Home Logo" />
             <h2>Favourites</h2>
-            <img className="menu-arrow" src={arrow} alt="Arrow" />
+            <Link to="/favourites">
+              <img className="menu-arrow" src={arrow} alt="Arrow" />
+            </Link>
           </div>
         </div>
         <div className="menu-info">
@@ -59,7 +62,9 @@ const Menu = ({ toggleMenu }) => {
           <div className="menu__page">
             <img className="menu-logo" src={contact} alt="Contact Logo" />
             <h2>Contact</h2>
-            <img className="menu-arrow" src={arrow} alt="Arrow" />
+            <Link to="/contact">
+              <img className="menu-arrow" src={arrow} alt="Arrow" />
+            </Link>
           </div>
         </div>
       </div>
