@@ -47,14 +47,32 @@ const DropDown = () => {
             role="option"
             tabIndex={0}
             className="dropdown__item dropdown__item--secondary"
+            onClick={() => handleActiveLocation("All")}
+          >
+            <p className="dropdown__item-name">All</p>
+          </div>
+          <div
+            role="option"
+            tabIndex={0}
+            className="dropdown__item dropdown__item--secondary"
             onClick={() => handleActiveLocation("liverpool")}
           >
             <p className="dropdown__item-name">liverpool</p>
           </div>
-          <div className="dropdown__item dropdown__item--secondary">
+          <div
+            role="option"
+            tabIndex={0}
+            className="dropdown__item dropdown__item--secondary"
+            onClick={() => handleActiveLocation("london")}
+          >
             <p className="dropdown__item-name">london</p>
           </div>
-          <div className="dropdown__item dropdown__item--secondary">
+          <div
+            role="option"
+            tabIndex={0}
+            className="dropdown__item dropdown__item--secondary"
+            onClick={() => handleActiveLocation("edinburgh")}
+          >
             <p className="dropdown__item-name">edinburgh</p>
           </div>
         </>
