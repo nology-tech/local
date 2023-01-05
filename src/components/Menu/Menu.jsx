@@ -1,5 +1,4 @@
 import "./Menu.scss";
-import Layout from "../../components/Layout/Layout";
 import logo from "../../images/logo.svg";
 import about from "../../images/about.svg";
 import account from "../../images/account.svg";
@@ -13,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Menu = ({ toggleMenu }) => {
   return (
-    <Layout menuLayout={true}>
+    <>
       <div className="menu">
         <div className="menu__header">
           <img className="menu-appLogo" src={logo} alt="App Logo" />
@@ -68,7 +67,7 @@ const Menu = ({ toggleMenu }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 
