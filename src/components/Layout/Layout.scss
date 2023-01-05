@@ -17,6 +17,7 @@
   width: 90%;
   height: 90%;
   @include set-background;
+  @include text-normal;
 }
 
 .menu__shadow {

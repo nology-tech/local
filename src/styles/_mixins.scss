@@ -1,5 +1,8 @@
 @use "./variables" as *;
 
+// Text mixins
+// mixing for most text on the website - Everything but the "LOCAL" title and Contact page header
+
 @mixin text-normal {
   font-family: $text-font-family;
   font-weight: $default-font-weight;
@@ -7,6 +10,7 @@
 }
 
 // simply use "@include set-background" in any styling its required.
+
 @mixin set-background {
   background: $background;
   background: $background-gradient;
