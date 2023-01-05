@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*                          Colours                         */
+/*                          Font stuff              */
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+button {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 120%;
+  }
+}
+.button {
+  font-family: "Inter";
+  background-color: #1f1b1b;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: 0.1rem solid black;
+  opacity: 0.8;
+}
+.button:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.button:active {
+  border: 0.2rem solid #f3f2e8;
+  opacity: 0.4;
+}
+
+.button--contact {
+  height: 4rem;
+  margin: auto;
+  width: 12rem;
+  color: #f3f2e8;
+  background-color: #5bb27c;
+  border-color: #5bb27c;
+  font-size: 3rem;
+  font-weight: 400;
+  border-radius: 1.7rem;
+}/*# sourceMappingURL=Button.css.map */

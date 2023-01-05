@@ -64,7 +64,6 @@ const BusinessCard = () => {
           onClick={() => setActiveDetails(null)}
         />
       )}
-      ;
     </>
   );
 };
