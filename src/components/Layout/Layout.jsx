@@ -13,7 +13,6 @@ const Layout = ({ children, isWithMenu }) => {
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
-    console.log("here");
   };
 
   return (
