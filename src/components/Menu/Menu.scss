@@ -19,11 +19,16 @@
     padding-top: 0.8rem;
   }
 
+  &__link {
+    text-decoration: none;
+  }
+
   &__header,
   &__page {
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
+    text-decoration: none;
 
     h1 {
       font-family: $text-font-family;
@@ -31,7 +36,6 @@
       font-weight: $light-font;
     }
     h2 {
-      //   border: 2px solid red;
       font-family: $text-font-family;
       font-size: $default-text-size;
       font-weight: $light-font;
