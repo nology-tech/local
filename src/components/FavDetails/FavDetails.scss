@@ -24,8 +24,15 @@ background-color: rgba(0, 128, 0, 0);
     display: flex;
 }
 .button--Close{
-    border: solid red 3px;
+    border: solid rgba(255, 0, 0, 0) 3px;
     background-color: rgba(255, 0, 0, 0);
+    // text-align: end;
+    width: 3rem;
+    // margin-right: 1rem;
+}
+.favDetails__SaveBtnContainer{
+    display: flex;
+    justify-content: center;
 }
 .button--Save{
     background-color: $orange-color-palette;
