@@ -3,7 +3,19 @@ import triangle from "../../assets/icons/triangleUpsideDown.svg";
 
 import { useState } from "react";
 
-const DropDown = () => {
+const DropDown = ({ options = [], onChange }) => {
+  const optionsArr = [
+    "All",
+    "Birmingham",
+    "London",
+    "Chester",
+    "Oxford",
+    "Newcastle",
+    "Liverpool",
+  ];
+
+  // you should call onChange with the new value whenever the value changes
+
   // state to change whether drop down is displayed or not - changes class of image to rotate the arrow and class of primary div to change borders
   const [dropdownActive, setDropdownActive] = useState(false);
   // state to track the active location selected - This defaults to all so that without any option being clicked all is displayed as the text
@@ -41,45 +53,22 @@ const DropDown = () => {
           <img className={applyActiveClassArrow} src={triangle} alt="" />
         </div>
       </div>
-      {dropdownActive && (
-        <>
+      {dropdownActive &&
+        optionsArr.map((location) => (
           <div
+            key={location}
             role="option"
             tabIndex={0}
             className="dropdown__item dropdown__item--secondary"
-            onClick={() => handleActiveLocation("All")}
+            onClick={() => handleActiveLocation(location)}
           >
-            <p className="dropdown__item-name">All</p>
+            <p className="dropdown__item-name">{location}</p>
           </div>
-          <div
-            role="option"
-            tabIndex={0}
-            className="dropdown__item dropdown__item--secondary"
-            onClick={() => handleActiveLocation("liverpool")}
-          >
-            <p className="dropdown__item-name">liverpool</p>
-          </div>
-          <div
-            role="option"
-            tabIndex={0}
-            className="dropdown__item dropdown__item--secondary"
-            onClick={() => handleActiveLocation("london")}
-          >
-            <p className="dropdown__item-name">london</p>
-          </div>
-          <div
-            role="option"
-            tabIndex={0}
-            className="dropdown__item dropdown__item--secondary"
-            onClick={() => handleActiveLocation("edinburgh")}
-          >
-            <p className="dropdown__item-name">edinburgh</p>
-          </div>
-        </>
-      )}
+        ))}
     </div>
   );
 };
+
 export default DropDown;
 
 //steps to do next
