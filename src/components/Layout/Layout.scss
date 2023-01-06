@@ -5,6 +5,7 @@
   height: 100vh;
   width: 100vw;
   @include set-background;
+  overflow-y: scroll;
 }
 
 .layout__menu {

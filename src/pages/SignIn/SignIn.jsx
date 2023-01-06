@@ -32,7 +32,6 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </Layout>
   );
 };
