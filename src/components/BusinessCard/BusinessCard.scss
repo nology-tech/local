@@ -1,2 +1,48 @@
 @use "../../../src/styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 2px solid $black;
+  border-radius: 1.7rem;
+  background-color: $white;
+  padding: 1rem;
+  .card__header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .card__heading {
+      font-weight: bold;
+      background-color: $yellow;
+      border-radius: 1.7rem;
+      padding: 0.7rem;
+      width: 80%;
+    }
+    .card__image-container {
+      padding: 0.5rem;
+    }
+  }
+  .card__text {
+    align-self: flex-start;
+    width: 90%;
+    padding: 0 0.7rem;
+  }
+  .card__text--adress {
+    font-weight: bold;
+  }
+  .card__buttons-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    .button--details,
+    .button--delete {
+      width: 7.5rem;
+    }
+  }
+}
