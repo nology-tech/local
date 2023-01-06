@@ -5,6 +5,10 @@
   padding: 1rem;
   width: min-content;
 
+  &__options {
+    position: absolute;
+  }
+
   .dropdown__item {
     background-color: $white;
     min-width: 15rem;
@@ -42,8 +46,4 @@
 
 .arrow-active {
   transform: rotate(180deg);
-}
-
-.dropdown__options {
-  position: absolute;
 }
