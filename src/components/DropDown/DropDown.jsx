@@ -42,18 +42,20 @@ const DropDown = ({ options = [], onChange }) => {
           />
         </div>
       </div>
-      {dropDownActive &&
-        options.map((location) => (
-          <div
-            key={location}
-            role="option"
-            tabIndex={0}
-            className="dropdown__item dropdown__item--secondary"
-            onClick={() => handleActiveLocation(location)}
-          >
-            <p className="dropdown__item-name">{location}</p>
-          </div>
-        ))}
+      <div className="dropdown__options">
+        {dropDownActive &&
+          options.map((location) => (
+            <div
+              key={location}
+              role="option"
+              tabIndex={0}
+              className="dropdown__item dropdown__item--secondary"
+              onClick={() => handleActiveLocation(location)}
+            >
+              <p className="dropdown__item-name">{location}</p>
+            </div>
+          ))}
+      </div>
     </div>
   );
 };

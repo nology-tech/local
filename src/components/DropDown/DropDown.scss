@@ -1,63 +1,47 @@
 @use "../../../src/styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.dropdown__content {
-  .dropdown__link--secondary:last-child {
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-  }
-}
-
 .dropdown {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-
   padding: 1rem;
+  width: min-content;
 
   .dropdown__item {
     background-color: $white;
     min-width: 15rem;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
     border: 2px solid $black;
     padding: 1rem;
+
     &--primary {
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       border-radius: 2rem;
+
       &--active {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        text-align: left;
       }
     }
+
     &:last-child {
       border-bottom-left-radius: 2rem;
       border-bottom-right-radius: 2rem;
     }
+
     .dropdown__item-name--primary {
       width: 60%;
     }
 
-    .dropdown__item--secondary {
-      position: relative;
-    }
     .dropdown__image-container {
-      display: block;
       width: 20%;
-      height: 50%;
-      justify-self: flex-end;
     }
-  }
-  .dropdown__arrow {
-    width: 100%;
-    height: 100%;
   }
 }
 
 .arrow-active {
   transform: rotate(180deg);
+}
+
+.dropdown__options {
+  position: absolute;
 }
