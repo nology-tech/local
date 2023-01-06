@@ -1,16 +1,17 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import DetailsPane from "../DetailsPane/DetailsPane";
+import "./BusinessCard.scss";
 
 const BusinessCard = ({ businessCardArray }) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const showCards = businessCardArray.map((card) => {
     return (
-      <div key={card.id}>
-        <h2>{card.name}</h2>
-        <p>{card.description}</p>
-        <p>{card.address}</p>
+      <div className="card" key={card.id}>
+        <h2 className="card__heading">{card.name}</h2>
+        <p className="card__text">{card.description}</p>
+        <p className="card__text card__text--adress">{card.address}</p>
         <div>
           <Button
             buttonName="details"
