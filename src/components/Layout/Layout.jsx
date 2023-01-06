@@ -26,6 +26,7 @@ const Layout = ({ children, isWithMenu }) => {
         </>
       )}
       {!showMenu && <MenuIcon toggleMenu={toggleMenu} />}
+
       {children}
     </div>
   );

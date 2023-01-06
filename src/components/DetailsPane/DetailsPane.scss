@@ -1,0 +1,29 @@
+@use "../../styles/variables.scss" as *;
+.details-pane{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 128, 0, 0);
+}
+.details-pane__container{
+    width: 96vw;
+    height: 96vh;
+    background-color: rgb(255, 255, 255);
+    border: solid 3px black;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.details-pane__header{
+    display: flex;
+}
+.details-pane__save-btn-container{
+    display: flex;
+    justify-content: center;
+}
