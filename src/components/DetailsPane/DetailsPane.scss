@@ -1,5 +1,5 @@
 @use "../../styles/variables.scss" as *;
-.detailsPane{
+.details-pane{
 position: fixed;
 top: 0;
 left: 0;
@@ -10,7 +10,7 @@ align-items: center;
 justify-content: center;
 background-color: rgba(0, 128, 0, 0);
 }
-.detailsPane__Container{
+.details-pane__container{
     width: 96vw;
     height: 96vh;
     background-color: rgb(255, 255, 255);
@@ -20,19 +20,10 @@ background-color: rgba(0, 128, 0, 0);
     flex-direction: column;
     padding: 1rem;
 }
-.detailsPane__Header{
+.details-pane__header{
     display: flex;
 }
-.button--Close{
-    border: solid rgba(255, 0, 0, 0) 3px;
-    background-color: rgba(255, 0, 0, 0);
-    width: 3rem;
-}
-.detailsPane__SaveBtnContainer{
+.details-pane__save-btn-container{
     display: flex;
     justify-content: center;
-}
-.button--Save{
-    background-color: $orange-color-palette;
-    border-radius: 1.5rem;
 }

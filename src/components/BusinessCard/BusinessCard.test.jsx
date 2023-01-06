@@ -1,18 +1,26 @@
-import BusinessCard from "./BusinessCard";
+import DetailsPane from "../DetailsPane/DetailsPane";
 import { customRender } from "../../utils/testUtils";
-import { Screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import BusinessCard from "./BusinessCard";
+import favArray from "../../data/favourites/favourites";
 
 it("should render the text on the display", () => {
-  const { container } = customRender(<BusinessCard />);
+  const { container } = customRender(
+    <BusinessCard businessCardArray={favArray} />
+  );
 
   expect(container).toMatchSnapshot();
 });
 
-it("should check if the click of the details button shows the details pane"),
-  () => {
-    const { container } = customRender(<BusinessCard />);
-    const button = screen.getByRole("button");
-
-    userEvent.click(button);
-    expect(container);
-  };
+it("should check if the click of the details button shows the details pane", () => {
+  //load the page
+  customRender(<BusinessCard businessCardArray={favArray} />);
+  //get the button
+  const button = screen.getAllByRole("button");
+  //on click of the button
+  userEvent.click(button[0]);
+  const saveButton = screen.getByText("Save");
+  //expect the details pane to appear
+  expect(saveButton).toBeInTheDocument();
+});

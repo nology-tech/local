@@ -3,19 +3,19 @@
 exports[`should render the details pane on the display 1`] = `
 <div>
   <div
-    class="detailsPane"
+    class="details-pane"
   >
     <div
-      class="detailsPane__Container"
+      class="details-pane__container"
     >
       <div
-        class="detailsPane__Header"
+        class="details-pane__header"
       >
         <h2>
           Smith and Sons
         </h2>
         <button
-          class="button button--Close"
+          class="button button--close"
         >
           ✖
         </button>
@@ -37,10 +37,10 @@ exports[`should render the details pane on the display 1`] = `
         insert here
       </p>
       <div
-        class="detailsPane__SaveBtnContainer"
+        class="details-pane__save-btn-container"
       >
         <button
-          class="button button--Save"
+          class="button button--save"
         >
           Save
         </button>

@@ -3,11 +3,11 @@ import Button from "../Button/Button";
 
 const DetailsPane = ({ onClick, card }) => {
   return (
-    <div className="detailsPane" key={card.id}>
-      <div className="detailsPane__Container">
-        <div className="detailsPane__Header">
+    <div className="details-pane" key={card.id}>
+      <div className="details-pane__container">
+        <div className="details-pane__header">
           <h2>{card.name}</h2>
-          <Button buttonText="✖" buttonName="Close" onClick={onClick} />
+          <Button buttonText="✖" buttonName="close" onClick={onClick} />
         </div>
         <p>{card.description}</p>
         <p>{card.weekdayOpening}</p>
@@ -15,8 +15,8 @@ const DetailsPane = ({ onClick, card }) => {
         <p>{card.address}</p>
         <p>{card.price}</p>
         <p>{card.image}</p>
-        <div className="detailsPane__SaveBtnContainer">
-          <Button buttonText="Save" buttonName="Save" />
+        <div className="details-pane__save-btn-container">
+          <Button buttonText="Save" buttonName="save" />
         </div>
       </div>
     </div>
