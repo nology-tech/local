@@ -1,24 +1,57 @@
 import Layout from "../../components/Layout/Layout";
-import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import "./NewUser.scss";
 import logo from "../../assets/images/AppLogo.svg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NewUser = () => {
+  const [buttonText, setButtonText] = useState("Get Started");
+  const [content, setContent] = useState(
+    " Bringing local business to local people"
+  );
+
+  const buttonClicked = () => {
+    if (buttonText == "Get Started") {
+      setButtonText("Continue");
+      setContent(
+        "No matter where you are in the world Local shows you the best local bars, cafes, restaurants and shops"
+      );
+    } else if (buttonText == "Continue") {
+      setButtonText("Sign Up");
+      setContent(
+        "Discover new places and curate your own personal list. Be a local anywhere"
+      );
+    }
+  };
+
+  const buttonJSX = (
+    <div onClick={buttonClicked}>
+      <Button buttonText={buttonText} buttonName="enter" />
+    </div>
+  );
+
+  const signUpbuttonJSX = (
+    <Link to="/enter/signup">
+      <div onClick={buttonClicked}>
+        <Button buttonText={buttonText} buttonName="enter" />
+      </div>
+    </Link>
+  );
+
   return (
     <Layout>
       <div className="newuser">
         <div className="newuser__description">
-          <img className="newuser__logo" src={logo} alt="App Logo" />
-          <h1>LOCAL</h1>
-          <p className="newuser__description--content">
-            Bringing local business to local people
-          </p>
+          <div className="newuser__header">
+            <img className="newuser__logo" src={logo} alt="App Logo" />
+            <h1>LOCAL</h1>
+          </div>
+
+          <p className="newuser__description--content">{content}</p>
         </div>
         <div className="newuser__buttons">
-          <Link to="/">
-            <Button buttonText={"Get Started"} buttonName="enter" />
-          </Link>
+          {buttonText == "Sign Up" ? signUpbuttonJSX : buttonJSX}
         </div>
       </div>
     </Layout>
