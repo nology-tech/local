@@ -1,14 +1,9 @@
-@use "../../../src/styles/reset" as *;
 @use "../../../src/styles/variables" as *;
-@use "../../styles/typography" as *;
 @use "../../styles/mixins" as *;
 
 .button {
-  font-family: $text-font-family;
   background-color: $background-color;
-
   width: 9rem;
-
   height: 3rem;
 
   font-size: $default-text-size;
@@ -17,6 +12,7 @@
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
   opacity: 0.8;
+  
   &:hover {
     opacity: 1;
     transition: 0.3s;
@@ -28,7 +24,7 @@
 }
 
 .button--details{
-  background-color: $green-color-palette;
+  background-color: $green;
 }
 
 .button--close{
@@ -39,16 +35,27 @@
 }
 
 .button--save{
-  background-color: $orange-color-palette;
+  background-color: $orange;
 }
 
 .button--contact {
   height: 4rem;
   margin: auto;
   width: 12rem;
-  background-color: $green-color-palette;
-  border-color: $green-color-palette;
+  border-color: $green;
+  background-color: $green;
   font-size: 3rem;
+}
 
-  font-weight: $default-font-weight;
+.button--enter {
+  margin: 0.8rem;
+  color: $alternate-text-color;
+  width: 16rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $grey;
 }
