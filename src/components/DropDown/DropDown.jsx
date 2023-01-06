@@ -25,16 +25,16 @@ const DropDown = ({ options = [], onChange }) => {
 
   return (
     <div className="dropdown">
-      <div role="select" tabIndex={0} className={applyActiveClassDiv}>
+      <div
+        role="select"
+        tabIndex={0}
+        className={applyActiveClassDiv}
+        onClick={handleDropDownActive}
+      >
         <p className="dropdown__item-name dropdown__item-name--primary">
           {activeLocation}
         </p>
-        <div
-          className={"dropdown__image-container"}
-          role="button"
-          tabIndex={0}
-          onClick={handleDropDownActive}
-        >
+        <div className={"dropdown__image-container"}>
           <img
             className={applyActiveClassArrow}
             src={triangle}

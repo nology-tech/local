@@ -13,7 +13,7 @@
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
+
   padding: 1rem;
 
   .dropdown__item {
@@ -40,6 +40,10 @@
     }
     .dropdown__item-name--primary {
       width: 60%;
+    }
+
+    .dropdown__item--secondary {
+      position: relative;
     }
     .dropdown__image-container {
       display: block;

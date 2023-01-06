@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render the button page 1`] = `
+exports[`should render the dropdown 1`] = `
 <div>
   <div
     class="dropdown"
@@ -17,39 +17,6 @@ exports[`should render the button page 1`] = `
       </p>
       <div
         class="dropdown__image-container"
-        role="button"
-        tabindex="0"
-      >
-        <img
-          alt="triangle"
-          class="dropdown__arrow"
-          src="triangleUpsideDown.svg"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`should render the dropDown 1`] = `
-<div>
-  <div
-    class="dropdown"
-  >
-    <div
-      class="dropdown__item dropdown__item--primary"
-      role="select"
-      tabindex="0"
-    >
-      <p
-        class="dropdown__item-name dropdown__item-name--primary"
-      >
-        All
-      </p>
-      <div
-        class="dropdown__image-container"
-        role="button"
-        tabindex="0"
       >
         <img
           alt="triangle"
