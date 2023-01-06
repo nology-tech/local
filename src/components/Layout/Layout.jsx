@@ -1,7 +1,33 @@
 import "./Layout.scss";
+import Menu from "../Menu/Menu";
+import MenuIcon from "../MenuIcon/MenuIcon";
+import { useState } from "react";
 
-const Layout = ({ children }) => {
-  return <div className="layout">{children}</div>;
+const Layout = ({ children, isWithMenu }) => {
+  if (!isWithMenu) {
+    return <div className="layout">{children}</div>;
+  }
+
+  //Layout with Menu Icon
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  return (
+    <div className="layout">
+      {showMenu && (
+        <>
+          <div className="layout__menu--shadow"></div>
+          <div className="layout__menu">
+            <Menu toggleMenu={toggleMenu} />
+          </div>
+        </>
+      )}
+      {!showMenu && <MenuIcon toggleMenu={toggleMenu} />}
+      {children}
+    </div>
+  );
 };
-
 export default Layout;
