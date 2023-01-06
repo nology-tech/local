@@ -8,7 +8,7 @@ it("should render the text on the display", () => {
   expect(container).toMatchSnapshot();
 });
 
-It("should check if the click of the details button shows the details pane"),
+it("should check if the click of the details button shows the details pane"),
   () => {
     const { container } = customRender(<BusinessCard />);
     const button = screen.getByRole("button");
