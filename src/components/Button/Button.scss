@@ -8,10 +8,12 @@
   border: 0.1rem solid $black;
   border-radius: 1.7rem;
   opacity: 0.9;
+
   &:hover {
     opacity: 1;
     transition: 0.3s;
   }
+
   &:active {
     border: 0.2rem solid $white;
     opacity: 0.4;
@@ -39,4 +41,18 @@
   border-radius: 1rem;
   border: none;
   background-color: $grey;
+}
+
+.button--signin {
+  // margin-top: 0.8rem;
+  color: $alternate-text-color;
+  // width: 95;
+  // height: 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $grey;
+  align-items: center;
 }
