@@ -11,16 +11,9 @@
 
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
-  opacity: 0.8;
-
-  &:hover {
-    opacity: 1;
-    transition: 0.3s;
-  }
 
   &:active {
     border: 0.2rem solid $white;
-    opacity: 0.4;
   }
 }
 
@@ -35,7 +28,7 @@
   color: $black;
 }
 
-.button--delete {
+<<<<<<< HEAD=======>>>>>>>36b0942b6b5ba3845d221622586a4a7b7b949c43 .button--delete {
   background-color: $red;
 }
 

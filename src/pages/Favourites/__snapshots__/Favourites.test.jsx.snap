@@ -5,6 +5,33 @@ exports[`should render the text on the display 1`] = `
   <div
     class="layout"
   >
+    <div
+      class="dropdown"
+    >
+      <div
+        class="dropdown__item dropdown__item--primary"
+        role="select"
+        tabindex="0"
+      >
+        <p
+          class="dropdown__item-name dropdown__item-name--primary"
+        >
+          All
+        </p>
+        <div
+          class="dropdown__image-container"
+        >
+          <img
+            alt="triangle"
+            class="dropdown__arrow"
+            src="triangleUpsideDown.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="dropdown__options"
+      />
+    </div>
     <div>
       <h2>
         Smith & Sons
