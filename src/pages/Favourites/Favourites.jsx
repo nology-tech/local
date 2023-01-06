@@ -20,6 +20,7 @@ const Favourites = () => {
 
   return (
     <Layout isWithMenu={true}>
+      <DropDown onChange={onChange} options={optionsArr} />
       <BusinessCard businessCardArray={favArray} />
     </Layout>
   );

@@ -27,6 +27,7 @@
   width: 3rem;
   color: $black;
 }
+
 .button--delete {
   background-color: $red;
 }
@@ -55,4 +56,20 @@
   border-radius: 1rem;
   border: none;
   background-color: $grey;
+}
+
+.button--signin {
+  color: $alternate-text-color;
+  width: auto;
+  margin-top: 2rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $grey;
+  align-items: center;
 }

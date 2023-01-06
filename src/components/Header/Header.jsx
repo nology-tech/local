@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <div className="header">
       <img src={BackButton} alt="" />
-      <div className="header--container">
-        <div className="header--logo-title">
+      <div className="header__container">
+        <div className="header__logo-title">
           <img src={AppLogo} alt="" />
           <h1>LOCAL</h1>
         </div>
