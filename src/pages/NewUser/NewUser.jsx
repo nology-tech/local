@@ -43,8 +43,11 @@ const NewUser = () => {
     <Layout>
       <div className="newuser">
         <div className="newuser__description">
-          <img className="newuser__logo" src={logo} alt="App Logo" />
-          <h1>LOCAL</h1>
+          <div className="newuser__header">
+            <img className="newuser__logo" src={logo} alt="App Logo" />
+            <h1>LOCAL</h1>
+          </div>
+
           <p className="newuser__description--content">{content}</p>
         </div>
         <div className="newuser__buttons">

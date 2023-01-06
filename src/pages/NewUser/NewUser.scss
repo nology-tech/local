@@ -16,11 +16,17 @@
     width: 80%;
     &--content {
       position: relative;
-      top: 5rem;
+      top: 5.5rem;
+      font-family: $text-font-family;
+      font-size: $newuser-text-size;
     }
   }
   &__logo {
-    width: 50%;
+    width: 80%;
+  }
+  &__header {
+    position: fixed;
+    top: 4rem;
   }
 
   &__buttons {
