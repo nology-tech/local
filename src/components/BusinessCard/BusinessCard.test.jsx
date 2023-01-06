@@ -1,4 +1,3 @@
-import DetailsPane from "../DetailsPane/DetailsPane";
 import { customRender } from "../../utils/testUtils";
 import { screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
