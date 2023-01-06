@@ -4,7 +4,7 @@ import favArray from "../../data/favourites/favourites";
 
 const Favourites = () => {
   return (
-    <Layout>
+    <Layout isWithMenu={true}>
       <BusinessCard businessCardArray={favArray} />
     </Layout>
   );
