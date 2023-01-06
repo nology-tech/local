@@ -15,7 +15,8 @@
     height: 50%;
     width: 80%;
     &--content {
-      padding-top: 80px;
+      position: relative;
+      top: 5rem;
     }
   }
   &__logo {
@@ -29,5 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 2.5rem;
   }
 }
