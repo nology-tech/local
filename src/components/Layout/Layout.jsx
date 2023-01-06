@@ -2,6 +2,7 @@ import "./Layout.scss";
 import Menu from "../Menu/Menu";
 import MenuIcon from "../MenuIcon/MenuIcon";
 import { useState } from "react";
+import Header from "../Header/Header";
 
 const Layout = ({ children, isWithMenu }) => {
   if (!isWithMenu) {
@@ -17,6 +18,7 @@ const Layout = ({ children, isWithMenu }) => {
 
   return (
     <div className="layout">
+      <Header />
       {showMenu && (
         <>
           <div className="layout__menu--shadow"></div>
@@ -26,6 +28,7 @@ const Layout = ({ children, isWithMenu }) => {
         </>
       )}
       {!showMenu && <MenuIcon toggleMenu={toggleMenu} />}
+
       {children}
     </div>
   );
