@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+.newuser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    height: 50%;
+    width: 80%;
+    &--content {
+      padding-top: 80px;
+    }
+  }
+  &__logo {
+    width: 50%;
+  }
+
+  &__buttons {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

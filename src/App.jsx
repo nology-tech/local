@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Favourites from "./pages/Favourites/Favourites";
 import "./styles/main.scss";
+import NewUser from "./pages/NewUser/NewUser";
 import About from "./pages/About/About";
 import Enter from "./pages/Enter/Enter";
 import SignUp from "./pages/SignUp/SignUp";
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="*" element={<Home />} />
+      <Route path="/newuser" element={<NewUser />} />
       <Route path="/enter" element={<Enter />} />
       <Route path="/enter/signin" element={<SignIn />} />
       <Route path="/enter/signup" element={<SignUp />} />
