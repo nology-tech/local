@@ -50,7 +50,10 @@ const DropDown = ({ options = [], onChange }) => {
               role="option"
               tabIndex={0}
               className="dropdown__item dropdown__item--secondary"
-              onClick={() => handleActiveLocation(location)}
+              onClick={() => {
+                handleActiveLocation(location);
+                handleDropDownActive(false);
+              }}
             >
               <p className="dropdown__item-name">{location}</p>
             </div>

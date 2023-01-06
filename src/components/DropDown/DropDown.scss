@@ -16,10 +16,12 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 2rem;
+      text-align: center;
 
       &--active {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        text-align: left;
       }
     }
 
