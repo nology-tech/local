@@ -21,6 +21,11 @@ exports[`should render the text on the display 1`] = `
         >
           Details
         </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
       </div>
     </div>
     <div>
@@ -39,6 +44,11 @@ exports[`should render the text on the display 1`] = `
         >
           Details
         </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
       </div>
     </div>
     <div>
@@ -56,6 +66,11 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
         </button>
       </div>
     </div>
