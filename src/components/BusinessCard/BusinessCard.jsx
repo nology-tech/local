@@ -17,6 +17,7 @@ const BusinessCard = ({ businessCardArray }) => {
             buttonText="Details"
             onClick={() => setActiveDetails(card)}
           />
+          <Button buttonName="delete" buttonText="Delete" />
         </div>
       </div>
     );
