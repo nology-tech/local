@@ -16,20 +16,18 @@ const Layout = ({ children, isWithMenu }) => {
   };
 
   return (
-    <>
-      <div className="layout">
-        {showMenu && (
-          <>
-            <div className="menu__shadow"></div>
-            <div className="layout__menu">
-              <Menu toggleMenu={toggleMenu} />
-            </div>
-          </>
-        )}
-        {!showMenu && <MenuIcon toggleMenu={toggleMenu} />}
-        {children}
-      </div>
-    </>
+    <div className="layout">
+      {showMenu && (
+        <>
+          <div className="layout__menu--shadow"></div>
+          <div className="layout__menu">
+            <Menu toggleMenu={toggleMenu} />
+          </div>
+        </>
+      )}
+      {!showMenu && <MenuIcon toggleMenu={toggleMenu} />}
+      {children}
+    </div>
   );
 };
 export default Layout;
