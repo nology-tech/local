@@ -1,6 +1,6 @@
-import FavouritesCard from "../../components/FavouritesCard/FavouritesCard";
+import BusinessCard from "../../components/BusinessCard/BusinessCard";
 import Layout from "../../components/Layout/Layout";
-import DropDown from "../../components/DropDown/DropDown";
+import favArray from "../../data/favourites/favourites";
 
 const Favourites = () => {
   const optionsArr = [
@@ -19,8 +19,7 @@ const Favourites = () => {
 
   return (
     <Layout>
-      <DropDown onChange={onChange} options={optionsArr} />
-      <FavouritesCard />
+      <BusinessCard businessCardArray={favArray} />
     </Layout>
   );
 };

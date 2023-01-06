@@ -5,7 +5,7 @@ import TextField from "../../components/TextField/TextField";
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout isWithMenu={true}>
       <main className="contact">
         <h1>Contact</h1>
         <p>We would love to hear from you and take your feedback on board.</p>

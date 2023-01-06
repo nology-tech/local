@@ -3,7 +3,7 @@ import Layout from "../../components/Layout/Layout";
 
 const About = () => {
   return (
-    <Layout>
+    <Layout isWithMenu={true}>
       <div className="about">
         <div className="about__container">
           <h1 className="about__heading">About</h1>
