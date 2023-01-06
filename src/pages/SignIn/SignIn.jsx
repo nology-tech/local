@@ -18,11 +18,13 @@ const SignIn = () => {
             uniqueInputFieldName="signinUserName"
             inputType="text"
             labelHeader="Username"
+            modifier="signin"
           />
           <TextField
             uniqueInputFieldName="signinPassword"
             inputType="text"
             labelHeader="Password"
+            modifier="signin"
           />
           <div className="sign-in__buttons">
             <Button buttonText={"Sign in"} buttonName="signin" />
