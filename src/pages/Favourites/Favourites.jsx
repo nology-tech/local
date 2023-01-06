@@ -3,7 +3,7 @@ import Layout from "../../components/Layout/Layout";
 
 const Favourites = () => {
   return (
-    <Layout>
+    <Layout isWithMenu={true}>
       <FavouritesCard />
     </Layout>
   );

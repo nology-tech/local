@@ -5,6 +5,10 @@ exports[`should render contact page 1`] = `
   <div
     class="layout"
   >
+    <img
+      alt="Menu icon"
+      src="menu.svg"
+    />
     <main
       class="contact"
     >
