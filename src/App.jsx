@@ -8,6 +8,7 @@ import Enter from "./pages/Enter/Enter";
 import SignUp from "./pages/SignUp/SignUp";
 import Contact from "./pages/Contact/Contact";
 import SignIn from "./pages/SignIn/SignIn";
+import Filter from "./components/Filter/Filter";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/favourites" element={<Favourites />} />
       <Route path="/about" element={<About />} />
+      <Route path="/filter" element={<Filter />} />
     </Routes>
   );
 };
