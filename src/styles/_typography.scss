@@ -28,7 +28,7 @@ button {
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: $title-signup-font-size;
 }
 
 h2 {
@@ -37,6 +37,20 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+}
+
+p,
+button {
+  font-family: $text-font-family;
 }
 
 @media screen and (min-width: $tablet-breakpoint) {

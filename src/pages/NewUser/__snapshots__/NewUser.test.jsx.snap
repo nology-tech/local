@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NewUser page 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    <div
+      class="newuser"
+    >
+      <div
+        class="newuser__description"
+      >
+        <div
+          class="newuser__header"
+        >
+          <img
+            alt="App Logo"
+            class="newuser__logo"
+            src="AppLogo.svg"
+          />
+          <h1>
+            LOCAL
+          </h1>
+        </div>
+        <p
+          class="newuser__description--content"
+        >
+           Bringing local business to local people
+        </p>
+      </div>
+      <div
+        class="newuser__buttons"
+      >
+        <button
+          class="button button--enter"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

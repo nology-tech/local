@@ -11,15 +11,8 @@
 
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
-  opacity: 0.8;
-
-  &:hover {
-    opacity: 1;
-    transition: 0.3s;
-  }
   &:active {
     border: 0.2rem solid $white;
-    opacity: 0.4;
   }
 }
 
@@ -61,4 +54,21 @@
   border-radius: 1rem;
   border: none;
   background-color: $grey;
+}
+
+.button--signin,
+.button--signup {
+  color: $alternate-text-color;
+  width: auto;
+  margin-top: 2rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: $grey;
+  align-items: center;
 }

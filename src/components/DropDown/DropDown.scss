@@ -1,0 +1,51 @@
+@use "../../../src/styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.dropdown {
+  padding: 1rem;
+  width: min-content;
+  z-index: 1000;
+
+  &__options {
+    position: absolute;
+  }
+
+  &__arrow--active {
+    transform: rotate(180deg);
+  }
+
+  .dropdown__item {
+    background-color: $white;
+    min-width: 15rem;
+    border: 2px solid $black;
+    padding: 1rem;
+    z-index: 1000;
+
+    &--primary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 2rem;
+      text-align: center;
+
+      &--active {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        text-align: left;
+      }
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+
+    .dropdown__item-name--primary {
+      width: 60%;
+    }
+
+    .dropdown__image-container {
+      width: 20%;
+    }
+  }
+}
