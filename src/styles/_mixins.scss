@@ -15,3 +15,9 @@
   background: $background;
   background: $background-gradient;
 }
+
+@mixin text-header {
+  font-family: $title-font-family;
+  font-size: $title-font-size;
+}
+

@@ -1,3 +1,5 @@
+@use "../../styles/mixins" as *;
+
 .header{
     display: flex;
     flex-direction: row;
@@ -15,4 +17,8 @@
     flex-direction: row;
     margin: 2px;
 
+}
+
+.header__title-local {
+    @include text-header;
 }
