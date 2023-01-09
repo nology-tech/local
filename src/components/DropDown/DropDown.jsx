@@ -20,11 +20,7 @@ const DropDown = ({ options = [], onChange }) => {
     : "dropdown__item dropdown__item--primary";
 
   const applyActiveClassArrow = dropDownActive
-<<<<<<< HEAD
-    ? "dropdown__arrow arrow-active"
-=======
     ? "dropdown__arrow dropdown__arrow--active"
->>>>>>> e2a0b5cc47c2434a4583daff47f16afa57d1c280
     : "dropdown__arrow";
 
   return (
