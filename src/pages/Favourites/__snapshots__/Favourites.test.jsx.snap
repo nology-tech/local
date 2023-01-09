@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the text on the display 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    <div
+      class="dropdown"
+    >
+      <div
+        class="dropdown__item dropdown__item--primary"
+        role="select"
+        tabindex="0"
+      >
+        <p
+          class="dropdown__item-name dropdown__item-name--primary"
+        >
+          All
+        </p>
+        <div
+          class="dropdown__image-container"
+        >
+          <img
+            alt="triangle"
+            class="dropdown__arrow"
+            src="triangleUpsideDown.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="dropdown__options"
+      />
+    </div>
+    <div>
+      <h2>
+        Smith & Sons
+      </h2>
+      <p>
+        Mom and Pop chain serving sandwhiches
+      </p>
+      <p>
+        32 Camden Hill, Eeling, London
+      </p>
+      <div>
+        <button
+          class="button button--details"
+        >
+          Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2>
+        Dirty Onion
+      </h2>
+      <p>
+        Irish Bar, Great guines on tap. Live music on saturdays.
+      </p>
+      <p>
+        36 Lamden Hill, Eeling, London
+      </p>
+      <div>
+        <button
+          class="button button--details"
+        >
+          Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2>
+        Gunners art gallery
+      </h2>
+      <p>
+        I SELL ART & STUFF
+      </p>
+      <p>
+        112 Backden Hill, Eeling, London
+      </p>
+      <div>
+        <button
+          class="button button--details"
+        >
+          Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -5,5 +5,28 @@
   height: 100vh;
   width: 100vw;
   @include set-background;
+  overflow-y: scroll;
+}
+
+.layout__menu {
+  position: absolute;
+  z-index: 100000;
+  margin-top: 8%;
+  margin-left: 10%;
+  border-radius: 1rem 0 0 1rem;
+  width: 100%;
+  height: 90%;
+  @include set-background;
   @include text-normal;
+}
+
+.layout__menu--shadow {
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
 }

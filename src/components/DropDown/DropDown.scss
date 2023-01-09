@@ -4,12 +4,28 @@
 .dropdown {
   padding: 1rem;
   width: min-content;
+<<<<<<< HEAD
+=======
+  z-index: 1000;
+
+  &__options {
+    position: absolute;
+  }
+
+  &__arrow--active {
+    transform: rotate(180deg);
+  }
+>>>>>>> e2a0b5cc47c2434a4583daff47f16afa57d1c280
 
   .dropdown__item {
     background-color: $white;
     min-width: 15rem;
     border: 2px solid $black;
     padding: 1rem;
+<<<<<<< HEAD
+=======
+    z-index: 1000;
+>>>>>>> e2a0b5cc47c2434a4583daff47f16afa57d1c280
 
     &--primary {
       display: flex;
@@ -39,6 +55,7 @@
     }
   }
 }
+<<<<<<< HEAD
 
 .arrow-active {
   transform: rotate(180deg);
@@ -47,3 +64,5 @@
 .dropdown__options {
   position: absolute;
 }
+=======
+>>>>>>> e2a0b5cc47c2434a4583daff47f16afa57d1c280

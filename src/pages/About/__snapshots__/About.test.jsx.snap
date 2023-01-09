@@ -5,6 +5,10 @@ exports[`should render About page 1`] = `
   <div
     class="layout"
   >
+    <img
+      alt="Menu icon"
+      src="menu.svg"
+    />
     <div
       class="about"
     >

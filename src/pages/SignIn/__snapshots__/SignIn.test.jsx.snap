@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the text on the display 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    <div
+      class="sign-in"
+    >
+      <div
+        class="sign-in__intro"
+      >
+        <img
+          alt="App Logo"
+          class="sign-in__logo"
+          src="AppLogo.svg"
+        />
+        <h1>
+          LOCAL
+        </h1>
+        <p>
+          Bringing local business to local people
+        </p>
+      </div>
+      <div
+        class="sign-in__input-field"
+      >
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Username
+          </label>
+          <input
+            class="text-field__input text-field__input--signin"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Password
+          </label>
+          <input
+            class="text-field__input text-field__input--signin"
+            type="text"
+          />
+        </div>
+        <div
+          class="sign-in__buttons"
+        >
+          <button
+            class="button button--signin"
+          >
+            Sign in
+          </button>
+          <button
+            class="button button--signin"
+          >
+            Sign in with Google
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
