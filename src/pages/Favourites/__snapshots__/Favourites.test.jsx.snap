@@ -66,14 +66,12 @@ exports[`should render the text on the display 1`] = `
       />
     </div>
     <div>
-      <h2>
-        Smith & Sons
-      </h2>
+      <h2 />
       <p>
-        Mom and Pop chain serving sandwhiches
+        Medicine Bakery is a small, family-run bakery located in the city of Birmingham. The bakery specializes in creating delicious, wholesome, and nutritious baked goods, all of which are made with only the freshest ingredients. From savory pies and tarts to sweet treats like muffins and cupcakes, Medicine Bakery has something to delight every palate. The bakery also offers vegan and gluten-free options, making it the perfect spot to enjoy a guilt-free snack or treat. Stop by and try something from Medicine Bakery today!
       </p>
       <p>
-        32 Camden Hill, Eeling, London
+        69a New St, Birmingham B2 4DU
       </p>
       <div>
         <button
@@ -89,14 +87,12 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div>
-      <h2>
-        Dirty Onion
-      </h2>
+      <h2 />
       <p>
-        Irish Bar, Great guines on tap. Live music on saturdays.
+        A ladies' clothes shop offering a wide range of fashionable pieces.
       </p>
       <p>
-        36 Lamden Hill, Eeling, London
+        5 N Western arcade, Birmingham B2 5LH
       </p>
       <div>
         <button
@@ -112,14 +108,75 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div>
-      <h2>
-        Gunners art gallery
-      </h2>
+      <h2 />
       <p>
-        I SELL ART & STUFF
+        A restaurant and Indian restaurant known for its delicious food and authentic flavors.
       </p>
       <p>
-        112 Backden Hill, Eeling, London
+        21a Bennetts Hill, Birmingham B2 5QP
+      </p>
+      <div>
+        <button
+          class="button button--details"
+        >
+          Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2 />
+      <p>
+        A pub, bar, and more, offering a wide range of drinks and a fun atmosphere.
+      </p>
+      <p>
+        8 Bennetts Hill, Birmingham B2 5RS
+      </p>
+      <div>
+        <button
+          class="button button--details"
+        >
+          Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2 />
+      <p>
+        This is a lively bar and restaurant that serves a variety of beers, wines, and cocktails, as well as classic pub food like burgers, sandwiches, and wings. It has a fun, casual atmosphere and is a popular spot for watching sports.
+      </p>
+      <p>
+        79 Seel St, Liverpool L1 4BB
+      </p>
+      <div>
+        <button
+          class="button button--details"
+        >
+          Details
+        </button>
+        <button
+          class="button button--delete"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+    <div>
+      <h2 />
+      <p>
+        A fun and quirky shop featuring a range of products and gifts inspired by local culture and humor.
+      </p>
+      <p>
+        31-33 Tarleton St, Liverpool L1 1DS
       </p>
       <div>
         <button
