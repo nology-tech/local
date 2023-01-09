@@ -58,7 +58,8 @@
   background-color: $grey;
 }
 
-.button--signin {
+.button--signin,
+.button--signup {
   color: $alternate-text-color;
   width: auto;
   margin-top: 2rem;
