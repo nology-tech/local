@@ -1,6 +1,5 @@
 import NewUser from "./NewUser";
 import { customRender } from "../../utils/testUtils";
-import Button from "../../components/Button/Button";
 import { screen } from "@testing-library/react";
 
 import userEvent from "@testing-library/user-event";
