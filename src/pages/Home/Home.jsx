@@ -18,7 +18,6 @@ const Home = () => {
         buttonImgClass={"discover-icon"}
       />
       <Button
-        // buttonText={"D"}
         buttonName={"map-navigation"}
         buttonImgUrl={discoverIcon}
         buttonImgClass={"discover-icon"}
