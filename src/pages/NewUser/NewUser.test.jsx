@@ -10,10 +10,10 @@ it("should render NewUser page", () => {
   expect(container).toMatchSnapshot();
 });
 
-it("should render the content of the page and the button when user clicks", () => {
+it("should render the content of the page and the newuser-button when user clicks", () => {
   const mockFunction = jest.fn();
 
-  customRender(<Button onClick={mockFunction} />);
+  customRender(<NewUser onClick={mockFunction} />);
 
   const button = screen.getByRole("button");
   userEvent.click(button);
