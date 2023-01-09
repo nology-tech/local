@@ -1,24 +1,23 @@
 @use "../../styles/mixins" as *;
 
-.header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.header__container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-.header__logo-title{
-    display: flex;
-    flex-direction: row;
-    margin: 2px;
-
+.header__logo-title {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
 }
 
 .header__title-local {
-    @include text-header;
+  @include text-header;
 }
