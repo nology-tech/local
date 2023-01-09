@@ -10,12 +10,14 @@ it("should render NewUser page", () => {
 });
 
 it("should render the content of the page and the newuser-button when user clicks", () => {
-  const mockFunction = jest.fn();
-
-  customRender(<NewUser onClick={mockFunction} />);
-
+  customRender(<NewUser />);
   const button = screen.getByRole("button");
   userEvent.click(button);
 
-  expect(mockFunction).toBeCalled();
+  const newContent = screen.queryByText(
+    "No matter where you are in the world Local shows you the best local bars, cafes, restaurants and shops"
+  );
+  expect(newContent).toBeInTheDocument();
+
+  expect(button).toHaveTextContent("Continue");
 });

@@ -32,13 +32,11 @@ exports[`should render NewUser page 1`] = `
       <div
         class="newuser__buttons"
       >
-        <div>
-          <button
-            class="button button--enter"
-          >
-            Get Started
-          </button>
-        </div>
+        <button
+          class="button button--enter"
+        >
+          Get Started
+        </button>
       </div>
     </div>
   </div>
