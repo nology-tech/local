@@ -15,13 +15,13 @@ const SignUp = () => {
         </div>
         <div className="sign-up__input-field">
           <TextField
-            uniqueInputFieldName="signupUserName"
+            uniqueInputFieldName="signupFirstName"
             inputType="text"
             labelHeader="First name"
             modifier="signup"
           />
           <TextField
-            uniqueInputFieldName="signupPassword"
+            uniqueInputFieldName="signupLastName"
             inputType="text"
             labelHeader="Last name"
             modifier="signup"
@@ -33,25 +33,25 @@ const SignUp = () => {
             modifier="signup"
           />
           <TextField
-            uniqueInputFieldName="signupUserName"
+            uniqueInputFieldName="signupEmail"
             inputType="text"
             labelHeader="Email"
             modifier="signup"
           />
           <TextField
-            uniqueInputFieldName="signupUserName"
+            uniqueInputFieldName="signupConfirmEmail"
             inputType="text"
             labelHeader="Confirm email"
             modifier="signup"
           />
           <TextField
-            uniqueInputFieldName="signupUserName"
+            uniqueInputFieldName="signupPassword"
             inputType="text"
             labelHeader="Password"
             modifier="signup"
           />
           <TextField
-            uniqueInputFieldName="signupUserName"
+            uniqueInputFieldName="signupRetypePassword"
             inputType="text"
             labelHeader="Retype password"
             modifier="signup"
