@@ -25,7 +25,9 @@ exports[`should render contact page 1`] = `
               alt=""
               src="AppLogo.svg"
             />
-            <h1>
+            <h1
+              class="header__title-local"
+            >
               LOCAL
             </h1>
           </div>
