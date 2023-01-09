@@ -23,3 +23,13 @@ it("should check if the click of the details button shows the details pane", () 
   //expect the details pane to appear
   expect(saveButton).toBeInTheDocument();
 });
+
+// 1. assert
+it("each card should have the correct styling applied", () => {
+  // 2. arrange
+  customRender(<componentName />);
+  // change getByRole to text etc if required
+  const componentName = screen.getByRole("componentIdentifier/role/label");
+  // 3. act
+  expect(heading).toMatchSnapshot();
+});
