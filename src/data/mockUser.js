@@ -1,5 +1,3 @@
-import { createContext } from "react";
-
 const mockUser = {
   firstName: "Barry",
   username: "TheOG",
@@ -44,12 +42,11 @@ const mockUser = {
         zipcode: "B3 2",
         city: "Birmingham",
       },
+      website: "it works.com",
       contactNumber: "0121 236 8964",
-      description:
-        "A ladies' clothes shop offering a wide range of fashionable pieces.",
+      description: "",
       openingHours:
         "Wednesday:[11am-5pm], Thursday:[11am-5pm], Friday:[11am-5pm], Saturday:[10am-6pm], Sunday:[Closed], Monday:[11am-5pm], Tuesday:[11am-5pm]",
-      website: "",
       category: "Ladies' Clothes Shop",
       featuredImage:
         "https://lh5.googleusercontent.com/p/AF1QipN6dL0iWsPKBBa-X36zkNVLmklwcGRAf-_F1zsu=w80-h106-k-no",

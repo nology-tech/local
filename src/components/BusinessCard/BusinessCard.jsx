@@ -6,6 +6,17 @@ import cardCategories from "../../data/favourites/cardCategoryData/cardCategorie
 
 const BusinessCard = ({ businessCardArray }) => {
   const [activeDetails, setActiveDetails] = useState(null);
+  console.log(businessCardArray);
+
+  const getDescription = (card) => {
+    const lastSentenceIndex = card.description.indexOf(".", 2) + 1;
+    const shortenedDescription = card.description.substring(
+      0,
+      lastSentenceIndex
+    );
+
+    return shortenedDescription;
+  };
 
   const showCards = businessCardArray.map((card) => (
     <div className="card" key={card._id}>
@@ -15,7 +26,7 @@ const BusinessCard = ({ businessCardArray }) => {
             cardCategories[card.category].categoryName
           }`}
         >
-          {card.name}
+          {card.placename}
         </h2>
         <div className="card__image-container">
           <img
@@ -25,7 +36,15 @@ const BusinessCard = ({ businessCardArray }) => {
           />
         </div>
       </div>
-      <p className="card__text">{card.description}</p>
+      <p className="card__text">
+        {card.description
+          ? activeDetails
+            ? card.description
+            : getDescription(card)
+          : `No description, try ${
+              card.website ? card.website : "searching the name and postcode"
+            }`}
+      </p>
       <p className="card__text card__text--adress">{card.address}</p>
       <div className="card__buttons-container">
         <Button
