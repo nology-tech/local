@@ -5,6 +5,7 @@
 // rem is relative to the :root element in the dom (html tag)
 // we can manipulate the :root element's font-size at different breakpoints to scale up the font-size application-wide
 
+
 * {
   @include text-normal;
   color: $text-color;
@@ -39,12 +40,28 @@ h3 {
   font-size: 1.25rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: $header-font-family;
+}
+
+
+
+
+
+
 @media screen and (min-width: $tablet-breakpoint) {
   // increases font-size of all items by 10%
   :root {
     font-size: 110%;
   }
 }
+
+
 
 @media screen and (min-width: $desktop-breakpoint) {
   // increases font-size of all items by 20%
