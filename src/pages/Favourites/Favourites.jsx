@@ -1,9 +1,16 @@
 import BusinessCard from "../../components/BusinessCard/BusinessCard";
 import Layout from "../../components/Layout/Layout";
-import favArray from "../../data/favourites/favourites";
 import DropDown from "../../components/DropDown/DropDown";
+import { useContext } from "react";
+import UserContext from "../../context/UserContext";
 
 const Favourites = () => {
+  const { user } = useContext(UserContext);
+  if (user === null) {
+    return <p>loading...</p>;
+  }
+  console.log(user);
+
   const optionsArr = [
     "All",
     "London",
@@ -21,7 +28,7 @@ const Favourites = () => {
   return (
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
-      <BusinessCard businessCardArray={favArray} />
+      <BusinessCard businessCardArray={user.favourites} />
     </Layout>
   );
 };

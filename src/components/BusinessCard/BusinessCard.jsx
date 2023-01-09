@@ -4,10 +4,9 @@ import DetailsPane from "../DetailsPane/DetailsPane";
 
 const BusinessCard = ({ businessCardArray }) => {
   const [activeDetails, setActiveDetails] = useState(null);
-
   const showCards = businessCardArray.map((card) => {
     return (
-      <div key={card.id}>
+      <div key={card._id}>
         <h2>{card.name}</h2>
         <p>{card.description}</p>
         <p>{card.address}</p>
