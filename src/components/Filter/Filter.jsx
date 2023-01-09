@@ -8,32 +8,36 @@ const Filter = () => {
   const [cultureFilter, setCultureFilter] = useState(false);
   const [otherFilter, setOtherFilter] = useState(false);
 
-  const handleClickFoodDrink = (event) => {
-    const userClick = event.target.value;
-    setFoodDrinkFilter(userClick);
-    console.log(userClick);
+  const handleClickFoodDrink = () => {
+    setFoodDrinkFilter(!foodDrinkFilter);
   };
 
-  const handleClickCulture = (event) => {
-    const userClick = event.target.value;
-    setCultureFilter(userClick);
-    console.log(userClick);
+  const handleClickCulture = () => {
+    setCultureFilter(!cultureFilter);
   };
 
-  const handleClickOther = (event) => {
-    const userClick = event.target.value;
-    setOtherFilter(userClick);
-    console.log(userClick);
+  const handleClickOther = () => {
+    setOtherFilter(!otherFilter);
   };
 
   const favFilter = favArray.filter((fav) => {
-    if (foodDrinkFilter) {
+    if (foodDrinkFilter === true) {
       return fav.category.includes("Food & Drink");
-    } else if (cultureFilter) {
+    } else if (cultureFilter === true) {
       return fav.category.includes("Culture");
-    } else if (otherFilter) {
+    } else if (otherFilter === true) {
       return fav.category.includes("Other");
     }
+  });
+
+  const FavCardJSX = favFilter.map((card) => {
+    return (
+      <div key={card.id}>
+        <h2>{card.name}</h2>
+        <p>{card.description}</p>
+        <p>{card.address}</p>
+      </div>
+    );
   });
 
   return (
@@ -53,6 +57,7 @@ const Filter = () => {
         buttonName="filter"
         onClick={handleClickOther}
       />
+      {FavCardJSX}
     </div>
   );
 };
