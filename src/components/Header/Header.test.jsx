@@ -12,7 +12,7 @@ it("should render the header on the page", () => {
 
 describe("test css", () => {
   it("test font size", () => {
-    const wrapper = customRender(<Header />);
+    customRender(<Header />);
     const title = screen.getByText("LOCAL");
     expect(title).toHaveStyle("font-size: 2em");
   });
