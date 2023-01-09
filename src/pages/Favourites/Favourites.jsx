@@ -9,7 +9,6 @@ const Favourites = () => {
   if (user === null) {
     return <p>loading...</p>;
   }
-  console.log(user);
 
   const optionsArr = [
     "All",
@@ -21,9 +20,7 @@ const Favourites = () => {
     "Liverpool",
   ];
 
-  const onChange = (location) => {
-    console.log(location);
-  };
+  const onChange = (location) => {};
 
   return (
     <Layout isWithMenu={true}>
