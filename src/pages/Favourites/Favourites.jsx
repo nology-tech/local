@@ -20,7 +20,9 @@ const Favourites = () => {
     "Liverpool",
   ];
 
-  const onChange = (location) => {};
+  const onChange = (location) => {
+    console.log(location);
+  };
 
   return (
     <Layout isWithMenu={true}>
