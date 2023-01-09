@@ -9,7 +9,7 @@ const Header = () => {
       <div className="header__container">
         <div className="header__logo-title">
           <img src={AppLogo} alt="" />
-          <h1>LOCAL</h1>
+          <h1 className="header__title-local">LOCAL</h1>
         </div>
       </div>
     </div>
