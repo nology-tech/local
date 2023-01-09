@@ -2,72 +2,131 @@
 
 exports[`should render the text on the display 1`] = `
 <div>
-  <div>
-    <h2>
-      Smith & Sons
-    </h2>
-    <p>
-      Mom and Pop chain serving sandwhiches
-    </p>
-    <p>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header-container"
+    >
+      <h2
+        class="card__heading card__heading--food"
+      />
+      <div
+        class="card__image-container"
+      >
+        <img
+          alt=""
+          class="card__image"
+          src="forkIcon.svg"
+        />
+      </div>
+    </div>
+    <p
+      class="card__text"
+    />
+    <p
+      class="card__text card__text--adress"
+    >
       32 Camden Hill, Eeling, London
     </p>
-    <div>
+    <div
+      class="card__buttons-container"
+    >
       <button
         class="button button--details"
       >
         Details
       </button>
       <button
-        class="button button--delete"
+        class="button button--remove"
       >
-        Delete
+        Remove
       </button>
     </div>
   </div>
-  <div>
-    <h2>
-      Dirty Onion
-    </h2>
-    <p>
-      Irish Bar, Great guines on tap. Live music on saturdays.
+  <div
+    class="card"
+  >
+    <div
+      class="card__header-container"
+    >
+      <h2
+        class="card__heading card__heading--other"
+      />
+      <div
+        class="card__image-container"
+      >
+        <img
+          alt=""
+          class="card__image"
+          src="other.svg"
+        />
+      </div>
+    </div>
+    <p
+      class="card__text"
+    >
+      Irish Bar, Great guines on tap.
     </p>
-    <p>
+    <p
+      class="card__text card__text--adress"
+    >
       36 Lamden Hill, Eeling, London
     </p>
-    <div>
+    <div
+      class="card__buttons-container"
+    >
       <button
         class="button button--details"
       >
         Details
       </button>
       <button
-        class="button button--delete"
+        class="button button--remove"
       >
-        Delete
+        Remove
       </button>
     </div>
   </div>
-  <div>
-    <h2>
-      Gunners art gallery
-    </h2>
-    <p>
-      I SELL ART & STUFF
-    </p>
-    <p>
+  <div
+    class="card"
+  >
+    <div
+      class="card__header-container"
+    >
+      <h2
+        class="card__heading card__heading--culture"
+      />
+      <div
+        class="card__image-container"
+      >
+        <img
+          alt=""
+          class="card__image"
+          src="paintIcon.svg"
+        />
+      </div>
+    </div>
+    <p
+      class="card__text"
+    />
+    <p
+      class="card__text card__text--adress"
+    >
       112 Backden Hill, Eeling, London
     </p>
-    <div>
+    <div
+      class="card__buttons-container"
+    >
       <button
         class="button button--details"
       >
         Details
       </button>
       <button
-        class="button button--delete"
+        class="button button--remove"
       >
-        Delete
+        Remove
       </button>
     </div>
   </div>

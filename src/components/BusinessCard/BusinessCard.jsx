@@ -6,7 +6,6 @@ import cardCategories from "../../data/favourites/cardCategoryData/cardCategorie
 
 const BusinessCard = ({ businessCardArray }) => {
   const [activeDetails, setActiveDetails] = useState(null);
-  console.log(businessCardArray);
 
   const getDescription = (card) => {
     const lastSentenceIndex = card.description.indexOf(".", 2) + 1;
