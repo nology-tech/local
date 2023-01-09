@@ -17,10 +17,19 @@
     width: 100%;
     .card__heading {
       font-weight: bold;
-      background-color: $yellow;
+      background-color: $green;
+      color: $alternate-text-color;
       border-radius: 1.7rem;
       padding: 0.7rem;
       width: 80%;
+      &--food {
+        background-color: $yellow;
+        color: $text-color;
+      }
+      &--culture {
+        background-color: $purple;
+        color: $alternate-text-color;
+      }
     }
     .card__image-container {
       padding: 0.5rem;
@@ -32,6 +41,7 @@
     padding: 0 0.7rem;
   }
   .card__text--adress {
+    font-style: italic;
     font-weight: bold;
   }
   .card__buttons-container {
@@ -41,7 +51,7 @@
     align-items: stretch;
     width: 100%;
     .button--details,
-    .button--delete {
+    .button--remove {
       width: 7.5rem;
     }
   }

@@ -12,7 +12,7 @@
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
   opacity: 0.8;
-  
+
   &:hover {
     opacity: 1;
     transition: 0.3s;
@@ -23,21 +23,21 @@
   }
 }
 
-.button--details{
+.button--details {
   background-color: $green;
 }
 
-.button--close{
+.button--close {
   border: solid 0px;
   background-color: rgba(255, 0, 0, 0);
   width: 3rem;
   color: $black;
 }
-.button--delete{
-  background-color: $red;
+.button--remove {
+  background-color: $orange;
 }
 
-.button--save{
+.button--save {
   background-color: $orange;
 }
 
