@@ -7,7 +7,6 @@ const Filter = () => {
   const [foodDrinkFilter, setFoodDrinkFilter] = useState(false);
   const [cultureFilter, setCultureFilter] = useState(false);
   const [otherFilter, setOtherFilter] = useState(false);
-
   const [allCardsArr, setallCardsArr] = useState(favArray);
 
   const handleClickFoodDrink = () => {
@@ -21,6 +20,10 @@ const Filter = () => {
   const handleClickOther = () => {
     setOtherFilter(!otherFilter);
   };
+
+  const applyFoodDrinkFilter = foodDrinkFilter ? "filter--active" : "filter";
+  const applyCultureFilter = cultureFilter ? "filter--active" : "filter";
+  const applyOtherFilter = otherFilter ? "filter--active" : "filter";
 
   const filteredCard = (foodDrinkFilter, cultureFilter, otherFilter) => {
     console.log(foodDrinkFilter, cultureFilter, otherFilter);
@@ -50,21 +53,23 @@ const Filter = () => {
 
   return (
     <div>
-      <Button
-        buttonText={"FOOD & DRINK"}
-        buttonName="filter"
-        onClick={handleClickFoodDrink}
-      />
-      <Button
-        buttonText={"CULTURE"}
-        buttonName="filter"
-        onClick={handleClickCulture}
-      />
-      <Button
-        buttonText={"OTHER"}
-        buttonName="filter"
-        onClick={handleClickOther}
-      />
+      <div className="filter__list">
+        <Button
+          buttonText={"FOOD & DRINK"}
+          buttonName={applyFoodDrinkFilter}
+          onClick={handleClickFoodDrink}
+        />
+        <Button
+          buttonText={"CULTURE"}
+          buttonName={applyCultureFilter}
+          onClick={handleClickCulture}
+        />
+        <Button
+          buttonText={"OTHER"}
+          buttonName={applyOtherFilter}
+          onClick={handleClickOther}
+        />
+      </div>
       {FavCardJSX}
     </div>
   );

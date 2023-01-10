@@ -1,6 +1,7 @@
 import FavouritesCard from "../../components/FavouritesCard/FavouritesCard";
 import Layout from "../../components/Layout/Layout";
 import DropDown from "../../components/DropDown/DropDown";
+import Filter from "../../components/Filter/Filter";
 
 const Favourites = () => {
   const optionsArr = [
@@ -20,6 +21,7 @@ const Favourites = () => {
   return (
     <Layout>
       <DropDown onChange={onChange} options={optionsArr} />
+      <Filter />
       <FavouritesCard />
     </Layout>
   );
