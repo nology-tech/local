@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the filter component 1`] = `
+<div>
+  <div
+    class="filter__list"
+  >
+    <button
+      class="button button--filter"
+    >
+      FOOD & DRINK
+    </button>
+    <button
+      class="button button--filter"
+    >
+      CULTURE
+    </button>
+    <button
+      class="button button--filter"
+    >
+      OTHER
+    </button>
+  </div>
+</div>
+`;
