@@ -8,7 +8,7 @@ const mockUser = {
       description:
         "Medicine Bakery is a small, family-run bakery located in the city of Birmingham. The bakery specializes in creating delicious, wholesome, and nutritious baked goods, all of which are made with only the freshest ingredients. From savory pies and tarts to sweet treats like muffins and cupcakes, Medicine Bakery has something to delight every palate. The bakery also offers vegan and gluten-free options, making it the perfect spot to enjoy a guilt-free snack or treat. Stop by and try something from Medicine Bakery today!",
       averageRating: "4.2",
-      category: "Bakery",
+      category: "Food & Drink",
       slug: "medicine-bakery",
       _id: "63acbe82e9f5e8160675818d",
       featuredImage:
@@ -42,13 +42,12 @@ const mockUser = {
         zipcode: "B3 2",
         city: "Birmingham",
       },
+      website: "it works.com",
       contactNumber: "0121 236 8964",
-      description:
-        "A ladies' clothes shop offering a wide range of fashionable pieces.",
+      description: "",
       openingHours:
         "Wednesday:[11am-5pm], Thursday:[11am-5pm], Friday:[11am-5pm], Saturday:[10am-6pm], Sunday:[Closed], Monday:[11am-5pm], Tuesday:[11am-5pm]",
-      website: "",
-      category: "Ladies' Clothes Shop",
+      category: "Culture",
       featuredImage:
         "https://lh5.googleusercontent.com/p/AF1QipN6dL0iWsPKBBa-X36zkNVLmklwcGRAf-_F1zsu=w80-h106-k-no",
       _id: "63acbe82e9f5e816067581b3",
@@ -68,7 +67,7 @@ const mockUser = {
         "A restaurant and Indian restaurant known for its delicious food and authentic flavors.",
       googleMapsLink: "https://www.google.com/maps?cid=6205728425048899965",
       address: "21a Bennetts Hill, Birmingham B2 5QP",
-      category: "Restaurant,Indian restaurant",
+      category: "Food & Drink",
       _id: "63acbe82e9f5e816067581c4",
       priceRange: ["£££"],
       location: {
@@ -103,7 +102,7 @@ const mockUser = {
         city: "Birmingham",
         coordinates: [-1.9004, 52.48022],
       },
-      category: "Pub,Bar",
+      category: "Food & Drink",
       featuredImage:
         "https://lh5.googleusercontent.com/p/AF1QipPjD3GGMKasjk-e9nrxTaJPkO8WDlPFMSWSwuEn=w122-h92-k-no",
       description:
@@ -121,7 +120,7 @@ const mockUser = {
       __v: 0,
       openingHours:
         "Wednesday:[5pm-2am], Thursday:[5pm-2am], Friday:[3pm-3am], Saturday:[3pm-3am], Sunday:[5pm-2am], Monday:[5pm-2am], Tuesday:[5pm-2am]",
-      category: "Cocktail bar,Bar,Beer hall,Hot dog restaurant",
+      category: "Food & Drink",
       googleMapsLink: "https://www.google.com/maps?cid=6471419920284917276",
       website: "https://saltdogslims.com/salt-dog-slims-liverpool/",
       description:
@@ -155,7 +154,7 @@ const mockUser = {
       },
       averageRating: "4.5",
       address: "31-33 Tarleton St, Liverpool L1 1DS",
-      category: "Gift shop,Clothing Shop,Coffee shop,Off Licence",
+      category: "Other",
       googleMapsLink: "https://www.google.com/maps?cid=14235302740343254363",
       website: "http://www.scousebirdshop.com/",
       __v: 0,
