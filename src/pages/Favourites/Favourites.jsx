@@ -1,4 +1,4 @@
-import BusinessCard from "../../components/BusinessCard/BusinessCard";
+import Card from "../../components/Card/Card";
 import Layout from "../../components/Layout/Layout";
 import DropDown from "../../components/DropDown/DropDown";
 import { useContext } from "react";
@@ -27,9 +27,8 @@ const Favourites = () => {
   return (
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
-      <BusinessCard businessCardArray={user.favourites} />
+      <Card cardArray={user.favourites} />
     </Layout>
   );
 };
-
 export default Favourites;
