@@ -2,11 +2,13 @@ import "./Filter.scss";
 import Button from "../Button/Button";
 import { useEffect, useState } from "react";
 
-const Filter = ({ favArray = [] }) => {
+const Filter = ({ favArray = [], setallCardsArr }) => {
   const [foodDrinkFilter, setFoodDrinkFilter] = useState(false);
   const [cultureFilter, setCultureFilter] = useState(false);
   const [otherFilter, setOtherFilter] = useState(false);
-  const [allCardsArr, setallCardsArr] = useState(favArray);
+
+  //when use the filter component, need to import below code to filter the cards in page(see Favourite Page for usage)
+  // const [allCardsArr, setallCardsArr] = useState(favArray);
 
   const handleClickFoodDrink = () => {
     setFoodDrinkFilter(!foodDrinkFilter);
@@ -39,37 +41,23 @@ const Filter = ({ favArray = [] }) => {
     filteredCard(foodDrinkFilter, cultureFilter, otherFilter);
   }, [foodDrinkFilter, cultureFilter, otherFilter]);
 
-  const FavCardJSX = allCardsArr.map((card) => {
-    return (
-      <div key={card.id}>
-        <h2>{card.name}</h2>
-        <p>{card.description}</p>
-        <p>{card.address}</p>
-        <p>{card.category}</p>
-      </div>
-    );
-  });
-
   return (
-    <div>
-      <div className="filter__list">
-        <Button
-          buttonText={"FOOD & DRINK"}
-          buttonName={applyFoodDrinkFilter}
-          onClick={handleClickFoodDrink}
-        />
-        <Button
-          buttonText={"CULTURE"}
-          buttonName={applyCultureFilter}
-          onClick={handleClickCulture}
-        />
-        <Button
-          buttonText={"OTHER"}
-          buttonName={applyOtherFilter}
-          onClick={handleClickOther}
-        />
-      </div>
-      {FavCardJSX}
+    <div className="filter__list">
+      <Button
+        buttonText={"FOOD & DRINK"}
+        buttonName={applyFoodDrinkFilter}
+        onClick={handleClickFoodDrink}
+      />
+      <Button
+        buttonText={"CULTURE"}
+        buttonName={applyCultureFilter}
+        onClick={handleClickCulture}
+      />
+      <Button
+        buttonText={"OTHER"}
+        buttonName={applyOtherFilter}
+        onClick={handleClickOther}
+      />
     </div>
   );
 };
