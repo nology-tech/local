@@ -1,11 +1,11 @@
-import Button from "../../components/Button/Button";
+import Home from "../../pages/Home/Home";
 import { customRender } from "../../utils/testUtils";
 import { screen } from "@testing-library/react";
 
 it("should render a button on the screen", () => {
-  customRender(<Button buttonImgClass={"discover-icon"} />);
+  customRender(<Home />);
 
-  const buttononscreen = screen.getByRole("button");
+  const buttononscreen = screen.getByText("List View");
 
   expect(buttononscreen).toBeInTheDocument();
 });

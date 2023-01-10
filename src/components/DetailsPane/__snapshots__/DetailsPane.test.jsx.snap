@@ -18,9 +18,6 @@ exports[`should render the details pane on the display 1`] = `
           class="button button--close"
         >
           ✖
-          <img
-            class="button--image--undefined"
-          />
         </button>
       </div>
       <p>
@@ -46,9 +43,6 @@ exports[`should render the details pane on the display 1`] = `
           class="button button--save"
         >
           Save
-          <img
-            class="button--image--undefined"
-          />
         </button>
       </div>
     </div>

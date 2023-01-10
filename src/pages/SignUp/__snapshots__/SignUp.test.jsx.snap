@@ -124,17 +124,11 @@ exports[`should render the text on the display 1`] = `
             class="button button--signup"
           >
             Sign up
-            <img
-              class="button--image--undefined"
-            />
           </button>
           <button
             class="button button--signup"
           >
             Sign up with Google
-            <img
-              class="button--image--undefined"
-            />
           </button>
         </div>
       </div>
