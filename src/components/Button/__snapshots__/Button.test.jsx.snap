@@ -4,6 +4,10 @@ exports[`should render the button page 1`] = `
 <div>
   <button
     class="button button--undefined"
-  />
+  >
+    <img
+      class="button--image--undefined"
+    />
+  </button>
 </div>
 `;

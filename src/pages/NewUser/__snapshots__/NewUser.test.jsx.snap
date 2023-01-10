@@ -36,6 +36,9 @@ exports[`should render NewUser page 1`] = `
           class="button button--enter"
         >
           Get Started
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>

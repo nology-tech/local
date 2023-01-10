@@ -93,6 +93,9 @@ exports[`should render contact page 1`] = `
           class="button button--contact"
         >
           SEND
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </form>
     </main>

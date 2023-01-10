@@ -78,11 +78,17 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+          <img
+            class="button--image--undefined"
+          />
         </button>
         <button
           class="button button--delete"
         >
           Delete
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>
@@ -99,11 +105,17 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+          <img
+            class="button--image--undefined"
+          />
         </button>
         <button
           class="button button--delete"
         >
           Delete
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>
@@ -120,11 +132,17 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+          <img
+            class="button--image--undefined"
+          />
         </button>
         <button
           class="button button--delete"
         >
           Delete
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>
@@ -141,11 +159,17 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+          <img
+            class="button--image--undefined"
+          />
         </button>
         <button
           class="button button--delete"
         >
           Delete
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>
@@ -162,11 +186,17 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+          <img
+            class="button--image--undefined"
+          />
         </button>
         <button
           class="button button--delete"
         >
           Delete
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>
@@ -183,11 +213,17 @@ exports[`should render the text on the display 1`] = `
           class="button button--details"
         >
           Details
+          <img
+            class="button--image--undefined"
+          />
         </button>
         <button
           class="button button--delete"
         >
           Delete
+          <img
+            class="button--image--undefined"
+          />
         </button>
       </div>
     </div>
