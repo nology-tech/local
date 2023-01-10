@@ -65,15 +65,40 @@ exports[`should render the text on the display 1`] = `
         class="dropdown__options"
       />
     </div>
-    <div>
-      <h2 />
-      <p>
-        Medicine Bakery is a small, family-run bakery located in the city of Birmingham. The bakery specializes in creating delicious, wholesome, and nutritious baked goods, all of which are made with only the freshest ingredients. From savory pies and tarts to sweet treats like muffins and cupcakes, Medicine Bakery has something to delight every palate. The bakery also offers vegan and gluten-free options, making it the perfect spot to enjoy a guilt-free snack or treat. Stop by and try something from Medicine Bakery today!
+    <div
+      class="card"
+    >
+      <div
+        class="card__header-container"
+      >
+        <h2
+          class="card__heading card__heading--food"
+        >
+          Medicine Bakery
+        </h2>
+        <div
+          class="card__image-container"
+        >
+          <img
+            alt=""
+            class="card__image"
+            src="forkIcon.svg"
+          />
+        </div>
+      </div>
+      <p
+        class="card__text"
+      >
+        Medicine Bakery is a small, family-run bakery located in the city of Birmingham.
       </p>
-      <p>
+      <p
+        class="card__text card__text--adress"
+      >
         69a New St, Birmingham B2 4DU
       </p>
-      <div>
+      <div
+        class="card__buttons-container"
+      >
         <button
           class="button button--details"
         >
@@ -82,19 +107,44 @@ exports[`should render the text on the display 1`] = `
         <button
           class="button button--remove"
         >
-          Delete
+          Remove
         </button>
       </div>
     </div>
-    <div>
-      <h2 />
-      <p>
-        A ladies' clothes shop offering a wide range of fashionable pieces.
+    <div
+      class="card"
+    >
+      <div
+        class="card__header-container"
+      >
+        <h2
+          class="card__heading card__heading--culture"
+        >
+          La M C
+        </h2>
+        <div
+          class="card__image-container"
+        >
+          <img
+            alt=""
+            class="card__image"
+            src="paintIcon.svg"
+          />
+        </div>
+      </div>
+      <p
+        class="card__text"
+      >
+        No description, try it works.com
       </p>
-      <p>
+      <p
+        class="card__text card__text--adress"
+      >
         5 N Western arcade, Birmingham B2 5LH
       </p>
-      <div>
+      <div
+        class="card__buttons-container"
+      >
         <button
           class="button button--details"
         >
@@ -103,19 +153,44 @@ exports[`should render the text on the display 1`] = `
         <button
           class="button button--remove"
         >
-          Delete
+          Remove
         </button>
       </div>
     </div>
-    <div>
-      <h2 />
-      <p>
+    <div
+      class="card"
+    >
+      <div
+        class="card__header-container"
+      >
+        <h2
+          class="card__heading card__heading--food"
+        >
+          The Indian Streatery
+        </h2>
+        <div
+          class="card__image-container"
+        >
+          <img
+            alt=""
+            class="card__image"
+            src="forkIcon.svg"
+          />
+        </div>
+      </div>
+      <p
+        class="card__text"
+      >
         A restaurant and Indian restaurant known for its delicious food and authentic flavors.
       </p>
-      <p>
+      <p
+        class="card__text card__text--adress"
+      >
         21a Bennetts Hill, Birmingham B2 5QP
       </p>
-      <div>
+      <div
+        class="card__buttons-container"
+      >
         <button
           class="button button--details"
         >
@@ -124,19 +199,44 @@ exports[`should render the text on the display 1`] = `
         <button
           class="button button--remove"
         >
-          Delete
+          Remove
         </button>
       </div>
     </div>
-    <div>
-      <h2 />
-      <p>
+    <div
+      class="card"
+    >
+      <div
+        class="card__header-container"
+      >
+        <h2
+          class="card__heading card__heading--food"
+        >
+          The Lost & Found Birmingham
+        </h2>
+        <div
+          class="card__image-container"
+        >
+          <img
+            alt=""
+            class="card__image"
+            src="forkIcon.svg"
+          />
+        </div>
+      </div>
+      <p
+        class="card__text"
+      >
         A pub, bar, and more, offering a wide range of drinks and a fun atmosphere.
       </p>
-      <p>
+      <p
+        class="card__text card__text--adress"
+      >
         8 Bennetts Hill, Birmingham B2 5RS
       </p>
-      <div>
+      <div
+        class="card__buttons-container"
+      >
         <button
           class="button button--details"
         >
@@ -145,19 +245,44 @@ exports[`should render the text on the display 1`] = `
         <button
           class="button button--remove"
         >
-          Delete
+          Remove
         </button>
       </div>
     </div>
-    <div>
-      <h2 />
-      <p>
-        This is a lively bar and restaurant that serves a variety of beers, wines, and cocktails, as well as classic pub food like burgers, sandwiches, and wings. It has a fun, casual atmosphere and is a popular spot for watching sports.
+    <div
+      class="card"
+    >
+      <div
+        class="card__header-container"
+      >
+        <h2
+          class="card__heading card__heading--food"
+        >
+          Salt Dog Slim's
+        </h2>
+        <div
+          class="card__image-container"
+        >
+          <img
+            alt=""
+            class="card__image"
+            src="forkIcon.svg"
+          />
+        </div>
+      </div>
+      <p
+        class="card__text"
+      >
+        This is a lively bar and restaurant that serves a variety of beers, wines, and cocktails, as well as classic pub food like burgers, sandwiches, and wings.
       </p>
-      <p>
+      <p
+        class="card__text card__text--adress"
+      >
         79 Seel St, Liverpool L1 4BB
       </p>
-      <div>
+      <div
+        class="card__buttons-container"
+      >
         <button
           class="button button--details"
         >
@@ -166,19 +291,44 @@ exports[`should render the text on the display 1`] = `
         <button
           class="button button--remove"
         >
-          Delete
+          Remove
         </button>
       </div>
     </div>
-    <div>
-      <h2 />
-      <p>
+    <div
+      class="card"
+    >
+      <div
+        class="card__header-container"
+      >
+        <h2
+          class="card__heading card__heading--other"
+        >
+          Scouse Bird Shop
+        </h2>
+        <div
+          class="card__image-container"
+        >
+          <img
+            alt=""
+            class="card__image"
+            src="other.svg"
+          />
+        </div>
+      </div>
+      <p
+        class="card__text"
+      >
         A fun and quirky shop featuring a range of products and gifts inspired by local culture and humor.
       </p>
-      <p>
+      <p
+        class="card__text card__text--adress"
+      >
         31-33 Tarleton St, Liverpool L1 1DS
       </p>
-      <div>
+      <div
+        class="card__buttons-container"
+      >
         <button
           class="button button--details"
         >
@@ -187,7 +337,7 @@ exports[`should render the text on the display 1`] = `
         <button
           class="button button--remove"
         >
-          Delete
+          Remove
         </button>
       </div>
     </div>
