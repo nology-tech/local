@@ -26,16 +26,20 @@ const NewUser = () => {
   };
 
   const buttonJSX = (
-    <div onClick={buttonClicked}>
-      <Button buttonText={buttonText} buttonName="enter" />
-    </div>
+    <Button
+      onClick={buttonClicked}
+      buttonText={buttonText}
+      buttonName="enter"
+    />
   );
 
-  const signUpbuttonJSX = (
+  const signUpButtonJSX = (
     <Link to="/enter/signup">
-      <div onClick={buttonClicked}>
-        <Button buttonText={buttonText} buttonName="enter" />
-      </div>
+      <Button
+        onClick={buttonClicked}
+        buttonText={buttonText}
+        buttonName="enter"
+      />
     </Link>
   );
 
@@ -51,7 +55,7 @@ const NewUser = () => {
           <p className="newuser__description--content">{content}</p>
         </div>
         <div className="newuser__buttons">
-          {buttonText == "Sign Up" ? signUpbuttonJSX : buttonJSX}
+          {buttonText == "Sign Up" ? signUpButtonJSX : buttonJSX}
         </div>
       </div>
     </Layout>

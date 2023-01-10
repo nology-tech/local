@@ -4,9 +4,14 @@
 .dropdown {
   padding: 1rem;
   width: min-content;
+  z-index: 1000;
 
   &__options {
     position: absolute;
+  }
+
+  &__arrow--active {
+    transform: rotate(180deg);
   }
 
   .dropdown__item {
@@ -14,6 +19,7 @@
     min-width: 15rem;
     border: 2px solid $black;
     padding: 1rem;
+    z-index: 1000;
 
     &--primary {
       display: flex;
@@ -42,8 +48,4 @@
       width: 20%;
     }
   }
-}
-
-.arrow-active {
-  transform: rotate(180deg);
 }

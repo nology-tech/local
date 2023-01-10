@@ -10,12 +10,14 @@
   flex-flow: column wrap;
   align-items: center;
   padding: 0.4rem;
+
   &__label,
   &__input {
     color: $text-color;
     @include text-normal;
     padding: 0.3rem;
   }
+
   &__label {
     align-self: flex-start;
     padding-left: 0.7rem;
@@ -31,8 +33,14 @@
     border: 0.125rem solid $black;
     border-radius: 2rem;
     box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+
     &--large {
       height: 7rem;
     }
+  }
+  &__input--signin,
+  &__input--signup {
+    border-style: none;
+    border-radius: 1rem;
   }
 }

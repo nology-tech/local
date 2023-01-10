@@ -6,6 +6,39 @@ exports[`should render About page 1`] = `
     class="layout"
   >
     <div
+      class="layout__header"
+    >
+      <div
+        class="header"
+      >
+        <img
+          alt=""
+          src="BackButton.svg"
+        />
+        <div
+          class="header__container"
+        >
+          <div
+            class="header__logo-title"
+          >
+            <img
+              alt=""
+              src="AppLogo.svg"
+            />
+            <h1
+              class="header__title-local"
+            >
+              LOCAL
+            </h1>
+          </div>
+        </div>
+      </div>
+      <img
+        alt="Menu icon"
+        src="menu.svg"
+      />
+    </div>
+    <div
       class="about"
     >
       <div

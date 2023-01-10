@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the text on the display 1`] = `
+<div>
+  <div
+    class="layout"
+  >
+    <div
+      class="sign-up"
+    >
+      <div
+        class="sign-up__intro"
+      >
+        <img
+          alt="App Logo"
+          class="sign-up__logo"
+          src="AppLogo.svg"
+        />
+        <h1>
+          LOCAL
+        </h1>
+        <p>
+          Bringing local business to local people
+        </p>
+      </div>
+      <div
+        class="sign-up__input-field"
+      >
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            First name
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Last name
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Username
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Email
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Confirm email
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Password
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="text-field"
+        >
+          <label
+            class="text-field__label"
+          >
+            Retype password
+          </label>
+          <input
+            class="text-field__input text-field__input--signup"
+            type="text"
+          />
+        </div>
+        <div
+          class="sign-up__buttons"
+        >
+          <button
+            class="button button--signup"
+          >
+            Sign up
+          </button>
+          <button
+            class="button button--signup"
+          >
+            Sign up with Google
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

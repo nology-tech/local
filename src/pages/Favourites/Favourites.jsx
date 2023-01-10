@@ -1,10 +1,19 @@
-import FavouritesCard from "../../components/FavouritesCard/FavouritesCard";
+import Card from "../../components/Card/Card";
 import Layout from "../../components/Layout/Layout";
 import DropDown from "../../components/DropDown/DropDown";
 import Filter from "../../components/Filter/Filter";
 import favArray from "../../data/favourites";
+import { useContext } from "react";
+import UserContext from "../../context/UserContext";
 
 const Favourites = () => {
+  const Favourites = () => {
+    const { user } = useContext(UserContext);
+    if (user === null) {
+      return <p>loading...</p>;
+    }
+  };
+
   const optionsArr = [
     "All",
     "London",
@@ -20,12 +29,11 @@ const Favourites = () => {
   };
 
   return (
-    <Layout>
+    <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
       <Filter favArray={favArray} />
-      <FavouritesCard />
+      <Card cardArray={user.favourites} />
     </Layout>
   );
 };
-
 export default Favourites;

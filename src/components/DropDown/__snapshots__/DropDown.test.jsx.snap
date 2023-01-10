@@ -25,6 +25,9 @@ exports[`should render the dropdown 1`] = `
         />
       </div>
     </div>
+    <div
+      class="dropdown__options"
+    />
   </div>
 </div>
 `;

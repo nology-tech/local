@@ -2,7 +2,7 @@ import Layout from "../../components/Layout/Layout";
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout isWithMenu={true}>
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
       <h3>Panel Heading</h3>
@@ -15,5 +15,4 @@ const Home = () => {
     </Layout>
   );
 };
-
 export default Home;
