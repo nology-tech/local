@@ -12,24 +12,9 @@ const Home = () => {
   }
   return (
     <Layout isWithMenu={true}>
-      <Button
-        buttonName="map-navigation button-plus"
-        buttonText="+"
-        // buttonImgUrl={plusIcon}
-        // buttonImgClass={"discover-icon"}
-      />
-      <Button
-        buttonName="map-navigation button-minus"
-        buttonText="-"
-        // buttonImgUrl={minusIcon}
-        // buttonImgClass={"discover-icon"}
-      />
-      <Button
-        buttonName="map-navigation"
-        buttonText="List View"
-        // buttonImgUrl={discoverIcon}
-        // buttonImgClass={"discover-icon"}
-      />
+      <Button buttonName="map-navigation button-plus" buttonText="+" />
+      <Button buttonName="map-navigation button-minus" buttonText="-" />
+      <Button buttonName="map-navigation" buttonText="List View" />
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
       <h3>Panel Heading</h3>
