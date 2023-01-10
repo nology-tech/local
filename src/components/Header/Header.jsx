@@ -4,9 +4,6 @@ import "./Header.scss";
 import MenuIcon from "../MenuIcon/MenuIcon";
 
 const Header = ({ toggleMenu }) => {
-  // const menuIconString = menu.toString();
-  // <img src={menuIconString} alt="An icon of a menu" />
-
   return (
     <div className="header">
       <img src={BackButton} alt="" />
