@@ -4,6 +4,13 @@ exports[`should render the text on the display 1`] = `
 <div>
   <div
     class="carousel"
-  />
+  >
+    <p>
+      test
+    </p>
+    <p>
+      other test
+    </p>
+  </div>
 </div>
 `;
