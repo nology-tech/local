@@ -4,7 +4,7 @@ import menu from "../../images/menu.svg";
 const MenuIcon = ({ toggleMenu }) => {
   return (
     <img
-      className="hamburger-menu hamburger-menu--header"
+      className="menu-icon"
       src={menu}
       alt="Menu icon"
       onClick={toggleMenu}

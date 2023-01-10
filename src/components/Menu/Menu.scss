@@ -1,18 +1,10 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-.layout__menu {
-  height: 83%;
-}
-
 .menu {
   position: absolute;
   z-index: 100000;
   width: 90%;
-  & > div:nth-child(even) {
-    border-top: 0.1rem solid white;
-    border-bottom: 0.1rem solid white;
-  }
 
   &__app-logo {
     height: 3rem;
@@ -85,4 +77,8 @@
   &__app-title {
     @include text-header;
   }
+}
+.menu > :nth-child(even) {
+  border-top: 0.1rem solid white;
+  border-bottom: 0.1rem solid white;
 }
