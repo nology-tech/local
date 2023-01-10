@@ -31,7 +31,7 @@ exports[`should render About page 1`] = `
       </div>
       <img
         alt="Menu icon"
-        class="hamburger-menu hamburger-menu--header"
+        class="menu-icon"
         role="button"
         src="menu.svg"
       />
