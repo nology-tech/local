@@ -11,7 +11,7 @@ const Favourites = () => {
     return <p>loading...</p>;
   }
 
-  const [allCardsArr, setallCardsArr] = useState(user.favourites);
+  const [allCardsArr, setAllCardsArr] = useState(user.favourites);
 
   const optionsArr = [
     "All",
@@ -30,7 +30,7 @@ const Favourites = () => {
   return (
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
-      <Filter favArray={user.favourites} setallCardsArr={setallCardsArr} />
+      <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
       <Card cardArray={allCardsArr} />
     </Layout>
   );

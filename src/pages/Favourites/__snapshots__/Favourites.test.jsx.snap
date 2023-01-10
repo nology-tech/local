@@ -66,6 +66,25 @@ exports[`should render the text on the display 1`] = `
       />
     </div>
     <div
+      class="filter__list"
+    >
+      <button
+        class="button button--filter"
+      >
+        FOOD & DRINK
+      </button>
+      <button
+        class="button button--filter"
+      >
+        CULTURE
+      </button>
+      <button
+        class="button button--filter"
+      >
+        OTHER
+      </button>
+    </div>
+    <div
       class="card"
     >
       <div
