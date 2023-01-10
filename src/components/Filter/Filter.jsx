@@ -1,9 +1,8 @@
 import "./Filter.scss";
 import Button from "../Button/Button";
-import favArray from "../../data/favourites";
 import { useEffect, useState } from "react";
 
-const Filter = () => {
+const Filter = ({ favArray = [] }) => {
   const [foodDrinkFilter, setFoodDrinkFilter] = useState(false);
   const [cultureFilter, setCultureFilter] = useState(false);
   const [otherFilter, setOtherFilter] = useState(false);
