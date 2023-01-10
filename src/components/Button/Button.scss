@@ -72,3 +72,9 @@
   background-color: $grey;
   align-items: center;
 }
+.button--menu {
+  color: black;
+  background-color: $white;
+  background-image: url("../../assets/images/MenuIcon.svg");
+  background-repeat: no-repeat;
+}

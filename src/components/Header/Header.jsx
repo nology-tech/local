@@ -1,8 +1,12 @@
 import AppLogo from "../../assets/images/AppLogo.svg";
 import BackButton from "../../assets/images/BackButton.svg";
 import "./Header.scss";
+import MenuIcon from "../MenuIcon/MenuIcon";
 
-const Header = () => {
+const Header = ({ toggleMenu }) => {
+  // const menuIconString = menu.toString();
+  // <img src={menuIconString} alt="An icon of a menu" />
+
   return (
     <div className="header">
       <img src={BackButton} alt="" />
@@ -12,6 +16,7 @@ const Header = () => {
           <h1 className="header__title-local">LOCAL</h1>
         </div>
       </div>
+      <MenuIcon toggleMenu={toggleMenu} />
     </div>
   );
 };
