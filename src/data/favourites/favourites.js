@@ -1,6 +1,6 @@
 const favArray = [
   {
-    id: "0",
+    _id: "0",
     name: "Smith & Sons",
     description: "Mom and Pop chain serving sandwhiches",
     weekdayOpening: "MON-FRI : 9:00 - 19:00",
@@ -8,9 +8,10 @@ const favArray = [
     address: "32 Camden Hill, Eeling, London",
     price: "£££££",
     image: " INSERT IMAGE HERE ",
+    category: "Food & Drink",
   },
   {
-    id: "1",
+    _id: "1",
     name: "Dirty Onion",
     description: "Irish Bar, Great guines on tap. Live music on saturdays.",
     weekdayOpening: "MON-FRI : 9:00 - 19:00",
@@ -18,9 +19,10 @@ const favArray = [
     address: "36 Lamden Hill, Eeling, London",
     price: "£",
     image: " INSERT IMAGE HERE ",
+    category: "Other",
   },
   {
-    id: "2",
+    _id: "2",
     name: "Gunners art gallery",
     description: "I SELL ART & STUFF",
     weekdayOpening: "MON-FRI : 9:00 - 19:00",
@@ -28,6 +30,7 @@ const favArray = [
     address: "112 Backden Hill, Eeling, London",
     price: "£££",
     image: " INSERT IMAGE HERE ",
+    category: "Culture",
   },
 ];
 export default favArray;

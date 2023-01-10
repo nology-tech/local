@@ -12,10 +12,6 @@
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   &:active {
     border: 0.2rem solid $white;
   }
@@ -44,9 +40,8 @@
   width: 3rem;
   color: $black;
 }
-
-.button--delete {
-  background-color: $red;
+.button--remove {
+  background-color: $orange;
 }
 
 .button--save {

@@ -1,10 +1,15 @@
 import Button from "../../components/Button/Button";
 import Layout from "../../components/Layout/Layout";
-// import discoverIcon from "../../assets/icons/discoverIcon.svg";
-// import plusIcon from "../../assets/icons/plusIcon.svg";
-// import minusIcon from "../../assets/icons/minusIcon.svg";
+import { useContext } from "react";
+import UserContext from "../../context/UserContext";
+import Carousel from "../../components/Carousel/Carousel";
+import Card from "../../components/Card/Card";
 
 const Home = () => {
+  const { user } = useContext(UserContext);
+  if (user === null) {
+    return <p>loading...</p>;
+  }
   return (
     <Layout isWithMenu={true}>
       <Button
@@ -34,6 +39,7 @@ const Home = () => {
         maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos,
         necessitatibus.
       </p>
+      <Carousel componentToDisplay={<Card cardArray={user.favourites} />} />
     </Layout>
   );
 };
