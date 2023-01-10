@@ -6,35 +6,33 @@ exports[`should render the text on the display 1`] = `
     class="layout"
   >
     <div
-      class="layout__header"
+      class="header"
     >
+      <img
+        alt=""
+        src="BackButton.svg"
+      />
       <div
-        class="header"
+        class="header__container"
       >
-        <img
-          alt=""
-          src="BackButton.svg"
-        />
         <div
-          class="header__container"
+          class="header__logo-title"
         >
-          <div
-            class="header__logo-title"
+          <img
+            alt=""
+            src="AppLogo.svg"
+          />
+          <h1
+            class="header__title-local"
           >
-            <img
-              alt=""
-              src="AppLogo.svg"
-            />
-            <h1
-              class="header__title-local"
-            >
-              LOCAL
-            </h1>
-          </div>
+            LOCAL
+          </h1>
         </div>
       </div>
       <img
         alt="Menu icon"
+        class="hamburger-menu hamburger-menu--header"
+        role="button"
         src="menu.svg"
       />
     </div>
