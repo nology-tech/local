@@ -13,7 +13,6 @@ it("should render the dropdown", () => {
 
 it("should call the function when user selects an option from the dropdown menu", () => {
   const mockFunction = jest.fn();
-
   customRender(<DropDown onChange={mockFunction} options={mockData} />);
 
   const dropDown = screen.getByRole("select");
