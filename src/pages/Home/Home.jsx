@@ -12,8 +12,8 @@ const Home = () => {
   }
   return (
     <Layout isWithMenu={true}>
-      <Button buttonName="map-navigation button-plus" buttonText="+" />
-      <Button buttonName="map-navigation button-minus" buttonText="-" />
+      <Button buttonName="map-navigation button--plus" buttonText="+" />
+      <Button buttonName="map-navigation button--minus" buttonText="-" />
       <Button buttonName="map-navigation" buttonText="List View" />
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
