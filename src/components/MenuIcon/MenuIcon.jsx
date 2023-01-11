@@ -2,9 +2,9 @@ import "./MenuIcon.scss";
 
 const MenuIcon = ({ toggleMenu }) => {
   return (
-    <div className="menu-icon-container" onClick={toggleMenu} role="button">
+    <div className="menu-icon__container" onClick={toggleMenu} role="button">
       <svg
-        className="menu-icon-container__icon"
+        className="menu-icon__icon"
         width="44"
         height="30"
         viewBox="0 0 44 30"
