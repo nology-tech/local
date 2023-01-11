@@ -36,3 +36,13 @@
   opacity: 0.5;
   z-index: 1;
 }
+
+.menu-open {
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-closed {
+  left: 100vw;
+  transition: 0.3s ease-in-out;
+}
