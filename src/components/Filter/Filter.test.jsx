@@ -4,12 +4,10 @@ import Filter from "./Filter";
 import userEvent from "@testing-library/user-event";
 import favArray from "../../data/favourites/favourites";
 
-const mockData = ["FOOD & DRINK", "CULTURE", "OTHER"];
-
 it("should render the filter component", () => {
   const mockFunction = jest.fn();
   const { container } = customRender(
-    <Filter favArray={mockData} setAllCardsArr={mockFunction} />
+    <Filter favArray={favArray} setAllCardsArr={mockFunction} />
   );
   expect(container).toMatchSnapshot();
 });

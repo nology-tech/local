@@ -3,7 +3,7 @@
 exports[`should render the filter component 1`] = `
 <div>
   <div
-    class="filter__list"
+    class="filter"
   >
     <button
       class="button button--filter"
