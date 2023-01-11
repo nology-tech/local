@@ -14,8 +14,6 @@ const Home = () => {
     setBusinessArr(data);
   };
 
-  console.log(businessArr);
-
   useEffect(() => {
     getBusiness();
   }, []);
