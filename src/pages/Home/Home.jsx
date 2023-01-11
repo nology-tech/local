@@ -1,3 +1,4 @@
+import Button from "../../components/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
@@ -10,6 +11,7 @@ const Home = () => {
   if (businessArr === null) {
     return <p>loading...</p>;
   }
+  u;
 
   const getData = async () => {
     const data = await getInRadius("CH451HE", 5);
@@ -23,6 +25,12 @@ const Home = () => {
 
   return (
     <Layout isWithMenu={true}>
+      <div className="home__map-buttons">
+        <Button buttonName="map-navigation-zoom" buttonText="+" />
+        <Button buttonName="map-navigation-zoom" buttonText="-" />
+        <Button buttonName="map-navigation" buttonText="List View" />
+      </div>
+
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
       <h3>Panel Heading</h3>

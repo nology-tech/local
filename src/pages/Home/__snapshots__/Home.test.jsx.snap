@@ -49,6 +49,25 @@ exports[`should render the text on the display 1`] = `
         </svg>
       </div>
     </div>
+    <div
+      class="home__map-buttons"
+    >
+      <button
+        class="button button--map-navigation-zoom"
+      >
+        +
+      </button>
+      <button
+        class="button button--map-navigation-zoom"
+      >
+        -
+      </button>
+      <button
+        class="button button--map-navigation"
+      >
+        List View
+      </button>
+    </div>
     <h1>
       Page Heading
     </h1>
