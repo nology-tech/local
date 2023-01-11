@@ -1,8 +1,10 @@
+import Button from "../../components/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
+import "./Home.scss";
 
 const Home = () => {
   const { user } = useContext(UserContext);
@@ -11,6 +13,12 @@ const Home = () => {
   }
   return (
     <Layout isWithMenu={true}>
+      <div className="home__map-buttons">
+        <Button buttonName="map-navigation-zoom" buttonText="+" />
+        <Button buttonName="map-navigation-zoom" buttonText="-" />
+        <Button buttonName="map-navigation" buttonText="List View" />
+      </div>
+
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
       <h3>Panel Heading</h3>
