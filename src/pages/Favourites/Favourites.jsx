@@ -1,7 +1,8 @@
 import Card from "../../components/Card/Card";
 import Layout from "../../components/Layout/Layout";
 import DropDown from "../../components/DropDown/DropDown";
-import { useContext } from "react";
+import Filter from "../../components/Filter/Filter";
+import { useContext, useState } from "react";
 import UserContext from "../../context/UserContext";
 
 const Favourites = () => {
@@ -9,6 +10,8 @@ const Favourites = () => {
   if (user === null) {
     return <p>loading...</p>;
   }
+
+  const [allCardsArr, setAllCardsArr] = useState(user.favourites);
 
   const optionsArr = [
     "All",
@@ -27,7 +30,8 @@ const Favourites = () => {
   return (
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
-      <Card cardArray={user.favourites} />
+      <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
+      <Card cardArray={allCardsArr} />
     </Layout>
   );
 };
