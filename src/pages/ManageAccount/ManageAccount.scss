@@ -8,3 +8,18 @@
   align-items: center;
   background-color: $white;
 }
+.manage-account__heading {
+  margin-left: 1.5rem;
+  font-family: $header-font-family;
+  font-weight: $large-font-weight;
+  font-size: $title-font-size;
+}
+
+.manage-account__button-container {
+  height: 70%;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

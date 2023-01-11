@@ -9,16 +9,23 @@ const ManageAccount = () => {
       <div className="manage-account">
         <h1 className="manage-account__heading">Account</h1>
         <div className="manage-account__button-container">
-          <Button buttonName="account account--signout" buttonText="Sign Out" />
-          <Button
-            buttonName="account account--update-details"
-            buttonText="Update details"
-          />
+          <div className="manage-account__buttons-updateAccount">
+            <Button
+              buttonName="account button--signout"
+              buttonText="Sign Out"
+            />
+            <Button
+              buttonName="account button--update-details"
+              buttonText="Update details"
+            />
+          </div>
+          <div className="manage-account__buttons-deleteAccount">
+            <Button
+              buttonName="account button--deleteAccount"
+              buttonText="Delete Account"
+            />
+          </div>
         </div>
-        <Button
-          buttonName="account account--delete"
-          buttonText="Delete Account"
-        />
       </div>
     </Layout>
   );
