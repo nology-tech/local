@@ -64,7 +64,7 @@ exports[`should render the text on the display 1`] = `
       />
     </div>
     <div
-      class="filter__list"
+      class="filter"
     >
       <button
         class="button button--filter"

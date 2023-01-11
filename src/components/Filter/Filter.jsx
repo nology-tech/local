@@ -22,9 +22,9 @@ const Filter = ({ favArray = [], setAllCardsArr }) => {
     setOtherFilter(!otherFilter);
   };
 
-  const applyFoodDrinkFilter = foodDrinkFilter ? "filter--active" : "filter";
-  const applyCultureFilter = cultureFilter ? "filter--active" : "filter";
-  const applyOtherFilter = otherFilter ? "filter--active" : "filter";
+  const applyFoodDrinkFilter = foodDrinkFilter ? "filter-active" : "filter";
+  const applyCultureFilter = cultureFilter ? "filter-active" : "filter";
+  const applyOtherFilter = otherFilter ? "filter-active" : "filter";
 
   const filteredCard = (foodDrinkFilter, cultureFilter, otherFilter) => {
     const filteredArr = favArray.filter(
@@ -41,7 +41,7 @@ const Filter = ({ favArray = [], setAllCardsArr }) => {
   }, [foodDrinkFilter, cultureFilter, otherFilter]);
 
   return (
-    <div className="filter__list">
+    <div className="filter">
       <Button
         buttonText={"FOOD & DRINK"}
         buttonName={applyFoodDrinkFilter}
