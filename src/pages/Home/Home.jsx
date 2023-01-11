@@ -11,13 +11,11 @@ const Home = () => {
   if (businessArr === null) {
     return <p>loading...</p>;
   }
-  u;
 
   const getData = async () => {
     const data = await getInRadius("CH451HE", 5);
     setBusinessArr(data);
   };
-  console.log(businessArr);
 
   useEffect(() => {
     getData();
