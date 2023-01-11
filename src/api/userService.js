@@ -211,3 +211,9 @@ export const loginUser = async (email, password) => {
     console.log({ error });
   }
 };
+
+export const handleUserFavouritesUpdate = (arrayToUpdateWith, userid) => {
+  const docRef = doc(db, "users", userid);
+  console.log(docRef);
+  return;
+};
