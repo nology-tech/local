@@ -12,7 +12,7 @@ const Favourites = () => {
     return <p>loading...</p>;
   }
 
-  const [allCardsArr, setAllCardsArr] = useState(favArray);
+  const [allCardsArr, setAllCardsArr] = useState(user.favourites);
 
   const optionsArr = [
     "All",
