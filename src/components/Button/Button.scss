@@ -94,3 +94,16 @@
 .button--menu {
   width: 2.5rem;
 }
+
+.button--account {
+  color: $text-color;
+  background-color: #f6f6f5;
+  width: 20.438rem;
+  height: 4rem;
+  box-shadow: -0.75rem -0.75rem 1.5rem #ffffff, 0.75rem 0.75rem 1.5rem #c7c1bf;
+  border-radius: 1.25rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.account--delete {
+}
