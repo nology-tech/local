@@ -1,0 +1,12 @@
+@use "../../styles/variables" as *;
+
+.menu-icon__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border-radius: 0.9rem;
+  border: 0.125rem solid $black;
+  height: 3.438rem;
+  width: 5.125rem;
+}
