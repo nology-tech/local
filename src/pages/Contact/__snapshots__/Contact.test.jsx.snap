@@ -6,37 +6,48 @@ exports[`should render contact page 1`] = `
     class="layout"
   >
     <div
-      class="layout__header"
+      class="header"
     >
+      <img
+        alt=""
+        src="BackButton.svg"
+      />
       <div
-        class="header"
+        class="header__container"
       >
-        <img
-          alt=""
-          src="BackButton.svg"
-        />
         <div
-          class="header__container"
+          class="header__logo-title"
         >
-          <div
-            class="header__logo-title"
+          <img
+            alt=""
+            src="AppLogo.svg"
+          />
+          <h1
+            class="header__title-local"
           >
-            <img
-              alt=""
-              src="AppLogo.svg"
-            />
-            <h1
-              class="header__title-local"
-            >
-              LOCAL
-            </h1>
-          </div>
+            LOCAL
+          </h1>
         </div>
       </div>
-      <img
-        alt="Menu icon"
-        src="menu.svg"
-      />
+      <div
+        class="menu-icon__container"
+        role="button"
+      >
+        <svg
+          alt="Menu-icon"
+          class="menu-icon__icon"
+          fill="none"
+          height="30"
+          viewBox="0 0 44 30"
+          width="44"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 30H44V25H0V30ZM0 17.5H44V12.5H0V17.5ZM0 0V5H44V0H22H0Z"
+            fill="black"
+          />
+        </svg>
+      </div>
     </div>
     <main
       class="contact"

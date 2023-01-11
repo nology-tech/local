@@ -4,7 +4,6 @@ import about from "../../images/about.svg";
 import account from "../../images/account.svg";
 import arrow from "../../images/arrow.svg";
 import contact from "../../images/contact.svg";
-import discover from "../../images/discover.svg";
 import favourites from "../../images/favourites.svg";
 import home from "../../images/home.svg";
 import closeBtn from "../../images/close-btn.svg";
@@ -32,14 +31,7 @@ const Menu = ({ toggleMenu }) => {
           </div>
         </Link>
       </div>
-      <div className="menu__search">
-        <Link className="menu__link" to="/discover">
-          <div className="menu__page ">
-            <img className="menu__logo" src={discover} alt="Discover Logo" />
-            <h2 className="menu__option">Discover</h2>
-            <img className="menu__arrow" src={arrow} alt="Arrow" />
-          </div>
-        </Link>
+      <div className="menu__favourites">
         <Link className="menu__link" to="/favourites">
           <div className="menu__page">
             <img className="menu__logo" src={favourites} alt="Home Logo" />
@@ -56,6 +48,8 @@ const Menu = ({ toggleMenu }) => {
             <img className="menu__arrow" src={arrow} alt="Arrow" />
           </div>
         </Link>
+      </div>
+      <div className="menu__about">
         <Link className="menu__link" to="/about">
           <div className="menu__page">
             <img className="menu__logo" src={about} alt="About Logo" />
