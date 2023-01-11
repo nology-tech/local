@@ -5,36 +5,34 @@
   position: absolute;
   z-index: 100000;
   width: 90%;
-
   &__app-logo {
+    width: 7rem;
     height: 3rem;
+    margin-right: 2rem;
   }
   &__close {
-    width: 15%;
+    width: 2rem;
     height: 2rem;
   }
   &__header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-left: 4rem;
+    margin-bottom: 6rem;
+    padding-top: 0.8rem;
   }
 
   &__link {
     text-decoration: none;
   }
   &__option {
-    padding-left: 0.3rem;
     font-family: $text-font-family;
     font-size: $default-text-size;
     font-weight: $light-font;
   }
 
   &__app-title {
-    display: inline-block;
-    text-align: center;
+    font-family: $text-font-family;
+    font-size: $sub-header-text-size;
     font-weight: $light-font;
-    @include text-header;
   }
 
   &__header,
@@ -61,20 +59,24 @@
     margin-right: 0.5rem;
   }
   &__home,
-  &__about,
-  &__favourites,
+  &__search,
   &__info,
   &__contact {
-    padding: 0.6rem 1rem;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    padding: 1rem;
   }
   &__search,
   &__info,
   &__contact {
     border-top: none;
   }
-}
+  &__contact {
+    padding: 0.2rem 1rem 0.2rem 1rem;
+  }
 
-.menu > :nth-child(even) {
-  border-top: 0.1rem solid white;
-  border-bottom: 0.1rem solid white;
+  &__app-title {
+    @include text-header;
+  }
 }
