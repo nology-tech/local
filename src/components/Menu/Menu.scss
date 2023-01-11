@@ -33,9 +33,8 @@
   &__app-title {
     display: inline-block;
     text-align: center;
-    font-family: $text-font-family;
-    font-size: $sub-header-text-size;
     font-weight: $light-font;
+    @include text-header;
   }
 
   &__header,
@@ -73,11 +72,8 @@
   &__contact {
     border-top: none;
   }
-
-  &__app-title {
-    @include text-header;
-  }
 }
+
 .menu > :nth-child(even) {
   border-top: 0.1rem solid white;
   border-bottom: 0.1rem solid white;
