@@ -1,14 +1,37 @@
 import Layout from "../../components/Layout/Layout";
-import { useContext } from "react";
-import UserContext from "../../context/UserContext";
+// import { useContext } from "react";
+// import UserContext from "../../context/UserContext";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
+import { useEffect, useState } from "react";
+// import { baseURL } from "../../api/placeService";
+// import { getInRadius } from "../../api/placeService";
 
 const Home = () => {
-  const { user } = useContext(UserContext);
-  if (user === null) {
+  const [businessArr, setBusinessArr] = useState([]);
+  // const { user } = useContext(UserContext);
+  // if (user === null) {
+  //   return <p>loading...</p>;
+  // }
+
+  const getBusiness = async () => {
+    let response = await fetch(
+      "https://place-api.herokuapp.com/api/v1/places/locationsearch/CH451HE/10"
+    );
+    const data = await response.json();
+    setBusinessArr(data);
+  };
+
+  console.log(businessArr);
+
+  useEffect(() => {
+    getBusiness();
+  }, []);
+
+  if (businessArr === null) {
     return <p>loading...</p>;
   }
+
   return (
     <Layout isWithMenu={true}>
       <h1>Page Heading</h1>
@@ -20,7 +43,7 @@ const Home = () => {
         maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos,
         necessitatibus.
       </p>
-      <Carousel componentToDisplay={<Card cardArray={user.favourites} />} />
+      <Carousel componentToDisplay={<Card cardArray={businessArr} />} />
     </Layout>
   );
 };
