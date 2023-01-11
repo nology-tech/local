@@ -47,6 +47,8 @@ const Menu = ({ toggleMenu }) => {
             <img className="menu__arrow" src={arrow} alt="Arrow" />
           </div>
         </Link>
+      </div>
+      <div className="menu__info">
         <Link className="menu__link" to="/account">
           <div className="menu__page">
             <img className="menu__logo" src={account} alt="Account Logo" />
@@ -54,8 +56,6 @@ const Menu = ({ toggleMenu }) => {
             <img className="menu__arrow" src={arrow} alt="Arrow" />
           </div>
         </Link>
-      </div>
-      <div className="menu__about">
         <Link className="menu__link" to="/about">
           <div className="menu__page">
             <img className="menu__logo" src={about} alt="About Logo" />
