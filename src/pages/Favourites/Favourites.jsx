@@ -5,17 +5,15 @@ import Filter from "../../components/Filter/Filter";
 import { useContext, useState } from "react";
 import UserContext from "../../context/UserContext";
 import { handleUserFavouritesUpdate } from "../../api/userService";
+
 const Favourites = () => {
   const { user } = useContext(UserContext);
   if (user === null) {
     return <p>loading...</p>;
   }
-<<<<<<< HEAD
 
-  const [allCardsArr, setAllCardsArr] = useState(user.favourites);
+  const [allCardsArr, setAllCardsArr] = useState(favArray);
 
-=======
->>>>>>> e0ab4a1dc2384bf368e467df0bf5f5954ed99757
   const optionsArr = [
     "All",
     "London",
@@ -44,7 +42,7 @@ const Favourites = () => {
       <DropDown onChange={onChange} options={optionsArr} />
       <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
       <Card
-        cardArray={user.favourites}
+        cardArray={allCardsArr}
         handleRemoveFavourites={handleRemoveFavourites}
       />
     </Layout>
