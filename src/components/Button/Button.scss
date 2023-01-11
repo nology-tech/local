@@ -11,9 +11,29 @@
 
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
+
   &:active {
     border: 0.2rem solid $white;
   }
+}
+
+.button--map-navigation{
+  background-color: $white;
+  color: $black;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border-width: $button-border-radius-v2;
+}
+.button--map-navigation-zoom{
+  font-size: 2rem;
+  background-color: $white;
+  color: $black;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-width: $button-border-radius-v2;
 }
 
 .button--details {
