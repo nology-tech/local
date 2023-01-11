@@ -13,9 +13,15 @@ const TextField = ({
     inputClassName = `text-field__input text-field__input--${modifier}`;
   }
 
+  let labelClassName = "text-field__label";
+
+  if (modifier) {
+    labelClassName = `text-field__label text-field__label--${modifier}`;
+  }
+
   return (
     <div className="text-field">
-      <label htmlFor={uniqueId} className="text-field__label">
+      <label htmlFor={uniqueId} className={labelClassName}>
         {labelHeader}
       </label>
       <input

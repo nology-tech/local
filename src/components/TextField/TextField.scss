@@ -24,6 +24,11 @@
     padding-bottom: 0.7rem;
   }
 
+  &__label--signin,
+  &__label--signup {
+    font-weight: 500;
+  }
+
   &__input {
     height: 3.5rem;
     width: 100%;
@@ -40,7 +45,7 @@
   }
   &__input--signin,
   &__input--signup {
-    border-style: none;
-    border-radius: 1rem;
+    border: 0.1rem solid $black;
+    border-radius: 0.625rem;
   }
 }
