@@ -39,12 +39,12 @@ exports[`should render the text on the display 1`] = `
       />
     </div>
     <button
-      class="button button--map-navigation button--plus"
+      class="button button--map-navigation-zoom"
     >
       +
     </button>
     <button
-      class="button button--map-navigation button--minus"
+      class="button button--map-navigation-zoom"
     >
       -
     </button>
