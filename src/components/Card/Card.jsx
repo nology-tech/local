@@ -5,7 +5,6 @@ import "./Card.scss";
 import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
 const Card = ({ cardArray }) => {
-  console.log(cardArray);
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {
@@ -29,7 +28,7 @@ const Card = ({ cardArray }) => {
         <div className="card__header-container">
           <h2
             className={`card__heading card__heading--${
-              cardCategories[card.category].categoryName ??
+              cardCategories[card.category]?.categoryName ??
               cardCategories["Other"].categoryName
             }`}
           >
@@ -37,7 +36,7 @@ const Card = ({ cardArray }) => {
           </h2>
           <div className="card__image-container">
             <img
-              src={cardCategories[card.category].image}
+              src={cardCategories[card.category]?.image}
               alt=""
               className="card__image"
             />
