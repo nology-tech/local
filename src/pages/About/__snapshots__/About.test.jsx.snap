@@ -29,12 +29,25 @@ exports[`should render About page 1`] = `
           </h1>
         </div>
       </div>
-      <img
-        alt="Menu icon"
-        class="menu-icon"
+      <div
+        class="menu-icon__container"
         role="button"
-        src="menu.svg"
-      />
+      >
+        <svg
+          alt="Menu-icon"
+          class="menu-icon__icon"
+          fill="none"
+          height="30"
+          viewBox="0 0 44 30"
+          width="44"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 30H44V25H0V30ZM0 17.5H44V12.5H0V17.5ZM0 0V5H44V0H22H0Z"
+            fill="black"
+          />
+        </svg>
+      </div>
     </div>
     <div
       class="about"
