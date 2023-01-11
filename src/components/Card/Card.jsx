@@ -5,6 +5,7 @@ import "./Card.scss";
 import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
 const Card = ({ cardArray }) => {
+  console.log(cardArray);
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {

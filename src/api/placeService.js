@@ -1,4 +1,4 @@
-export const baseURL = "https://place-api.herokuapp.com/api/v1";
+const baseURL = "https://place-api.herokuapp.com/api/v1";
 
 const getData = async (url) => {
   try {

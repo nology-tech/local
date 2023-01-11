@@ -2,25 +2,24 @@ import Layout from "../../components/Layout/Layout";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
 import { useEffect, useState } from "react";
+import { getInRadius } from "../../api/placeService";
 
 const Home = () => {
   const [businessArr, setBusinessArr] = useState([]);
 
-  const getBusiness = async () => {
-    let response = await fetch(
-      "https://place-api.herokuapp.com/api/v1/places/locationsearch/CH451HE/5"
-    );
-    const data = await response.json();
-    setBusinessArr(data);
-  };
-
-  useEffect(() => {
-    getBusiness();
-  }, []);
-
   if (businessArr === null) {
     return <p>loading...</p>;
   }
+
+  const getData = async () => {
+    const data = await getInRadius("CH451HE", 5);
+    setBusinessArr(data);
+  };
+  console.log(businessArr);
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <Layout isWithMenu={true}>
@@ -33,8 +32,8 @@ const Home = () => {
         maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos,
         necessitatibus.
       </p>
-      {businessArr.data?.length > 1 && (
-        <Carousel componentToDisplay={<Card cardArray={businessArr.data} />} />
+      {businessArr?.length > 1 && (
+        <Carousel componentToDisplay={<Card cardArray={businessArr} />} />
       )}
     </Layout>
   );
