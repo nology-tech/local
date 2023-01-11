@@ -4,7 +4,7 @@ import DetailsPane from "../DetailsPane/DetailsPane";
 import "./Card.scss";
 import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
-const Card = ({ cardArray, handleRemoveFavourites }) => {
+const Card = ({ cardArray, onClickPrimary }) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {
@@ -54,7 +54,7 @@ const Card = ({ cardArray, handleRemoveFavourites }) => {
           <Button
             buttonName="remove"
             buttonText="Remove"
-            onClick={() => handleRemoveFavourites(card._id)}
+            onClick={() => onClickPrimary(card._id)}
           />
         </div>
       </div>

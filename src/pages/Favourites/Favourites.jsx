@@ -9,6 +9,7 @@ const Favourites = () => {
   if (user === null) {
     return <p>loading...</p>;
   }
+
   const optionsArr = [
     "All",
     "London",
@@ -20,12 +21,10 @@ const Favourites = () => {
   ];
 
   const handleRemoveFavourites = (cardId) => {
-    let localUserFavouritesArray = user.favourites;
-
-    const updatedUserFavourites = localUserFavouritesArray.filter(
+    const updatedUserFavourites = user.favourites.filter(
       (element) => element._id !== cardId
     );
-    handleUserFavouritesUpdate(updatedUserFavourites, user.id);
+    handleUserFavouritesUpdate(updatedUserFavourites, user);
   };
 
   const onChange = (location) => {
@@ -37,7 +36,7 @@ const Favourites = () => {
       <DropDown onChange={onChange} options={optionsArr} />
       <Card
         cardArray={user.favourites}
-        handleRemoveFavourites={handleRemoveFavourites}
+        onClickPrimary={handleRemoveFavourites}
       />
     </Layout>
   );
