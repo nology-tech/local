@@ -17,7 +17,7 @@ export const UserProvider = ({ children }) => {
   // login to default user
   // remove this when sign in functionality is complete
   useEffect(() => {
-    loginUser("test@test.com", "password123!");
+    loginUser("barry@email.com", "password123!");
   }, []);
 
   // checks for logged in user details and applies to user state

@@ -39,7 +39,10 @@ const Favourites = () => {
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
       <Filter favArray={allCardsArr} setAllCardsArr={setAllCardsArr} />
-      <Card cardArray={allCardsArr} onClickPrimary={handleRemoveFavourites} />
+      <Card
+        cardArray={allCardsArr}
+        primaryButtonOnClick={() => onClickPrimary(card._id)}
+      />
     </Layout>
   );
 };
