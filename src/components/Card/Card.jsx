@@ -54,7 +54,7 @@ const Card = ({ cardArray, primaryButtonOnClick }) => {
           <Button
             buttonName="remove"
             buttonText="Remove"
-            onClick={primaryButtonOnClick}
+            onClick={() => primaryButtonOnClick(card._id)}
           />
         </div>
       </div>

@@ -41,7 +41,7 @@ const Favourites = () => {
       <Filter favArray={allCardsArr} setAllCardsArr={setAllCardsArr} />
       <Card
         cardArray={allCardsArr}
-        primaryButtonOnClick={() => onClickPrimary(card._id)}
+        primaryButtonOnClick={handleRemoveFavourites}
       />
     </Layout>
   );
