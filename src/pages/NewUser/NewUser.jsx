@@ -34,13 +34,22 @@ const NewUser = () => {
   );
 
   const signUpButtonJSX = (
-    <Link to="/enter/signup">
-      <Button
-        onClick={buttonClicked}
-        buttonText={buttonText}
-        buttonName="enter"
-      />
-    </Link>
+    <>
+      <Link to="/enter/signin">
+        <Button
+          onClick={buttonClicked}
+          buttonText="Sign In"
+          buttonName="enter"
+        />
+      </Link>
+      <Link to="/enter/signup">
+        <Button
+          onClick={buttonClicked}
+          buttonText={buttonText}
+          buttonName="enter"
+        />
+      </Link>
+    </>
   );
 
   return (
