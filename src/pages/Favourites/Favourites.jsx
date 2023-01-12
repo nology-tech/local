@@ -8,11 +8,11 @@ import { handleUserFavouritesUpdate } from "../../api/userService";
 
 const Favourites = () => {
   const { user } = useContext(UserContext);
+  const [allCardsArr, setAllCardsArr] = useState(user?.favourites ?? []);
+
   if (user === null) {
     return <p>loading...</p>;
   }
-
-  const [allCardsArr, setAllCardsArr] = useState(user.favourites);
 
   const optionsArr = [
     "All",
@@ -28,6 +28,7 @@ const Favourites = () => {
     const updatedUserFavourites = user.favourites.filter(
       (element) => element._id !== cardId
     );
+    setAllCardsArr(updatedUserFavourites);
     handleUserFavouritesUpdate(updatedUserFavourites, user);
   };
 
@@ -38,7 +39,7 @@ const Favourites = () => {
   return (
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
-      <Filter favArray={allCardsArr} setAllCardsArr={setAllCardsArr} />
+      <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
       <Card
         cardArray={allCardsArr}
         primaryButtonOnClick={handleRemoveFavourites}

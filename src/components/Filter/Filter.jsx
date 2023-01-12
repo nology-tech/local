@@ -27,12 +27,14 @@ const Filter = ({ favArray = [], setAllCardsArr }) => {
   const applyOtherFilter = otherFilter ? "filter-active" : "filter";
 
   const filteredCard = (foodDrinkFilter, cultureFilter, otherFilter) => {
-    const filteredArr = favArray.filter(
-      (fav) =>
-        (foodDrinkFilter ? fav.category.includes("Food & Drink") : true) &&
-        (cultureFilter ? fav.category.includes("Culture") : true) &&
-        (otherFilter ? fav.category.includes("Other") : true)
-    );
+    const filteredArr = favArray.filter((fav) => {
+      return (
+        (foodDrinkFilter ? fav.category.includes("Food & Drink") : false) ||
+        (cultureFilter ? fav.category.includes("Culture") : false) ||
+        (otherFilter ? fav.category.includes("Other") : false) ||
+        (!foodDrinkFilter && !cultureFilter && !otherFilter && true)
+      );
+    });
     return setAllCardsArr(filteredArr);
   };
 

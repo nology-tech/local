@@ -214,7 +214,6 @@ export const loginUser = async (email, password) => {
 
 export const handleUserFavouritesUpdate = async (
   arrayToUpdateWith,
-
   { id, firstName, lastName, username, email }
 ) => {
   try {
