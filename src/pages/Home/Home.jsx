@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Home.scss";
 
 const Home = () => {
@@ -29,7 +30,9 @@ const Home = () => {
       <div className="home__map-buttons">
         <Button buttonName="map-navigation-zoom" buttonText="+" />
         <Button buttonName="map-navigation-zoom" buttonText="-" />
-        <Button buttonName="map-navigation" buttonText="List View" />
+        <Link to="/list">
+          <Button buttonName="map-navigation" buttonText="List View" />
+        </Link>
       </div>
 
       <h1>Page Heading</h1>

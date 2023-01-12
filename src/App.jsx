@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import Contact from "./pages/Contact/Contact";
 import SignIn from "./pages/SignIn/SignIn";
 import ManageAccount from "./pages/ManageAccount/ManageAccount";
+import List from "./pages/List/List";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/favourites" element={<Favourites />} />
       <Route path="/about" element={<About />} />
+      <Route path="/list" element={<List />} />
     </Routes>
   );
 };
