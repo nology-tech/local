@@ -9,6 +9,7 @@
   border-radius: 1.7rem;
   background-color: $white;
   padding: 1rem;
+
   .card__header-container {
     display: flex;
     flex-direction: row;
@@ -66,4 +67,11 @@
       width: 7rem;
     }
   }
+}
+.card--favourites,
+.card--home-list-view {
+  margin-bottom: 0.5rem;
+}
+.card--home {
+  margin: 0.5rem;
 }

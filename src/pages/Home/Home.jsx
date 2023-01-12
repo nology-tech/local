@@ -28,7 +28,9 @@ const Home = () => {
         maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos,
         necessitatibus.
       </p>
-      <Carousel componentToDisplay={<Card cardArray={user.favourites} />} />
+      <Carousel
+        componentToDisplay={<Card cardArray={user.favourites} page="home" />}
+      />
     </Layout>
   );
 };

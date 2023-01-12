@@ -1,0 +1,8 @@
+@use "../../styles/variables" as *;
+
+.home-list-view__container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  padding: 0 1rem;
+}

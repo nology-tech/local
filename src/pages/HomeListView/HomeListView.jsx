@@ -1,12 +1,12 @@
+import "./HomeListView.scss";
 import Card from "../../components/Card/Card";
 import Layout from "../../components/Layout/Layout";
-import DropDown from "../../components/DropDown/DropDown";
 import Filter from "../../components/Filter/Filter";
 import { useContext, useState } from "react";
 import UserContext from "../../context/UserContext";
-import "./Favourites.scss";
+import TextField from "../../components/TextField/TextField";
 
-const Favourites = () => {
+const HomeListView = () => {
   const { user } = useContext(UserContext);
   if (user === null) {
     return <p>loading...</p>;
@@ -14,29 +14,24 @@ const Favourites = () => {
 
   const [allCardsArr, setAllCardsArr] = useState(user.favourites);
 
-  const optionsArr = [
-    "All",
-    "London",
-    "Birmingham",
-    "Chester",
-    "Oxford",
-    "Newcastle",
-    "Liverpool",
-  ];
-
-  const onChange = (location) => {
-    console.log(location);
-  };
+  //   const onChange = (location) => {
+  //     console.log(location);
+  //   };
 
   return (
     <Layout isWithMenu={true}>
-      <main className="favourites__container">
-        <DropDown onChange={onChange} options={optionsArr} />
+      <TextField
+        uniqueId="location-search-bar"
+        inputType="text"
+        modifier="location-search-bar"
+        placeholderText="Tooting, London, GB"
+      />
 
+      <main className="home-list-view__container">
         <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
-        <Card cardArray={allCardsArr} page="favourites" />
+        <Card cardArray={allCardsArr} page="home-list-view" />
       </main>
     </Layout>
   );
 };
-export default Favourites;
+export default HomeListView;

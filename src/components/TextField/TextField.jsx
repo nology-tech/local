@@ -6,6 +6,7 @@ const TextField = ({
   labelHeader,
   modifier,
   onChange,
+  placeholderText,
 }) => {
   let inputClassName = "text-field__input";
 
@@ -14,8 +15,11 @@ const TextField = ({
   }
 
   return (
-    <div className="text-field">
-      <label htmlFor={uniqueId} className="text-field__label">
+    <div className={`text-field text-field--${modifier}`}>
+      <label
+        htmlFor={uniqueId}
+        className={`text-field__label text-field__label--${modifier}`}
+      >
         {labelHeader}
       </label>
       <input
@@ -23,6 +27,7 @@ const TextField = ({
         type={inputType}
         className={inputClassName}
         onChange={onChange}
+        placeholder={placeholderText}
       />
     </div>
   );

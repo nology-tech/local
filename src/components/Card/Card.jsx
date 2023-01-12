@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import DetailsPane from "../DetailsPane/DetailsPane";
+
 import "./Card.scss";
 import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
-const Card = ({ cardArray }) => {
+const Card = ({ cardArray, page }) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {
@@ -25,7 +26,7 @@ const Card = ({ cardArray }) => {
     const description = getDescription(card?.description, card?.website);
 
     return (
-      <div className="card" key={card._id}>
+      <div className={`card card--${page}`} key={card._id}>
         <div className="card__header-container">
           <h2
             className={`card__heading card__heading--${

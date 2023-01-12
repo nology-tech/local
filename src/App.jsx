@@ -9,11 +9,13 @@ import SignUp from "./pages/SignUp/SignUp";
 import Contact from "./pages/Contact/Contact";
 import SignIn from "./pages/SignIn/SignIn";
 import ManageAccount from "./pages/ManageAccount/ManageAccount";
+import HomeListView from "./pages/HomeListView/HomeListView";
 
 const App = () => {
   return (
     <Routes>
       <Route path="*" element={<Home />} />
+      <Route path="/list-view" element={<HomeListView />} />
       <Route path="/new" element={<NewUser />} />
       <Route path="/enter" element={<Enter />} />
       <Route path="/account" element={<ManageAccount />} />
