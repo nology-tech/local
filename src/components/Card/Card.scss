@@ -4,7 +4,7 @@
 .card {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  align-items: stretch;
   border: 2px solid $black;
   border-radius: 1.7rem;
   background-color: $white;
@@ -15,13 +15,16 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-grow: 1;
     .card__heading {
+      flex-grow: 1;
       font-weight: bold;
       background-color: $green;
       color: $alternate-text-color;
       border-radius: 1.7rem;
       padding: 0.7rem;
       width: 80%;
+      margin: auto;
       &--food {
         background-color: $yellow;
         color: $text-color;
@@ -33,18 +36,25 @@
     }
     .card__image-container {
       padding: 0.5rem;
+      .card__image {
+        margin: auto;
+      }
     }
   }
+
   .card__text {
-    align-self: flex-start;
-    width: 90%;
+    margin-bottom: auto;
+    width: 100%;
     padding: 0 0.7rem;
+    flex-grow: 1;
   }
   .card__text--adress {
     font-style: italic;
     font-weight: bold;
+    flex-grow: 0;
   }
   .card__buttons-container {
+    padding: 0.5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -52,7 +62,8 @@
     width: 100%;
     .button--details,
     .button--remove {
-      width: 7.5rem;
+      margin: 0 0.2rem;
+      width: 7rem;
     }
   }
 }
