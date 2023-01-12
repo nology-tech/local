@@ -24,7 +24,9 @@ it("should check if the click of the details button shows the details pane", () 
 
 it("should call the functions within onclick when user clicks", () => {
   const mockFunction = jest.fn();
-  customRender(<Card cardArray={favArray} onClickPrimary={mockFunction} />);
+  customRender(
+    <Card cardArray={favArray} primaryButtonOnClick={mockFunction} />
+  );
 
   const button = screen.getAllByRole("button", { name: /Remove/i });
 
