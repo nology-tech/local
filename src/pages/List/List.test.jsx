@@ -1,6 +1,6 @@
 import { customRender } from "../../utils/testUtils";
 import { screen } from "@testing-library/react";
-import List from "./list";
+import List from "./List";
 
 it("should render the text on the display", () => {
   const { container } = customRender(<List />);
