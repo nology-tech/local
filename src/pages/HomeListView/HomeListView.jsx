@@ -5,6 +5,7 @@ import Filter from "../../components/Filter/Filter";
 import { useContext, useState } from "react";
 import UserContext from "../../context/UserContext";
 import TextField from "../../components/TextField/TextField";
+import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
 
 const HomeListView = () => {
   const { user } = useContext(UserContext);
@@ -20,12 +21,20 @@ const HomeListView = () => {
 
   return (
     <Layout isWithMenu={true}>
-      <TextField
-        uniqueId="location-search-bar"
-        inputType="text"
-        modifier="location-search-bar"
-        placeholderText="Tooting, London, GB"
-      />
+      <div className="home-list-view__search--bar-container">
+        <img
+          className="home-list-view__map-icon"
+          src={MapIcon}
+          type="image/svg+xml"
+          alt=""
+        />
+        <TextField
+          uniqueId="location-search-bar"
+          inputType="text"
+          modifier="location-search-bar"
+          placeholderText="Tooting, London, GB"
+        />
+      </div>
 
       <main className="home-list-view__container">
         <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />

@@ -1,8 +1,28 @@
 @use "../../styles/variables" as *;
 
+.home-list-view__search--bar-container {
+  position: relative;
+  .home-list-view__map-icon {
+    position: absolute;
+    height: 2.5rem;
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    z-index: 2;
+  }
+}
 .home-list-view__container {
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
   padding: 0 1rem;
+}
+
+.text-field__label--location-search-bar {
+  display: none;
+}
+.text-field__input--location-search-bar {
+  &::placeholder {
+    color: $text-color;
+    text-align: center;
+  }
 }
