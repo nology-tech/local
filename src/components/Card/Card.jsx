@@ -4,8 +4,7 @@ import DetailsPane from "../DetailsPane/DetailsPane";
 import "./Card.scss";
 import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
-const Card = ({ cardArray }) => {
-  console.log(cardArray);
+const Card = ({ cardArray, isWithAddress }) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {
@@ -44,7 +43,9 @@ const Card = ({ cardArray }) => {
           </div>
         </div>
         <p className="card__text">{description}</p>
-        <p className="card__text card__text--adress">{card.address}</p>
+        {isWithAddress && (
+          <p className="card__text card__text--adress">{card.address}</p>
+        )}
         <div className="card__buttons-container">
           <Button
             buttonName="details"

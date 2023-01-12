@@ -7,7 +7,6 @@ import { getInRadius } from "../../api/placeService";
 
 const Home = () => {
   const [businessArr, setBusinessArr] = useState([]);
-
   if (businessArr === null) {
     return <p>loading...</p>;
   }

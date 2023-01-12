@@ -31,7 +31,7 @@ const Favourites = () => {
     <Layout isWithMenu={true}>
       <DropDown onChange={onChange} options={optionsArr} />
       <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
-      <Card cardArray={allCardsArr} />
+      <Card isWithAddress={true} cardArray={allCardsArr} />
     </Layout>
   );
 };
