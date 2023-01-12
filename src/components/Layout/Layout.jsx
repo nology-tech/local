@@ -3,7 +3,7 @@ import Menu from "../Menu/Menu";
 import { useState } from "react";
 import Header from "../Header/Header";
 
-const Layout = ({ children, isWithMenu }) => {
+const Layout = ({ children, isWithMenu, isManageAccount }) => {
   if (!isWithMenu) {
     return <div className="layout">{children}</div>;
   }
@@ -15,9 +15,13 @@ const Layout = ({ children, isWithMenu }) => {
     setShowMenu(!showMenu);
   };
 
+  const layoutClassName = isManageAccount
+    ? "layout layout__manage-account"
+    : "layout";
+
   return (
-    <div className="layout">
-      <Header toggleMenu={toggleMenu} />
+    <div className={layoutClassName}>
+      <Header toggleMenu={toggleMenu} isManageAccount={isManageAccount} />
       {showMenu && (
         <>
           <div className="layout__menu--shadow"></div>
