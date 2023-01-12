@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import UserContext from "../../context/UserContext";
 import TextField from "../../components/TextField/TextField";
 import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
+import Button from "../../components/Button/Button";
 
 const HomeListView = () => {
   const { user } = useContext(UserContext);
@@ -14,10 +15,6 @@ const HomeListView = () => {
   }
 
   const [allCardsArr, setAllCardsArr] = useState(user.favourites);
-
-  //   const onChange = (location) => {
-  //     console.log(location);
-  //   };
 
   return (
     <Layout isWithMenu={true}>
@@ -28,12 +25,14 @@ const HomeListView = () => {
           type="image/svg+xml"
           alt=""
         />
+
         <TextField
           uniqueId="location-search-bar"
           inputType="text"
           modifier="location-search-bar"
           placeholderText="Tooting, London, GB"
         />
+        <Button buttonName="map-view" buttonText="Map View" />
       </div>
 
       <main className="home-list-view__container">

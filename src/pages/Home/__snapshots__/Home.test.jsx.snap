@@ -84,7 +84,7 @@ exports[`should render the text on the display 1`] = `
       class="carousel"
     >
       <div
-        class="card"
+        class="card card--home"
       >
         <div
           class="card__header-container"
@@ -130,7 +130,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--home"
       >
         <div
           class="card__header-container"
@@ -176,7 +176,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--home"
       >
         <div
           class="card__header-container"
@@ -222,7 +222,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--home"
       >
         <div
           class="card__header-container"
@@ -268,7 +268,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--home"
       >
         <div
           class="card__header-container"
@@ -314,7 +314,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--home"
       >
         <div
           class="card__header-container"

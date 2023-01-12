@@ -62,10 +62,10 @@ exports[`should render contact page 1`] = `
         class="contact__form"
       >
         <div
-          class="text-field"
+          class="text-field text-field--undefined"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--undefined"
           >
             Name
           </label>
@@ -75,10 +75,10 @@ exports[`should render contact page 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--undefined"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--undefined"
           >
             Email
           </label>
@@ -88,10 +88,10 @@ exports[`should render contact page 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--large"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--large"
           >
             Message
           </label>

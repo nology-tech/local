@@ -3,10 +3,10 @@
 exports[`should render the TextField component 1`] = `
 <div>
   <div
-    class="text-field"
+    class="text-field text-field--undefined"
   >
     <label
-      class="text-field__label"
+      class="text-field__label text-field__label--undefined"
     />
     <input
       class="text-field__input"

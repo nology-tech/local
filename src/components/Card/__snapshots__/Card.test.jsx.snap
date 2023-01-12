@@ -3,7 +3,7 @@
 exports[`should render the text on the display 1`] = `
 <div>
   <div
-    class="card"
+    class="card card--undefined"
   >
     <div
       class="card__header-container"
@@ -45,7 +45,7 @@ exports[`should render the text on the display 1`] = `
     </div>
   </div>
   <div
-    class="card"
+    class="card card--undefined"
   >
     <div
       class="card__header-container"
@@ -89,7 +89,7 @@ exports[`should render the text on the display 1`] = `
     </div>
   </div>
   <div
-    class="card"
+    class="card card--undefined"
   >
     <div
       class="card__header-container"

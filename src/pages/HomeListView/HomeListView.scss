@@ -1,13 +1,30 @@
 @use "../../styles/variables" as *;
 
 .home-list-view__search--bar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   position: relative;
+  width: 100%;
   .home-list-view__map-icon {
     position: absolute;
     height: 2.5rem;
-    margin-left: 1.5rem;
-    margin-top: 0.8rem;
+    margin-left: 1rem;
     z-index: 2;
+  }
+}
+.text-field--location-search-bar {
+  display: block;
+}
+.text-field__label--location-search-bar {
+  display: none;
+}
+.text-field__input--location-search-bar {
+  width: 100%;
+  &::placeholder {
+    color: $text-color;
+    text-align: center;
+    font-weight: 600;
   }
 }
 .home-list-view__container {
@@ -15,14 +32,4 @@
   flex-flow: column nowrap;
   align-items: stretch;
   padding: 0 1rem;
-}
-
-.text-field__label--location-search-bar {
-  display: none;
-}
-.text-field__input--location-search-bar {
-  &::placeholder {
-    color: $text-color;
-    text-align: center;
-  }
 }

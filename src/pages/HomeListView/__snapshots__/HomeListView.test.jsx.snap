@@ -49,36 +49,33 @@ exports[`should render the text on the display 1`] = `
         </svg>
       </div>
     </div>
-    <main
-      class="favourites__container"
+    <div
+      class="home-list-view__search--bar-container"
     >
+      <img
+        alt=""
+        class="home-list-view__map-icon"
+        src="mapMarkerIcon.svg"
+        type="image/svg+xml"
+      />
       <div
-        class="dropdown"
+        class="text-field text-field--location-search-bar"
       >
-        <div
-          class="dropdown__item dropdown__item--primary"
-          role="select"
-          tabindex="0"
-        >
-          <p
-            class="dropdown__item-name dropdown__item-name--primary"
-          >
-            All
-          </p>
-          <div
-            class="dropdown__image-container"
-          >
-            <img
-              alt="triangle"
-              class="dropdown__arrow"
-              src="triangleUpsideDown.svg"
-            />
-          </div>
-        </div>
-        <div
-          class="dropdown__options"
+        <label
+          class="text-field__label text-field__label--location-search-bar"
+          for="location-search-bar"
+        />
+        <input
+          class="text-field__input text-field__input--location-search-bar"
+          id="location-search-bar"
+          placeholder="Tooting, London, GB"
+          type="text"
         />
       </div>
+    </div>
+    <main
+      class="home-list-view__container"
+    >
       <div
         class="filter"
       >
@@ -99,7 +96,7 @@ exports[`should render the text on the display 1`] = `
         </button>
       </div>
       <div
-        class="card card--favourites"
+        class="card card--home-list-view"
       >
         <div
           class="card__header-container"
@@ -145,7 +142,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card card--favourites"
+        class="card card--home-list-view"
       >
         <div
           class="card__header-container"
@@ -191,7 +188,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card card--favourites"
+        class="card card--home-list-view"
       >
         <div
           class="card__header-container"
@@ -237,7 +234,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card card--favourites"
+        class="card card--home-list-view"
       >
         <div
           class="card__header-container"
@@ -283,7 +280,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card card--favourites"
+        class="card card--home-list-view"
       >
         <div
           class="card__header-container"
@@ -329,7 +326,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card card--favourites"
+        class="card card--home-list-view"
       >
         <div
           class="card__header-container"

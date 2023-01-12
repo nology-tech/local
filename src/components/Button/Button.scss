@@ -17,7 +17,7 @@
   }
 }
 
-.button--map-navigation{
+.button--map-navigation {
   background-color: $white;
   color: $black;
   width: 3rem;
@@ -26,7 +26,13 @@
   text-align: center;
   border-width: $button-border-radius-v2;
 }
-.button--map-navigation-zoom{
+.button--map-view {
+  @extend .button--map-navigation;
+  padding: 0.4rem;
+  width: 5rem;
+  margin-right: 1rem;
+}
+.button--map-navigation-zoom {
   font-size: 2rem;
   background-color: $white;
   color: $black;
