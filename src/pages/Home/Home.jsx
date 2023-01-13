@@ -3,8 +3,11 @@ import Layout from "../../components/Layout/Layout";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
 import TextField from "../../components/TextField/TextField";
+import "./Home.scss";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getInRadius } from "../../api/placeService";
+import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
 
 const Home = () => {
   const [businessArr, setBusinessArr] = useState([]);
@@ -33,12 +36,12 @@ const Home = () => {
   return (
     <Layout isWithMenu={true}>
       <div className="home-list-view__search--bar-container">
-        {/* <img
+        <img
           className="home-list-view__map-icon"
           src={MapIcon}
           type="image/svg+xml"
           alt="an icon of a map marker"
-        /> */}
+        />
 
         <TextField
           uniqueId="location-search-bar"
@@ -52,7 +55,9 @@ const Home = () => {
       <div className="home__map-buttons">
         <Button buttonName="map-navigation-zoom" buttonText="+" />
         <Button buttonName="map-navigation-zoom" buttonText="-" />
-        <Button buttonName="map-navigation" buttonText="List View" />
+        <Link to="./list-view" className="home__link--list-view">
+          <Button buttonName="map-navigation" buttonText="List View" />
+        </Link>
       </div>
 
       <h1>Page Heading</h1>
@@ -65,7 +70,9 @@ const Home = () => {
         necessitatibus.
       </p>
       {businessArr?.length > 1 && (
-        <Carousel componentToDisplay={<Card cardArray={businessArr} />} />
+        <Carousel
+          componentToDisplay={<Card cardArray={businessArr} page="home" />}
+        />
       )}
     </Layout>
   );

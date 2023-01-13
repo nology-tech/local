@@ -1,10 +1,16 @@
 import { useState } from "react";
+import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 import Button from "../Button/Button";
 import DetailsPane from "../DetailsPane/DetailsPane";
-import "./Card.scss";
-import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
-const Card = ({ cardArray, isWithAddress }) => {
+import "./Card.scss";
+
+const Card = ({
+  cardArray = [],
+  isWithAddress,
+  primaryButtonOnClick,
+  page,
+}) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {
@@ -20,11 +26,11 @@ const Card = ({ cardArray, isWithAddress }) => {
 
     return shortenedDescription;
   };
-
+  const cardClassName = page ? `card card--${page}` : "card";
   const showCards = cardArray.map((card) => {
     const description = getDescription(card?.description, card?.website);
     return (
-      <div className="card" key={card._id}>
+      <div className={cardClassName} key={card._id}>
         <div className="card__header-container">
           <h2
             className={`card__heading card__heading--${
@@ -52,7 +58,11 @@ const Card = ({ cardArray, isWithAddress }) => {
             buttonText="Details"
             onClick={() => setActiveDetails(card)}
           />
-          <Button buttonName="remove" buttonText="Remove" />
+          <Button
+            buttonName="remove"
+            buttonText="Remove"
+            onClick={() => primaryButtonOnClick(card._id)}
+          />
         </div>
       </div>
     );
