@@ -5,6 +5,7 @@ import UserContext from "../../context/UserContext";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { user } = useContext(UserContext);
@@ -16,7 +17,9 @@ const Home = () => {
       <div className="home__map-buttons">
         <Button buttonName="map-navigation-zoom" buttonText="+" />
         <Button buttonName="map-navigation-zoom" buttonText="-" />
-        <Button buttonName="map-navigation" buttonText="List View" />
+        <Link to="./list-view" className="home__link--list-view">
+          <Button buttonName="map-navigation" buttonText="List View" />
+        </Link>
       </div>
 
       <h1>Page Heading</h1>

@@ -7,6 +7,7 @@ import UserContext from "../../context/UserContext";
 import TextField from "../../components/TextField/TextField";
 import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
 import Button from "../../components/Button/Button";
+import { Link } from "react-router-dom";
 
 const HomeListView = () => {
   const { user } = useContext(UserContext);
@@ -23,7 +24,7 @@ const HomeListView = () => {
           className="home-list-view__map-icon"
           src={MapIcon}
           type="image/svg+xml"
-          alt=""
+          alt="an icon of a map marker"
         />
 
         <TextField
@@ -32,7 +33,10 @@ const HomeListView = () => {
           modifier="location-search-bar"
           placeholderText="Tooting, London, GB"
         />
-        <Button buttonName="map-view" buttonText="Map View" />
+
+        <Link to="../*" className="home-list-view__link--map-view">
+          <Button buttonName="map-view" buttonText="Map View" />
+        </Link>
       </div>
 
       <main className="home-list-view__container">
