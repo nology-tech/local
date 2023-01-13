@@ -8,18 +8,19 @@ const TextField = ({
   onChange,
   placeholderText,
 }) => {
-  let inputClassName = "text-field__input";
-
-  if (modifier) {
-    inputClassName = `text-field__input text-field__input--${modifier}`;
-  }
+  const inputClassName = modifier
+    ? `text-field__input text-field__input--${modifier}`
+    : "text-field__input";
+  const textFieldClassName = modifier
+    ? `text-field text-field--${modifier}`
+    : "text-field";
+  const textFieldLabelClassName = modifier
+    ? `text-field__label text-field__label--${modifier}`
+    : "text-field__label";
 
   return (
-    <div className={`text-field text-field--${modifier}`}>
-      <label
-        htmlFor={uniqueId}
-        className={`text-field__label text-field__label--${modifier}`}
-      >
+    <div className={textFieldClassName}>
+      <label htmlFor={uniqueId} className={textFieldLabelClassName}>
         {labelHeader}
       </label>
       <input

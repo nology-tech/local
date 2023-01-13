@@ -21,12 +21,12 @@ const Card = ({ cardArray, page }) => {
 
     return shortenedDescription;
   };
-
+  const cardClassName = page ? `card card--${page}` : "card";
   const showCards = cardArray.map((card) => {
     const description = getDescription(card?.description, card?.website);
 
     return (
-      <div className={`card card--${page}`} key={card._id}>
+      <div className={cardClassName} key={card._id}>
         <div className="card__header-container">
           <h2
             className={`card__heading card__heading--${
