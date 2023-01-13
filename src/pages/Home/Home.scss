@@ -1,3 +1,12 @@
+.home {
+  height: 100%;
+  background-image: url("../../assets/images/Map.svg");
+  object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .home__map-buttons {
   display: flex;
   flex-direction: column;
