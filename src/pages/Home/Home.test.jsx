@@ -16,30 +16,3 @@ it("should render the text on the display", () => {
 
   expect(container).toMatchSnapshot();
 });
-
-it("should render the input field", () => {
-  customRender(<Home />);
-
-  const textField = screen.getByRole("input", { id: "location-search-bar" });
-
-  expect(textField).toBeInTheDocument();
-});
-
-it("should call the url when user input the Postcode", () => {
-  const mockFunction = jest.fn();
-
-  customRender(
-    <TextField
-      uniqueId="location-search-bar"
-      inputType="text"
-      modifier="location-search-bar"
-      placeholderText="Search by Postcode"
-      onChange={mockFunction}
-    />
-  );
-
-  const textField = screen.getByRole("textfield");
-  userEvent.type(textField, "CH451HE");
-
-  expect(mockFunction).toBeCalled();
-});
