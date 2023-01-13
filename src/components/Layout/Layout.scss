@@ -6,6 +6,7 @@
   width: 100vw;
   @include set-background;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .layout__header {
   display: flex;
@@ -19,11 +20,13 @@
   margin-top: 8%;
   margin-left: 10%;
   border-radius: 1rem 0 0 1rem;
-  width: 100%;
+  width: 90%;
   height: 83%;
   @include set-background;
   @include text-normal;
   display: flex;
+  transform: translateX(0);
+  overflow-x: hidden;
 }
 
 .layout__menu--shadow {
@@ -37,12 +40,32 @@
   z-index: 1;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .menu-open {
+  display: unset;
   left: 0;
-  transition: 0.3s ease-in-out;
+  animation: slideIn 0.3s ease-in-out;
 }
 
 .menu-closed {
+  display: none;
   left: 100vw;
-  transition: 0.3s ease-in-out;
+  animation: slideOut 0.3s ease-in-out;
 }
