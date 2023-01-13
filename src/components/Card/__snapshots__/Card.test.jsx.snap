@@ -33,7 +33,7 @@ exports[`should render the text on the display 1`] = `
         Details
       </button>
       <button
-        class="button button--remove"
+        class="button button--Remove"
       >
         Remove
       </button>
@@ -72,7 +72,7 @@ exports[`should render the text on the display 1`] = `
         Details
       </button>
       <button
-        class="button button--remove"
+        class="button button--Remove"
       >
         Remove
       </button>
@@ -109,7 +109,7 @@ exports[`should render the text on the display 1`] = `
         Details
       </button>
       <button
-        class="button button--remove"
+        class="button button--Remove"
       >
         Remove
       </button>
