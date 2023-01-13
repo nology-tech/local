@@ -5,7 +5,12 @@ import DetailsPane from "../DetailsPane/DetailsPane";
 
 import "./Card.scss";
 
-const Card = ({ cardArray = [], isWithAddress, primaryButtonOnClick }) => {
+const Card = ({
+  cardArray = [],
+  isWithAddress,
+  primaryButtonOnClick,
+  page,
+}) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {

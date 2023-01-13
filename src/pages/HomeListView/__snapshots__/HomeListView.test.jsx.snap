@@ -50,6 +50,173 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
+      class="layout__menu menu-closed"
+    >
+      <div
+        class="menu"
+      >
+        <div
+          class="menu__header"
+        >
+          <img
+            alt="App Logo"
+            class="menu__app-logo"
+            src="logo.svg"
+          />
+          <h1
+            class="menu__app-title"
+          >
+            LOCAL
+          </h1>
+          <img
+            alt="Close Button"
+            class="menu__close"
+            src="close-btn.svg"
+          />
+        </div>
+        <div
+          class="menu__home"
+        >
+          <a
+            class="menu__link"
+            href="/home"
+          >
+            <div
+              class="menu__page"
+            >
+              <img
+                alt="Home Logo"
+                class="menu__logo"
+                src="home.svg"
+              />
+              <h2
+                class="menu__option"
+              >
+                Home
+              </h2>
+              <img
+                alt="Arrow"
+                class="menu__arrow"
+                src="arrow.svg"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          class="menu__favourites"
+        >
+          <a
+            class="menu__link"
+            href="/favourites"
+          >
+            <div
+              class="menu__page"
+            >
+              <img
+                alt="Home Logo"
+                class="menu__logo"
+                src="favourites.svg"
+              />
+              <h2
+                class="menu__option"
+              >
+                Favourites
+              </h2>
+              <img
+                alt="Arrow"
+                class="menu__arrow"
+                src="arrow.svg"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          class="menu__info"
+        >
+          <a
+            class="menu__link"
+            href="/account"
+          >
+            <div
+              class="menu__page"
+            >
+              <img
+                alt="Account Logo"
+                class="menu__logo"
+                src="account.svg"
+              />
+              <h2
+                class="menu__option"
+              >
+                Manage Account
+              </h2>
+              <img
+                alt="Arrow"
+                class="menu__arrow"
+                src="arrow.svg"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          class="menu__about"
+        >
+          <a
+            class="menu__link"
+            href="/about"
+          >
+            <div
+              class="menu__page"
+            >
+              <img
+                alt="About Logo"
+                class="menu__logo"
+                src="about.svg"
+              />
+              <h2
+                class="menu__option"
+              >
+                About
+              </h2>
+              <img
+                alt="Arrow"
+                class="menu__arrow"
+                src="arrow.svg"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          class="menu__contact"
+        >
+          <a
+            class="menu__link"
+            href="/contact"
+          >
+            <div
+              class="menu__page"
+            >
+              <img
+                alt="Contact Logo"
+                class="menu__logo"
+                src="contact.svg"
+              />
+              <h2
+                class="menu__option"
+              >
+                Contact
+              </h2>
+              <img
+                alt="Arrow"
+                class="menu__arrow"
+                src="arrow.svg"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
       class="home-list-view__search--bar-container"
     >
       <img
@@ -131,11 +298,6 @@ exports[`should render the text on the display 1`] = `
         >
           Medicine Bakery is a small, family-run bakery located in the city of Birmingham.
         </p>
-        <p
-          class="card__text card__text--adress"
-        >
-          69a New St, Birmingham B2 4DU
-        </p>
         <div
           class="card__buttons-container"
         >
@@ -176,11 +338,6 @@ exports[`should render the text on the display 1`] = `
           class="card__text"
         >
           No description, try it works.com
-        </p>
-        <p
-          class="card__text card__text--adress"
-        >
-          5 N Western arcade, Birmingham B2 5LH
         </p>
         <div
           class="card__buttons-container"
@@ -223,11 +380,6 @@ exports[`should render the text on the display 1`] = `
         >
           A restaurant and Indian restaurant known for its delicious food and authentic flavors.
         </p>
-        <p
-          class="card__text card__text--adress"
-        >
-          21a Bennetts Hill, Birmingham B2 5QP
-        </p>
         <div
           class="card__buttons-container"
         >
@@ -268,11 +420,6 @@ exports[`should render the text on the display 1`] = `
           class="card__text"
         >
           A pub, bar, and more, offering a wide range of drinks and a fun atmosphere.
-        </p>
-        <p
-          class="card__text card__text--adress"
-        >
-          8 Bennetts Hill, Birmingham B2 5RS
         </p>
         <div
           class="card__buttons-container"
@@ -315,11 +462,6 @@ exports[`should render the text on the display 1`] = `
         >
           This is a lively bar and restaurant that serves a variety of beers, wines, and cocktails, as well as classic pub food like burgers, sandwiches, and wings.
         </p>
-        <p
-          class="card__text card__text--adress"
-        >
-          79 Seel St, Liverpool L1 4BB
-        </p>
         <div
           class="card__buttons-container"
         >
@@ -360,11 +502,6 @@ exports[`should render the text on the display 1`] = `
           class="card__text"
         >
           A fun and quirky shop featuring a range of products and gifts inspired by local culture and humor.
-        </p>
-        <p
-          class="card__text card__text--adress"
-        >
-          31-33 Tarleton St, Liverpool L1 1DS
         </p>
         <div
           class="card__buttons-container"
