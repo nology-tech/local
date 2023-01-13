@@ -26,6 +26,7 @@ const Card = ({
 
     return shortenedDescription;
   };
+
   const cardClassName = page ? `card card--${page}` : "card";
   const getButtonType = (page) => {
     let buttonName = "";
@@ -38,6 +39,7 @@ const Card = ({
   };
 
   const showCards = cardArray.map((card) => {
+    const handleButtonData = page ? card : "card._id";
     const description = getDescription(card?.description, card?.website);
     return (
       <div className={cardClassName} key={card._id}>
@@ -71,7 +73,7 @@ const Card = ({
           <Button
             buttonName={getButtonType(page)}
             buttonText={getButtonType(page)}
-            onClick={() => primaryButtonOnClick(card._id)}
+            onClick={() => primaryButtonOnClick(handleButtonData)}
           />
         </div>
       </div>

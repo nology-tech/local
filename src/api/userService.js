@@ -234,10 +234,9 @@ export const handleUserFavouritesUpdate = async (
   return;
 };
 export const handleAddToUserFavourites = async (
-  cardId,
+  card,
   { id, firstName, lastName, username, email, favourites }
 ) => {
-  const updatedFavourites = favourites.push(cardId);
   try {
     const docRef = doc(db, "users", auth.currentUser.uid);
     await updateDoc(docRef, {
@@ -246,7 +245,7 @@ export const handleAddToUserFavourites = async (
       lastName,
       username,
       email,
-      favourites: updatedFavourites,
+      favourites: [...favourites, card],
     });
   } catch (error) {
     console.log({ error });
