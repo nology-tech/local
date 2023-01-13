@@ -255,10 +255,10 @@ exports[`should render contact page 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--large"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--large"
           >
             Message
           </label>

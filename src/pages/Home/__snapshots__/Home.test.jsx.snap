@@ -229,11 +229,16 @@ exports[`should render the text on the display 1`] = `
       >
         -
       </button>
-      <button
-        class="button button--map-navigation"
+      <a
+        class="home__link--list-view"
+        href="/list-view"
       >
-        List View
-      </button>
+        <button
+          class="button button--map-navigation"
+        >
+          List View
+        </button>
+      </a>
     </div>
     <h1>
       Page Heading

@@ -27,10 +27,10 @@ exports[`should render the text on the display 1`] = `
         class="sign-up__input-field"
       >
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             First name
           </label>
@@ -40,10 +40,10 @@ exports[`should render the text on the display 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             Last name
           </label>
@@ -53,10 +53,10 @@ exports[`should render the text on the display 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             Username
           </label>
@@ -66,10 +66,10 @@ exports[`should render the text on the display 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             Email
           </label>
@@ -79,10 +79,10 @@ exports[`should render the text on the display 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             Confirm email
           </label>
@@ -92,10 +92,10 @@ exports[`should render the text on the display 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             Password
           </label>
@@ -105,10 +105,10 @@ exports[`should render the text on the display 1`] = `
           />
         </div>
         <div
-          class="text-field"
+          class="text-field text-field--signup"
         >
           <label
-            class="text-field__label"
+            class="text-field__label text-field__label--signup"
           >
             Retype password
           </label>

@@ -2,7 +2,7 @@
 @use "../../styles/mixins" as *;
 
 .dropdown {
-  padding: 1rem;
+  padding: 0 1rem;
   width: min-content;
   z-index: 1000;
 
@@ -16,9 +16,9 @@
 
   .dropdown__item {
     background-color: $white;
-    min-width: 15rem;
+    min-width: 17rem;
     border: 2px solid $black;
-    padding: 1rem;
+    padding: 0.3rem 1rem;
     z-index: 1000;
 
     &--primary {
@@ -31,7 +31,7 @@
       &--active {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        text-align: left;
+        text-align: start;
       }
     }
 
