@@ -21,3 +21,16 @@ it("should check if the click of the details button shows the details pane", () 
   //expect the details pane to appear
   expect(saveButton).toBeInTheDocument();
 });
+
+it("should call the functions within onclick when user clicks", () => {
+  const mockFunction = jest.fn();
+  customRender(
+    <Card cardArray={favArray} primaryButtonOnClick={mockFunction} />
+  );
+
+  const button = screen.getAllByRole("button", { name: /Remove/i });
+
+  userEvent.click(button[0]);
+
+  expect(mockFunction).toBeCalled();
+});
