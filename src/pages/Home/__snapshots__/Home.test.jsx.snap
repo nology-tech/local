@@ -50,6 +50,23 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
+      class="home-list-view__search--bar-container"
+    >
+      <div
+        class="text-field"
+      >
+        <label
+          class="text-field__label"
+          for="location-search-bar"
+        />
+        <input
+          class="text-field__input text-field__input--location-search-bar"
+          id="location-search-bar"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
       class="home__map-buttons"
     >
       <button

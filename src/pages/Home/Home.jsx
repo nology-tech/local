@@ -18,19 +18,17 @@ const Home = () => {
     const useSearchInput = event.target.value;
     setSearchPostCode(useSearchInput);
   };
-  console.log(searchPostCode);
 
   useEffect(() => {
     getData(searchPostCode);
   }, [searchPostCode]);
 
   const getData = async (searchPostCode) => {
-    // if (searchPostCode !== "") {
-    const data = await getInRadius({ searchPostCode }, 5);
-    setBusinessArr(data);
-    // }
+    if (searchPostCode !== "") {
+      const data = await getInRadius(searchPostCode, 5);
+      setBusinessArr(data);
+    }
   };
-  console.log(businessArr[0]);
 
   return (
     <Layout isWithMenu={true}>
@@ -46,7 +44,7 @@ const Home = () => {
           uniqueId="location-search-bar"
           inputType="text"
           modifier="location-search-bar"
-          placeholderText="Tooting, London, GB"
+          placeholderText="Search by Postcode"
           onChange={handleSearchInput}
         />
       </div>
