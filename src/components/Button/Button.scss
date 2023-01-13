@@ -11,9 +11,29 @@
 
   border: 0.1rem solid $button-border;
   border-radius: $button-border-radius;
+
   &:active {
     border: 0.2rem solid $white;
   }
+}
+
+.button--map-navigation {
+  background-color: $white;
+  color: $black;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border-width: $button-border-radius-v2;
+}
+.button--map-navigation-zoom {
+  font-size: 2rem;
+  background-color: $white;
+  color: $black;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-width: $button-border-radius-v2;
 }
 
 .button--details {
@@ -93,4 +113,27 @@
 }
 .button--menu {
   width: 2.5rem;
+}
+
+.button--account {
+  color: $text-color;
+  background-color: #f6f6f5;
+  width: 18rem;
+  height: 4rem;
+  border: none;
+  box-shadow: -0.75rem -0.75rem 1.5rem #ffffff, 0.75rem 0.75rem 1.5rem #c7c1bf;
+  border-radius: 1.25rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.button--deleteAccount {
+  color: $white;
+  background-color: #1b1a17;
+  box-shadow: none;
+  width: 16rem;
+  height: 3.5rem;
+}
+
+.button--signout {
+  margin-bottom: 1.5rem;
 }

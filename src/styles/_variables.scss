@@ -17,6 +17,8 @@ $background-gradient: linear-gradient(
 // button styling
 $button-border: black;
 $button-border-radius: 1.7rem;
+$button-border-radius-v1: 0.0625rem;
+$button-border-radius-v2: 0.13rem;
 // base Colour palette - Client provided
 
 $white: rgba(246, 251, 249, 1);
@@ -44,6 +46,7 @@ $text-font-family: "Inter";
 // Font weights
 $light-font: 300;
 $default-font-weight: 400;
+$large-font-weight: 800;
 
 // font size
 $larger-text-size: 1.2rem;

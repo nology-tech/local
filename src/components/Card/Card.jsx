@@ -1,10 +1,10 @@
 import { useState } from "react";
+import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 import Button from "../Button/Button";
 import DetailsPane from "../DetailsPane/DetailsPane";
 import "./Card.scss";
-import cardCategories from "../../data/favourites/cardCategoryData/cardCategories";
 
-const Card = ({ cardArray = [], primaryButtonOnClick }) => {
+const Card = ({ cardArray = [], isWithAddress, primaryButtonOnClick }) => {
   const [activeDetails, setActiveDetails] = useState(null);
 
   const getDescription = (description, website) => {
@@ -23,13 +23,12 @@ const Card = ({ cardArray = [], primaryButtonOnClick }) => {
 
   const showCards = cardArray.map((card) => {
     const description = getDescription(card?.description, card?.website);
-
     return (
       <div className="card" key={card._id}>
         <div className="card__header-container">
           <h2
             className={`card__heading card__heading--${
-              cardCategories[card.category].categoryName ??
+              cardCategories[card.category]?.categoryName ??
               cardCategories["Other"].categoryName
             }`}
           >
@@ -37,14 +36,16 @@ const Card = ({ cardArray = [], primaryButtonOnClick }) => {
           </h2>
           <div className="card__image-container">
             <img
-              src={cardCategories[card.category].image}
+              src={cardCategories[card.category]?.image}
               alt=""
               className="card__image"
             />
           </div>
         </div>
         <p className="card__text">{description}</p>
-        <p className="card__text card__text--adress">{card.address}</p>
+        {isWithAddress && (
+          <p className="card__text card__text--adress">{card.address}</p>
+        )}
         <div className="card__buttons-container">
           <Button
             buttonName="details"

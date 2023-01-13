@@ -1,10 +1,10 @@
+import { useContext, useState } from "react";
+import { handleUserFavouritesUpdate } from "../../api/userService";
 import Card from "../../components/Card/Card";
-import Layout from "../../components/Layout/Layout";
 import DropDown from "../../components/DropDown/DropDown";
 import Filter from "../../components/Filter/Filter";
-import { useContext, useState } from "react";
+import Layout from "../../components/Layout/Layout";
 import UserContext from "../../context/UserContext";
-import { handleUserFavouritesUpdate } from "../../api/userService";
 
 const Favourites = () => {
   const { user } = useContext(UserContext);
@@ -41,6 +41,7 @@ const Favourites = () => {
       <DropDown onChange={onChange} options={optionsArr} />
       <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
       <Card
+        isWithAddress={true}
         cardArray={allCardsArr}
         primaryButtonOnClick={handleRemoveFavourites}
       />
