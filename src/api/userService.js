@@ -211,3 +211,24 @@ export const loginUser = async (email, password) => {
     console.log({ error });
   }
 };
+
+export const handleUserFavouritesUpdate = async (
+  arrayToUpdateWith,
+  { id, firstName, lastName, username, email }
+) => {
+  try {
+    const docRef = doc(db, "users", auth.currentUser.uid);
+    await setDoc(docRef, {
+      id,
+      firstName,
+      lastName,
+      username,
+      email,
+      favourites: arrayToUpdateWith,
+    });
+  } catch (error) {
+    console.log({ error });
+  }
+
+  return;
+};

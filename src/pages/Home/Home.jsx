@@ -1,16 +1,25 @@
 import Button from "../../components/Button/Button";
 import Layout from "../../components/Layout/Layout";
-import { useContext } from "react";
-import UserContext from "../../context/UserContext";
 import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
-import "./Home.scss";
+import { useEffect, useState } from "react";
+import { getInRadius } from "../../api/placeService";
 
 const Home = () => {
-  const { user } = useContext(UserContext);
-  if (user === null) {
+  const [businessArr, setBusinessArr] = useState([]);
+  if (businessArr === null) {
     return <p>loading...</p>;
   }
+
+  const getData = async () => {
+    const data = await getInRadius("CH451HE", 5);
+    setBusinessArr(data);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <Layout isWithMenu={true}>
       <div className="home__map-buttons">
@@ -28,7 +37,9 @@ const Home = () => {
         maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos,
         necessitatibus.
       </p>
-      <Carousel componentToDisplay={<Card cardArray={user.favourites} />} />
+      {businessArr?.length > 1 && (
+        <Carousel componentToDisplay={<Card cardArray={businessArr} />} />
+      )}
     </Layout>
   );
 };

@@ -8,6 +8,7 @@ import Enter from "./pages/Enter/Enter";
 import SignUp from "./pages/SignUp/SignUp";
 import Contact from "./pages/Contact/Contact";
 import SignIn from "./pages/SignIn/SignIn";
+import ManageAccount from "./pages/ManageAccount/ManageAccount";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="*" element={<Home />} />
       <Route path="/new" element={<NewUser />} />
       <Route path="/enter" element={<Enter />} />
+      <Route path="/account" element={<ManageAccount />} />
       <Route path="/enter/signin" element={<SignIn />} />
       <Route path="/enter/signup" element={<SignUp />} />
       <Route path="/contact" element={<Contact />} />

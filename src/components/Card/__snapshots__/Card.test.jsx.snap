@@ -24,11 +24,6 @@ exports[`should render the text on the display 1`] = `
     <p
       class="card__text"
     />
-    <p
-      class="card__text card__text--adress"
-    >
-      32 Camden Hill, Eeling, London
-    </p>
     <div
       class="card__buttons-container"
     >
@@ -68,11 +63,6 @@ exports[`should render the text on the display 1`] = `
     >
       Irish Bar, Great guines on tap.
     </p>
-    <p
-      class="card__text card__text--adress"
-    >
-      36 Lamden Hill, Eeling, London
-    </p>
     <div
       class="card__buttons-container"
     >
@@ -110,11 +100,6 @@ exports[`should render the text on the display 1`] = `
     <p
       class="card__text"
     />
-    <p
-      class="card__text card__text--adress"
-    >
-      112 Backden Hill, Eeling, London
-    </p>
     <div
       class="card__buttons-container"
     >

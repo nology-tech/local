@@ -36,6 +36,7 @@
     font-family: $text-font-family;
     font-size: $sub-header-text-size;
     font-weight: $light-font;
+    @include text-header;
   }
 
   &__header,
