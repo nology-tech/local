@@ -17,10 +17,6 @@ const Home = () => {
     return <p>loading...</p>;
   }
 
-  // inputs - all cards for location
-  // press save - save should add card clicked to favourites
-  // output - favourites is updated with card
-
   const getData = async () => {
     const data = await getInRadius("CH451HE", 5);
     setBusinessArr(data);
