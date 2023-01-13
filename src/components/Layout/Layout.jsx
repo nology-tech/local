@@ -22,15 +22,11 @@ const Layout = ({ children, isWithMenu, isManageAccount }) => {
   return (
     <div className={layoutClassName}>
       <Header toggleMenu={toggleMenu} isManageAccount={isManageAccount} />
-      {showMenu && (
-        <>
-          <div className="layout__menu--shadow"></div>
-          <div className="layout__menu">
-            <Menu toggleMenu={toggleMenu} />
-          </div>
-        </>
-      )}
 
+      {showMenu && <div className="layout__menu--shadow"></div>}
+      <div className={`layout__menu ${showMenu ? "menu-open" : "menu-closed"}`}>
+        <Menu toggleMenu={toggleMenu} />
+      </div>
       {children}
     </div>
   );
