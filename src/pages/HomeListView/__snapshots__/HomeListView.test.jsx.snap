@@ -53,7 +53,7 @@ exports[`should render the text on the display 1`] = `
       class="home-list-view__search--bar-container"
     >
       <img
-        alt=""
+        alt="an icon of a map marker"
         class="home-list-view__map-icon"
         src="mapMarkerIcon.svg"
         type="image/svg+xml"
@@ -72,6 +72,16 @@ exports[`should render the text on the display 1`] = `
           type="text"
         />
       </div>
+      <a
+        class="home-list-view__link--map-view"
+        href="/*"
+      >
+        <button
+          class="button button--map-view"
+        >
+          Map View
+        </button>
+      </a>
     </div>
     <main
       class="home-list-view__container"
