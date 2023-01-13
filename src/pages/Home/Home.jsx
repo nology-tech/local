@@ -4,14 +4,22 @@ import Carousel from "../../components/Carousel/Carousel";
 import Card from "../../components/Card/Card";
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { getInRadius } from "../../api/placeService";
+import { handleAddToUserFavourites } from "../../api/userService";
+
+import UserContext from "../../context/UserContext";
 
 const Home = () => {
+  const { user } = useContext(UserContext);
   const [businessArr, setBusinessArr] = useState([]);
   if (businessArr === null) {
     return <p>loading...</p>;
   }
+
+  // inputs - all cards for location
+  // press save - save should add card clicked to favourites
+  // output - favourites is updated with card
 
   const getData = async () => {
     const data = await getInRadius("CH451HE", 5);
@@ -21,6 +29,10 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  const handleSaveToFavourites = (cardId) => {
+    handleAddToUserFavourites(cardId, user);
+  };
 
   return (
     <Layout isWithMenu={true}>
@@ -43,7 +55,13 @@ const Home = () => {
       </p>
       {businessArr?.length > 1 && (
         <Carousel
-          componentToDisplay={<Card cardArray={businessArr} page="home" />}
+          componentToDisplay={
+            <Card
+              cardArray={businessArr}
+              page="home"
+              primaryButtonOnClick={handleSaveToFavourites}
+            />
+          }
         />
       )}
     </Layout>

@@ -3,7 +3,8 @@ import {
   getAuth,
   signInWithEmailAndPassword,
 } from "@firebase/auth";
-import { doc, setDoc } from "@firebase/firestore";
+import { doc, setDoc, updateDoc } from "@firebase/firestore";
+
 import { auth, db } from "../firebase";
 
 const defaultFavourites = [
@@ -231,4 +232,23 @@ export const handleUserFavouritesUpdate = async (
   }
 
   return;
+};
+export const handleAddToUserFavourites = async (
+  cardId,
+  { id, firstName, lastName, username, email, favourites }
+) => {
+  const updatedFavourites = favourites.push(cardId);
+  try {
+    const docRef = doc(db, "users", auth.currentUser.uid);
+    await updateDoc(docRef, {
+      id,
+      firstName,
+      lastName,
+      username,
+      email,
+      favourites: updatedFavourites,
+    });
+  } catch (error) {
+    console.log({ error });
+  }
 };

@@ -27,6 +27,16 @@ const Card = ({
     return shortenedDescription;
   };
   const cardClassName = page ? `card card--${page}` : "card";
+  const getButtonType = (page) => {
+    let buttonName = "";
+    if (page === "home") {
+      buttonName = "Save";
+    } else {
+      buttonName = "Remove";
+    }
+    return buttonName;
+  };
+
   const showCards = cardArray.map((card) => {
     const description = getDescription(card?.description, card?.website);
     return (
@@ -59,8 +69,8 @@ const Card = ({
             onClick={() => setActiveDetails(card)}
           />
           <Button
-            buttonName="remove"
-            buttonText="Remove"
+            buttonName={getButtonType(page)}
+            buttonText={getButtonType(page)}
             onClick={() => primaryButtonOnClick(card._id)}
           />
         </div>
