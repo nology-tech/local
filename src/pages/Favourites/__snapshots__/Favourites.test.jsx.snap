@@ -305,7 +305,11 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
+<<<<<<< HEAD
             class="button button--Remove"
+=======
+            class="button button--remove"
+>>>>>>> e4c6ccbf8187a8fa144e6a512760540438e8bbac
           >
             Remove
           </button>
@@ -351,7 +355,11 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
+<<<<<<< HEAD
             class="button button--Remove"
+=======
+            class="button button--remove"
+>>>>>>> e4c6ccbf8187a8fa144e6a512760540438e8bbac
           >
             Remove
           </button>
@@ -397,7 +405,11 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
+<<<<<<< HEAD
             class="button button--Remove"
+=======
+            class="button button--remove"
+>>>>>>> e4c6ccbf8187a8fa144e6a512760540438e8bbac
           >
             Remove
           </button>
@@ -443,7 +455,11 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
+<<<<<<< HEAD
             class="button button--Remove"
+=======
+            class="button button--remove"
+>>>>>>> e4c6ccbf8187a8fa144e6a512760540438e8bbac
           >
             Remove
           </button>
@@ -489,7 +505,11 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
+<<<<<<< HEAD
             class="button button--Remove"
+=======
+            class="button button--remove"
+>>>>>>> e4c6ccbf8187a8fa144e6a512760540438e8bbac
           >
             Remove
           </button>
