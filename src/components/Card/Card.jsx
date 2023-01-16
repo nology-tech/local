@@ -38,7 +38,6 @@ const Card = ({
   };
 
   const showCards = cardArray.map((card) => {
-    const handleButtonData = page ? card : "card._id";
     const description = getDescription(card?.description, card?.website);
     return (
       <div className={cardClassName} key={card._id}>
