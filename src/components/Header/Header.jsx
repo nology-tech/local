@@ -10,7 +10,7 @@ const Header = ({ toggleMenu, isManageAccount }) => {
     : "header";
   return (
     <div className={headerClassName}>
-      <Link to="/*" className="header__link--home">
+      <Link to="/" className="header__link--home">
         <img src={BackButton} alt="an Icon of an backwards facing arrow" />
       </Link>
       <div className="header__container">
