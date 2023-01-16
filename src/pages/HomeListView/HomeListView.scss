@@ -6,13 +6,16 @@
   align-items: center;
   position: relative;
   width: 100%;
+
   .home-list-view__map-icon {
+    display: block;
     position: absolute;
-    height: 2.5rem;
-    margin-left: 1rem;
-    z-index: 2;
+    height: 2rem;
+    left: 7%;
+
   }
 }
+
 .home-list-view__container {
   display: flex;
   flex-flow: column nowrap;
