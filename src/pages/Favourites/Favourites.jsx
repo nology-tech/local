@@ -10,7 +10,17 @@ import "./Favourites.scss";
 const Favourites = () => {
   const { user } = useContext(UserContext);
   const [allCardsArr, setAllCardsArr] = useState(user?.favourites ?? []);
-
+  const handleUpdateDropDownCardsUpdate = (location) => {
+    let dropDownFilteredArray = [];
+    if (location == "All") {
+      setAllCardsArr(user.favourites);
+    } else {
+      dropDownFilteredArray = user.favourites.filter(
+        (element) => element.location.city === location
+      );
+      setAllCardsArr(dropDownFilteredArray);
+    }
+  };
   if (user === null) {
     return <p>loading...</p>;
   }
@@ -36,14 +46,17 @@ const Favourites = () => {
     handleUserFavouritesUpdate(updatedUserFavourites, user);
   };
 
-  const onChange = (location) => {
-    console.log(location);
-  };
+  // const onChange = (location) => {
+  //   console.log(location);
+  // };
 
   return (
     <Layout isWithMenu={true}>
       <main className="favourites__container">
-        <DropDown onChange={onChange} options={getDropDownMenuOptions()} />
+        <DropDown
+          onChange={handleUpdateDropDownCardsUpdate}
+          options={getDropDownMenuOptions()}
+        />
 
         <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
         <Card
