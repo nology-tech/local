@@ -43,15 +43,15 @@
   border-width: $button-border-radius-v2;
 }
 .button--details,
-.button--Remove,
-.button--Save {
+.button--remove,
+.button--save {
   margin: 0 0.2rem;
   width: 7rem;
 }
-.button--Save {
+.button--save {
   background-color: $orange;
 }
-.button--Remove {
+.button--remove {
   background-color: $red;
 }
 .button--details {

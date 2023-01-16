@@ -28,14 +28,13 @@ const Card = ({
   };
 
   const cardClassName = page ? `card card--${page}` : "card";
-  const getButtonType = (page) => {
-    let buttonName = "";
-    if (page === "home") {
-      buttonName = "Save";
-    } else {
-      buttonName = "Remove";
-    }
-    return buttonName;
+  const getButtonType = (page, isButtonText) => {
+    const isFavouritesPage = page === "Favourites" ? "remove" : "save";
+    let buttonName = isFavouritesPage;
+    let buttonText =
+      isFavouritesPage.charAt(0).toUpperCase() + isFavouritesPage.slice(1);
+
+    return isButtonText ? buttonText : buttonName;
   };
 
   const showCards = cardArray.map((card) => {
@@ -72,7 +71,7 @@ const Card = ({
           />
           <Button
             buttonName={getButtonType(page)}
-            buttonText={getButtonType(page)}
+            buttonText={getButtonType(page, true)}
             onClick={() => primaryButtonOnClick(handleButtonData)}
           />
         </div>
