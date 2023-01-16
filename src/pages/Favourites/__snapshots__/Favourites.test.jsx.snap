@@ -310,7 +310,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
@@ -356,7 +356,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
@@ -402,7 +402,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
@@ -448,7 +448,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
@@ -494,7 +494,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
@@ -540,7 +540,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
