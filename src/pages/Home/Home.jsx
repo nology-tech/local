@@ -37,7 +37,7 @@ const Home = () => {
     }
   };
 
-  const handlesaveToFavourites = (cardId) => {
+  const handleSaveToFavourites = (cardId) => {
     handleAddToUserFavourites(cardId, user);
   };
 
@@ -83,7 +83,7 @@ const Home = () => {
             <Card
               cardArray={businessArr}
               page="home"
-              primaryButtonOnClick={handlesaveToFavourites}
+              primaryButtonOnClick={handleSaveToFavourites}
             />
           }
         />
