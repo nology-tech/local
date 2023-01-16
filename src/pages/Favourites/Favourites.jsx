@@ -47,7 +47,7 @@ const Favourites = () => {
           isWithAddress={true}
           cardArray={allCardsArr}
           primaryButtonOnClick={handleRemoveFavourites}
-          page="Favourites"
+          page="favourites"
         />
       </main>
     </Layout>

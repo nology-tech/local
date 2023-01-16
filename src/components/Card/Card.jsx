@@ -29,7 +29,7 @@ const Card = ({
 
   const cardClassName = page ? `card card--${page}` : "card";
   const getButtonType = (page, isButtonText) => {
-    const isFavouritesPage = page === "Favourites" ? "remove" : "save";
+    const isFavouritesPage = page === "favourites" ? "remove" : "save";
     let buttonName = isFavouritesPage;
     let buttonText =
       isFavouritesPage.charAt(0).toUpperCase() + isFavouritesPage.slice(1);

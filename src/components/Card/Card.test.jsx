@@ -12,7 +12,7 @@ it("should render the text on the display", () => {
 
 it("should check if the click of the details button shows the details pane", () => {
   //load the page
-  customRender(<Card cardArray={favArray} page="Favourites" />);
+  customRender(<Card cardArray={favArray} page="favourites" />);
   //get the button
   const button = screen.getAllByText("Details");
   //on click of the button
@@ -29,7 +29,7 @@ it("should call the functions within onclick when user clicks", () => {
     <Card
       cardArray={favArray}
       primaryButtonOnClick={mockFunction}
-      page="Favourites"
+      page="favourites"
     />
   );
 

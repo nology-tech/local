@@ -16,7 +16,11 @@ const DetailsPane = ({ onClick, card, buttonName, buttonText }) => {
         <p>{card.price}</p>
         <p>{card.image}</p>
         <div className="details-pane__save-btn-container">
-          <Button buttonText={buttonText} buttonName={buttonName} />
+          <Button
+            buttonText={buttonText}
+            buttonName={buttonName}
+            page="favourites"
+          />
         </div>
       </div>
     </div>
