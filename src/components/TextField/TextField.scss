@@ -42,24 +42,34 @@
       height: 7rem;
     }
   }
+
   &__input--signin,
   &__input--signup {
     border: 0.1rem solid $black;
     border-radius: 0.625rem;
   }
 }
+
 .text-field--location-search-bar {
   display: block;
 }
+
 .text-field__label--location-search-bar {
   display: none;
 }
+
 .text-field__input--location-search-bar {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+
   &::placeholder {
     color: $text-color;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
+    opacity: 50%;
+
   }
 }

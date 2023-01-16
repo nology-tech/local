@@ -27,9 +27,9 @@ const Favourites = () => {
       .sort();
     return dropDownOptions;
   };
-  const handleRemoveFavourites = (cardId) => {
+  const handleRemoveFavourites = (card) => {
     const updatedUserFavourites = user.favourites.filter(
-      (element) => element._id !== cardId
+      (element) => element._id !== card._id
     );
     setAllCardsArr(updatedUserFavourites);
     handleUserFavouritesUpdate(updatedUserFavourites, user);
@@ -49,6 +49,7 @@ const Favourites = () => {
           isWithAddress={true}
           cardArray={allCardsArr}
           primaryButtonOnClick={handleRemoveFavourites}
+          page="favourites"
         />
       </main>
     </Layout>

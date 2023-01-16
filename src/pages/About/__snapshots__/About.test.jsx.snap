@@ -10,7 +10,7 @@ exports[`should render About page 1`] = `
     >
       <a
         class="header__link--home"
-        href="/*"
+        href="/"
       >
         <img
           alt="an Icon of an backwards facing arrow"

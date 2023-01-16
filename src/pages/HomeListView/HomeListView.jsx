@@ -31,7 +31,7 @@ const HomeListView = () => {
           uniqueId="location-search-bar"
           inputType="text"
           modifier="location-search-bar"
-          placeholderText="Tooting, London, GB"
+          placeholderText="e.g. CH451HE"
         />
 
         <Link to="../*" className="home-list-view__link--map-view">
