@@ -217,11 +217,11 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
-      class="home-list-view__search--bar-container"
+      class="home__search--bar-container"
     >
       <img
         alt="an icon of a map marker"
-        class="home-list-view__map-icon"
+        class="home__map-icon"
         src="mapMarkerIcon.svg"
         type="image/svg+xml"
       />
