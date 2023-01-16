@@ -46,10 +46,6 @@ const Favourites = () => {
     handleUserFavouritesUpdate(updatedUserFavourites, user);
   };
 
-  // const onChange = (location) => {
-  //   console.log(location);
-  // };
-
   return (
     <Layout isWithMenu={true}>
       <main className="favourites__container">
