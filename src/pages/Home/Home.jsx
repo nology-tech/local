@@ -8,17 +8,16 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getInRadius } from "../../api/placeService";
 import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
-// import Filter from "../../components/Filter/Filter";
+import Filter from "../../components/Filter/Filter";
 
 const Home = () => {
   const [businessArr, setBusinessArr] = useState([]);
   const [searchPostCode, setSearchPostCode] = useState("");
+  const [allCardsArr, setAllCardsArr] = useState(businessArr ?? []);
 
   if (businessArr === null) {
     return <p>loading...</p>;
   }
-
-  // const [allCardsArr, setAllCardsArr] = useState(businessArr);
 
   const handleSearchInput = (event) => {
     const useSearchInput = event.target.value;
@@ -55,19 +54,18 @@ const Home = () => {
             onChange={handleSearchInput}
           />
         </div>
-
-        {/* <Filter favArray={businessArr} setAllCardsArr={setAllCardsArr} /> */}
+        <Filter favArray={allCardsArr} setAllCardsArr={setAllCardsArr} />
         <div>
           <div className="home__map-buttons">
-            <Button buttonName="map-navigation-zoom" buttonText="+" />
-            <Button buttonName="map-navigation-zoom" buttonText="-" />
             <Link to="./list-view" className="home__link--list-view">
               <Button buttonName="map-navigation" buttonText="List View" />
             </Link>
+            <Button buttonName="map-navigation-zoom" buttonText="+" />
+            <Button buttonName="map-navigation-zoom" buttonText="-" />
           </div>
-          {businessArr?.length > 1 && (
+          {allCardsArr?.length > 1 && (
             <Carousel
-              componentToDisplay={<Card cardArray={businessArr} page="home" />}
+              componentToDisplay={<Card cardArray={allCardsArr} page="home" />}
             />
           )}
         </div>
