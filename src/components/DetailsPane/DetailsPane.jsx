@@ -1,7 +1,7 @@
 import "./DetailsPane.scss";
 import Button from "../Button/Button";
 
-const DetailsPane = ({ onClick, card }) => {
+const DetailsPane = ({ onClick, card, buttonName, buttonText }) => {
   return (
     <div className="details-pane" key={card.id}>
       <div className="details-pane__container">
@@ -16,7 +16,7 @@ const DetailsPane = ({ onClick, card }) => {
         <p>{card.price}</p>
         <p>{card.image}</p>
         <div className="details-pane__save-btn-container">
-          <Button buttonText="Save" buttonName="save" />
+          <Button buttonText={buttonText} buttonName={buttonName} />
         </div>
       </div>
     </div>

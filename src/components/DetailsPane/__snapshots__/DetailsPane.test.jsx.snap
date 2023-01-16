@@ -42,7 +42,7 @@ exports[`should render the details pane on the display 1`] = `
         <button
           class="button button--save"
         >
-          save
+          Save
         </button>
       </div>
     </div>

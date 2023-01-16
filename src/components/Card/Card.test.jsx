@@ -17,7 +17,7 @@ it("should check if the click of the details button shows the details pane", () 
   const button = screen.getAllByRole("button");
   //on click of the button
   userEvent.click(button[0]);
-  const saveButton = screen.getByText("save");
+  const saveButton = screen.getByText("Save");
   //expect the details pane to appear
   expect(saveButton).toBeInTheDocument();
 });

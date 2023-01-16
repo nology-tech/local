@@ -85,6 +85,8 @@ const Card = ({
         <DetailsPane
           card={activeDetails}
           onClick={() => setActiveDetails(null)}
+          buttonName={getButtonType(page)}
+          buttonText={getButtonType(page, true)}
         />
       )}
     </>

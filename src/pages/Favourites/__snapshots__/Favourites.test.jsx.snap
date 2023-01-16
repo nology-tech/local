@@ -266,7 +266,7 @@ exports[`should render the text on the display 1`] = `
         </button>
       </div>
       <div
-        class="card"
+        class="card card--Favourites"
       >
         <div
           class="card__header-container"
@@ -305,14 +305,14 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
         </div>
       </div>
       <div
-        class="card"
+        class="card card--Favourites"
       >
         <div
           class="card__header-container"
@@ -351,14 +351,14 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
         </div>
       </div>
       <div
-        class="card"
+        class="card card--Favourites"
       >
         <div
           class="card__header-container"
@@ -397,14 +397,14 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
         </div>
       </div>
       <div
-        class="card"
+        class="card card--Favourites"
       >
         <div
           class="card__header-container"
@@ -443,14 +443,14 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
         </div>
       </div>
       <div
-        class="card"
+        class="card card--Favourites"
       >
         <div
           class="card__header-container"
@@ -489,14 +489,14 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>
         </div>
       </div>
       <div
-        class="card"
+        class="card card--Favourites"
       >
         <div
           class="card__header-container"
@@ -535,7 +535,7 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--Remove"
+            class="button button--remove"
           >
             Remove
           </button>

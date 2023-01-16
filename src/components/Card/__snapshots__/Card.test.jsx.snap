@@ -33,9 +33,9 @@ exports[`should render the text on the display 1`] = `
         Details
       </button>
       <button
-        class="button button--Remove"
+        class="button button--save"
       >
-        Remove
+        Save
       </button>
     </div>
   </div>
@@ -72,9 +72,9 @@ exports[`should render the text on the display 1`] = `
         Details
       </button>
       <button
-        class="button button--Remove"
+        class="button button--save"
       >
-        Remove
+        Save
       </button>
     </div>
   </div>
@@ -109,9 +109,9 @@ exports[`should render the text on the display 1`] = `
         Details
       </button>
       <button
-        class="button button--Remove"
+        class="button button--save"
       >
-        Remove
+        Save
       </button>
     </div>
   </div>
