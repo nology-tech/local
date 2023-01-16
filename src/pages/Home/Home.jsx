@@ -35,9 +35,9 @@ const Home = () => {
 
   return (
     <Layout isWithMenu={true}>
-      <div className="home-list-view__search--bar-container">
+      <div className="home__search--bar-container">
         <img
-          className="home-list-view__map-icon"
+          className="home__map-icon"
           src={MapIcon}
           type="image/svg+xml"
           alt="an icon of a map marker"
