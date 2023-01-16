@@ -12,20 +12,25 @@ it("should render the text on the display", () => {
 
 it("should check if the click of the details button shows the details pane", () => {
   //load the page
-  customRender(<Card cardArray={favArray} />);
+  customRender(<Card cardArray={favArray} page="Favourites" />);
   //get the button
-  const button = screen.getAllByRole("button");
+  const button = screen.getAllByText("Details");
   //on click of the button
   userEvent.click(button[0]);
-  const saveButton = screen.getByText("Save");
+
+  const closeButton = screen.getAllByText("✖");
   //expect the details pane to appear
-  expect(saveButton).toBeInTheDocument();
+  expect(closeButton[0]).toBeInTheDocument();
 });
 
 it("should call the functions within onclick when user clicks", () => {
   const mockFunction = jest.fn();
   customRender(
-    <Card cardArray={favArray} primaryButtonOnClick={mockFunction} />
+    <Card
+      cardArray={favArray}
+      primaryButtonOnClick={mockFunction}
+      page="Favourites"
+    />
   );
 
   const button = screen.getAllByRole("button", { name: /Remove/i });

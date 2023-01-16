@@ -40,10 +40,8 @@ exports[`should render the details pane on the display 1`] = `
         class="details-pane__save-btn-container"
       >
         <button
-          class="button button--save"
-        >
-          Save
-        </button>
+          class="button button--undefined"
+        />
       </div>
     </div>
   </div>
