@@ -1,20 +1,42 @@
 import "./DetailsPane.scss";
 import Button from "../Button/Button";
-
-const DetailsPane = ({ onClick, card }) => {
+import placeHolderImage from "../../assets/images/cafe-placeholder.jpg";
+const DetailsPane = ({
+  onClick,
+  card: {
+    _id,
+    description,
+    weekdayOpening,
+    weekendOpening,
+    name,
+    address,
+    price,
+  },
+}) => {
   return (
-    <div className="details-pane" key={card.id}>
+    <div className="details-pane" key={_id}>
       <div className="details-pane__container">
         <div className="details-pane__header">
-          <h2>{card.name}</h2>
+          <h2>{name}</h2>
           <Button buttonText="✖" buttonName="close" onClick={onClick} />
         </div>
-        <p>{card.description}</p>
-        <p>{card.weekdayOpening}</p>
-        <p>{card.weekendOpening}</p>
-        <p>{card.address}</p>
-        <p>{card.price}</p>
-        <p>{card.image}</p>
+        <p className="details-pane__text">{description}</p>
+        <p className="details-pane__text">{weekdayOpening}</p>
+        <p className="details-pane__text">{weekendOpening}</p>
+        <p className="details-pane__text">{address}</p>
+        <p className="details-pane__text">{price}</p>
+        <div className="details-pane__images-container">
+          <img
+            className="details-pane__image"
+            src={placeHolderImage}
+            alt={`an image from ${name}'s website`}
+          />
+          <img
+            className="details-pane__image"
+            src={placeHolderImage}
+            alt={`an image from ${name}'s website`}
+          />
+        </div>
         <div className="details-pane__save-btn-container">
           <Button buttonText="Save" buttonName="save" />
         </div>
