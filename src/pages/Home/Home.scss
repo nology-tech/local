@@ -18,3 +18,24 @@
   display: flex;
   flex-direction: row;
 }
+.home-list-view__search--bar-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  .home-list-view__map-icon {
+    display: block;
+    position: absolute;
+    height: 2rem;
+    left: 7%;
+  }
+}
+
+.home-list-view__container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  padding: 0 1rem;
+}

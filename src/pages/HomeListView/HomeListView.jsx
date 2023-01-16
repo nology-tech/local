@@ -18,37 +18,39 @@ const HomeListView = () => {
 
   return (
     <Layout isWithMenu={true}>
-      <div className="home-list-view__search--bar-container">
-        <img
-          className="home-list-view__map-icon"
-          src={MapIcon}
-          type="image/svg+xml"
-          alt="an icon of a map marker"
-        />
+      <>
+        <div className="home-list-view__search--bar-container">
+          <img
+            className="home-list-view__map-icon"
+            src={MapIcon}
+            type="image/svg+xml"
+            alt="an icon of a map marker"
+          />
 
-        <TextField
-          uniqueId="location-search-bar"
-          inputType="text"
-          modifier="location-search-bar"
-          placeholderText="e.g. CH451HE"
-        />
+          <TextField
+            uniqueId="location-search-bar"
+            inputType="text"
+            modifier="location-search-bar"
+            placeholderText="e.g. CH451HE"
+          />
 
-        <Link to="../*" className="home-list-view__link--map-view">
-          <Button buttonName="map-view" buttonText="Map View" />
-        </Link>
-      </div>
+          <Link to="../*" className="home-list-view__link--map-view">
+            <Button buttonName="map-view" buttonText="Map View" />
+          </Link>
+        </div>
 
-      <main className="home-list-view__container">
-        <Filter
-          favArray={homeBusinessArray}
-          setAllCardsArr={sethomeBusinessArray}
-        />
-        <Card
-          cardArray={homeBusinessArray}
-          page="home-list-view"
-          primaryButtonOnClick={handleSaveToFavourites}
-        />
-      </main>
+        <main className="home-list-view__container">
+          <Filter
+            favArray={homeBusinessArray}
+            setAllCardsArr={sethomeBusinessArray}
+          />
+          <Card
+            cardArray={homeBusinessArray}
+            page="home-list-view"
+            primaryButtonOnClick={handleSaveToFavourites}
+          />
+        </main>
+      </>
     </Layout>
   );
 };
