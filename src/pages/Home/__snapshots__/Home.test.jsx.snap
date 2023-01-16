@@ -222,71 +222,75 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
-      class="home__search--bar-container"
+      class="home"
     >
-      <img
-        alt="an icon of a map marker"
-        class="home__map-icon"
-        src="mapMarkerIcon.svg"
-        type="image/svg+xml"
-      />
       <div
-        class="text-field text-field--location-search-bar"
+        class="home__search--bar-container"
       >
-        <label
-          class="text-field__label text-field__label--location-search-bar"
-          for="location-search-bar"
+        <img
+          alt="an icon of a map marker"
+          class="home__map-icon"
+          src="mapMarkerIcon.svg"
+          type="image/svg+xml"
         />
-        <input
-          class="text-field__input text-field__input--location-search-bar"
-          id="location-search-bar"
-          placeholder="Search by Postcode"
-          type="text"
-        />
+        <div
+          class="text-field text-field--location-search-bar"
+        >
+          <label
+            class="text-field__label text-field__label--location-search-bar"
+            for="location-search-bar"
+          />
+          <input
+            class="text-field__input text-field__input--location-search-bar"
+            id="location-search-bar"
+            placeholder="Search by Postcode"
+            type="text"
+          />
+        </div>
       </div>
-    </div>
-    <div
-      class="filter"
-    >
-      <button
-        class="button button--filter"
-      >
-        FOOD & DRINK
-      </button>
-      <button
-        class="button button--filter"
-      >
-        CULTURE
-      </button>
-      <button
-        class="button button--filter"
-      >
-        OTHER
-      </button>
-    </div>
-    <div
-      class="home__map-buttons"
-    >
-      <a
-        class="home__link--list-view"
-        href="/list-view"
+      <div
+        class="filter"
       >
         <button
-          class="button button--map-navigation"
+          class="button button--filter"
         >
-          List View
+          FOOD & DRINK
         </button>
-      </a>
-      <button
-        class="button button--map-navigation-zoom"
+        <button
+          class="button button--filter"
+        >
+          CULTURE
+        </button>
+        <button
+          class="button button--filter"
+        >
+          OTHER
+        </button>
+      </div>
+      <div
+        class="home__map-buttons"
       >
-        +
-      </button>
-      <button
-        class="button button--map-navigation-zoom"
-      >
-        -
-      </button>
+        <a
+          class="home__link--list-view"
+          href="/list-view"
+        >
+          <button
+            class="button button--map-navigation"
+          >
+            List View
+          </button>
+        </a>
+        <button
+          class="button button--map-navigation-zoom"
+        >
+          +
+        </button>
+        <button
+          class="button button--map-navigation-zoom"
+        >
+          -
+        </button>
+      </div>
     </div>
   </div>
 </div>

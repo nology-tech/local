@@ -44,41 +44,43 @@ const Home = () => {
 
   return (
     <Layout isWithMenu={true}>
-      <div className="home__search--bar-container">
-        <img
-          className="home__map-icon"
-          src={MapIcon}
-          type="image/svg+xml"
-          alt="an icon of a map marker"
-        />
+      <div className="home">
+        <div className="home__search--bar-container">
+          <img
+            className="home__map-icon"
+            src={MapIcon}
+            type="image/svg+xml"
+            alt="an icon of a map marker"
+          />
 
-        <TextField
-          uniqueId="location-search-bar"
-          inputType="text"
-          modifier="location-search-bar"
-          placeholderText="Search by Postcode"
-          onChange={handleSearchInput}
-        />
+          <TextField
+            uniqueId="location-search-bar"
+            inputType="text"
+            modifier="location-search-bar"
+            placeholderText="Search by Postcode"
+            onChange={handleSearchInput}
+          />
+        </div>
+        <Filter favArray={allCardsArr} setAllCardsArr={setAllCardsArr} />
+        <div className="home__map-buttons">
+          <Link to="./list-view" className="home__link--list-view">
+            <Button buttonName="map-navigation" buttonText="List View" />
+          </Link>
+          <Button buttonName="map-navigation-zoom" buttonText="+" />
+          <Button buttonName="map-navigation-zoom" buttonText="-" />
+        </div>
+        {allCardsArr?.length > 1 && (
+          <Carousel
+            componentToDisplay={
+              <Card
+                cardArray={allCardsArr}
+                page="home"
+                primaryButtonOnClick={handleSaveToFavourites}
+              />
+            }
+          />
+        )}
       </div>
-      <Filter favArray={allCardsArr} setAllCardsArr={setAllCardsArr} />
-      <div className="home__map-buttons">
-        <Link to="./list-view" className="home__link--list-view">
-          <Button buttonName="map-navigation" buttonText="List View" />
-        </Link>
-        <Button buttonName="map-navigation-zoom" buttonText="+" />
-        <Button buttonName="map-navigation-zoom" buttonText="-" />
-      </div>
-      {allCardsArr?.length > 1 && (
-        <Carousel
-          componentToDisplay={
-            <Card
-              cardArray={allCardsArr}
-              page="home"
-              primaryButtonOnClick={handleSaveToFavourites}
-            />
-          }
-        />
-      )}
     </Layout>
   );
 };
