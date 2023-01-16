@@ -15,16 +15,17 @@ const Favourites = () => {
     return <p>loading...</p>;
   }
   const getDropDownMenuOptions = () => {
-    let baseArray = ["All"];
     const userFavouritesLocationArray = user.favourites.map((favourite) => {
       return favourite.location.city;
     });
     const uniqueUserFavouritesLocationArray = [
       ...new Set(userFavouritesLocationArray),
     ];
-    const dropDownOptions = baseArray
-      .concat(uniqueUserFavouritesLocationArray)
-      .sort();
+
+    const dropDownOptions = [
+      "All",
+      ...uniqueUserFavouritesLocationArray.sort(),
+    ];
     return dropDownOptions;
   };
   const handleRemoveFavourites = (card) => {
