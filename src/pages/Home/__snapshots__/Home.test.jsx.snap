@@ -258,16 +258,11 @@ exports[`should render the text on the display 1`] = `
       >
         -
       </button>
-      <a
-        class="home__link--list-view"
-        href="/list-view"
+      <button
+        class="button button--map-navigation"
       >
-        <button
-          class="button button--map-navigation"
-        >
-          List View
-        </button>
-      </a>
+        List View
+      </button>
     </div>
     <h1>
       Page Heading
@@ -282,5 +277,7 @@ exports[`should render the text on the display 1`] = `
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non error dolor in nostrum minima odio a fuga saepe soluta adipisci perspiciatis maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos, necessitatibus.
     </p>
   </div>
+  ;
+  ;
 </div>
 `;
