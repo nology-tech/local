@@ -8,14 +8,13 @@ import TextField from "../../components/TextField/TextField";
 import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
-import businessArr from "../Home/Home";
 import handleSaveToFavourites from "../Home/Home";
 const HomeListView = () => {
   const { user } = useContext(UserContext);
   if (user === null) {
     return <p>loading...</p>;
   }
-  const [homeBusinessArray, sethomeBusinessArray] = useState(businessArr);
+  const [homeBusinessArray, sethomeBusinessArray] = useState([]);
 
   return (
     <Layout isWithMenu={true}>
