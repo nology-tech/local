@@ -8,10 +8,15 @@ exports[`should render the text on the display 1`] = `
     <div
       class="header"
     >
-      <img
-        alt=""
-        src="BackButton.svg"
-      />
+      <a
+        class="header__link--home"
+        href="/"
+      >
+        <img
+          alt="an Icon of an backwards facing arrow"
+          src="BackButton.svg"
+        />
+      </a>
       <div
         class="header__container"
       >
@@ -19,7 +24,7 @@ exports[`should render the text on the display 1`] = `
           class="header__logo-title"
         >
           <img
-            alt=""
+            alt="an image showing the Local logo"
             src="AppLogo.svg"
           />
           <h1
@@ -235,7 +240,7 @@ exports[`should render the text on the display 1`] = `
         <input
           class="text-field__input text-field__input--location-search-bar"
           id="location-search-bar"
-          placeholder="Tooting, London, GB"
+          placeholder="e.g. CH451HE"
           type="text"
         />
       </div>
@@ -307,9 +312,9 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--remove"
+            class="button button--save"
           >
-            Remove
+            Save
           </button>
         </div>
       </div>
@@ -348,9 +353,9 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--remove"
+            class="button button--save"
           >
-            Remove
+            Save
           </button>
         </div>
       </div>
@@ -389,9 +394,9 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--remove"
+            class="button button--save"
           >
-            Remove
+            Save
           </button>
         </div>
       </div>
@@ -430,9 +435,9 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--remove"
+            class="button button--save"
           >
-            Remove
+            Save
           </button>
         </div>
       </div>
@@ -471,9 +476,9 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--remove"
+            class="button button--save"
           >
-            Remove
+            Save
           </button>
         </div>
       </div>
@@ -512,9 +517,9 @@ exports[`should render the text on the display 1`] = `
             Details
           </button>
           <button
-            class="button button--remove"
+            class="button button--save"
           >
-            Remove
+            Save
           </button>
         </div>
       </div>

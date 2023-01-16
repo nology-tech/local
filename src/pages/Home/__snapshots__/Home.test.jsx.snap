@@ -8,10 +8,15 @@ exports[`should render the text on the display 1`] = `
     <div
       class="header"
     >
-      <img
-        alt=""
-        src="BackButton.svg"
-      />
+      <a
+        class="header__link--home"
+        href="/"
+      >
+        <img
+          alt="an Icon of an backwards facing arrow"
+          src="BackButton.svg"
+        />
+      </a>
       <div
         class="header__container"
       >
@@ -19,7 +24,7 @@ exports[`should render the text on the display 1`] = `
           class="header__logo-title"
         >
           <img
-            alt=""
+            alt="an image showing the Local logo"
             src="AppLogo.svg"
           />
           <h1
@@ -217,11 +222,11 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
-      class="home-list-view__search--bar-container"
+      class="home__search--bar-container"
     >
       <img
         alt="an icon of a map marker"
-        class="home-list-view__map-icon"
+        class="home__map-icon"
         src="mapMarkerIcon.svg"
         type="image/svg+xml"
       />
@@ -241,18 +246,27 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
-      class="home__map-buttons"
+      class="filter"
     >
       <button
-        class="button button--map-navigation-zoom"
+        class="button button--filter"
       >
-        +
+        FOOD & DRINK
       </button>
       <button
-        class="button button--map-navigation-zoom"
+        class="button button--filter"
       >
-        -
+        CULTURE
       </button>
+      <button
+        class="button button--filter"
+      >
+        OTHER
+      </button>
+    </div>
+    <div
+      class="home__map-buttons"
+    >
       <a
         class="home__link--list-view"
         href="/list-view"
@@ -263,19 +277,17 @@ exports[`should render the text on the display 1`] = `
           List View
         </button>
       </a>
+      <button
+        class="button button--map-navigation-zoom"
+      >
+        +
+      </button>
+      <button
+        class="button button--map-navigation-zoom"
+      >
+        -
+      </button>
     </div>
-    <h1>
-      Page Heading
-    </h1>
-    <h2>
-      Section Heading
-    </h2>
-    <h3>
-      Panel Heading
-    </h3>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non error dolor in nostrum minima odio a fuga saepe soluta adipisci perspiciatis maxime tempora, temporibus beatae voluptas repellat rerum. Dignissimos, necessitatibus.
-    </p>
   </div>
 </div>
 `;

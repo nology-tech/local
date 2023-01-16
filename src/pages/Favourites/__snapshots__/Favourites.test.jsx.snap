@@ -8,10 +8,15 @@ exports[`should render the text on the display 1`] = `
     <div
       class="header"
     >
-      <img
-        alt=""
-        src="BackButton.svg"
-      />
+      <a
+        class="header__link--home"
+        href="/"
+      >
+        <img
+          alt="an Icon of an backwards facing arrow"
+          src="BackButton.svg"
+        />
+      </a>
       <div
         class="header__container"
       >
@@ -19,7 +24,7 @@ exports[`should render the text on the display 1`] = `
           class="header__logo-title"
         >
           <img
-            alt=""
+            alt="an image showing the Local logo"
             src="AppLogo.svg"
           />
           <h1
@@ -266,7 +271,7 @@ exports[`should render the text on the display 1`] = `
         </button>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -312,7 +317,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -358,7 +363,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -404,7 +409,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -450,7 +455,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -496,7 +501,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
