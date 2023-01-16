@@ -271,7 +271,7 @@ exports[`should render the text on the display 1`] = `
         </button>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -317,7 +317,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -363,7 +363,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -409,7 +409,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -455,7 +455,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
@@ -501,7 +501,7 @@ exports[`should render the text on the display 1`] = `
         </div>
       </div>
       <div
-        class="card"
+        class="card card--favourites"
       >
         <div
           class="card__header-container"
