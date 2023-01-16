@@ -5,11 +5,15 @@ import Card from "../../components/Card/Card";
 import TextField from "../../components/TextField/TextField";
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { getInRadius } from "../../api/placeService";
+import { handleAddToUserFavourites } from "../../api/userService";
+
+import UserContext from "../../context/UserContext";
 import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
 
 const Home = () => {
+  const { user } = useContext(UserContext);
   const [businessArr, setBusinessArr] = useState([]);
   const [searchPostCode, setSearchPostCode] = useState("");
 
@@ -31,6 +35,10 @@ const Home = () => {
       const data = await getInRadius(searchPostCode, 5);
       setBusinessArr(data);
     }
+  };
+
+  const handlesaveToFavourites = (cardId) => {
+    handleAddToUserFavourites(cardId, user);
   };
 
   return (
@@ -71,7 +79,13 @@ const Home = () => {
       </p>
       {businessArr?.length > 1 && (
         <Carousel
-          componentToDisplay={<Card cardArray={businessArr} page="home" />}
+          componentToDisplay={
+            <Card
+              cardArray={businessArr}
+              page="home"
+              primaryButtonOnClick={handlesaveToFavourites}
+            />
+          }
         />
       )}
     </Layout>

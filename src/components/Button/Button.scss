@@ -42,7 +42,18 @@
   text-align: center;
   border-width: $button-border-radius-v2;
 }
-
+.button--details,
+.button--remove,
+.button--save {
+  margin: 0 0.2rem;
+  width: 7rem;
+}
+.button--save {
+  background-color: $orange;
+}
+.button--remove {
+  background-color: $red;
+}
 .button--details {
   background-color: $green;
 }
@@ -52,13 +63,6 @@
   background-color: rgba(255, 0, 0, 0);
   width: 3rem;
   color: $black;
-}
-.button--remove {
-  background-color: $orange;
-}
-
-.button--save {
-  background-color: $orange;
 }
 
 .button--contact {
