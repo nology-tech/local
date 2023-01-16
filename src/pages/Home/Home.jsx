@@ -37,8 +37,8 @@ const Home = () => {
     }
   };
 
-  const handleSaveToFavourites = (cardId) => {
-    handleAddToUserFavourites(cardId, user);
+  const handleSaveToFavourites = (card) => {
+    handleAddToUserFavourites(card, user);
   };
 
   return (

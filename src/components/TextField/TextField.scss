@@ -23,6 +23,10 @@
     padding-left: 0.7rem;
     padding-bottom: 0.7rem;
   }
+  &__label--signin,
+  &__label--signup {
+    font-weight: 550;
+  }
 
   &__input {
     height: 3.5rem;

@@ -8,14 +8,13 @@ import TextField from "../../components/TextField/TextField";
 import MapIcon from "../../assets/icons/mapMarkerIcon.svg";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
-
+import handleSaveToFavourites from "../Home/Home";
 const HomeListView = () => {
   const { user } = useContext(UserContext);
   if (user === null) {
     return <p>loading...</p>;
   }
-
-  const [allCardsArr, setAllCardsArr] = useState(user.favourites);
+  const [homeBusinessArray, sethomeBusinessArray] = useState([]);
 
   return (
     <Layout isWithMenu={true}>
@@ -40,8 +39,15 @@ const HomeListView = () => {
       </div>
 
       <main className="home-list-view__container">
-        <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
-        <Card cardArray={allCardsArr} page="home-list-view" />
+        <Filter
+          favArray={homeBusinessArray}
+          setAllCardsArr={sethomeBusinessArray}
+        />
+        <Card
+          cardArray={homeBusinessArray}
+          page="home-list-view"
+          primaryButtonOnClick={handleSaveToFavourites}
+        />
       </main>
     </Layout>
   );

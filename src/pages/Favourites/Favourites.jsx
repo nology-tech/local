@@ -14,17 +14,20 @@ const Favourites = () => {
   if (user === null) {
     return <p>loading...</p>;
   }
+  const getDropDownMenuOptions = () => {
+    const userFavouritesLocationArray = user.favourites.map((favourite) => {
+      return favourite.location.city;
+    });
+    const uniqueUserFavouritesLocationArray = [
+      ...new Set(userFavouritesLocationArray),
+    ];
 
-  const optionsArr = [
-    "All",
-    "London",
-    "Birmingham",
-    "Chester",
-    "Oxford",
-    "Newcastle",
-    "Liverpool",
-  ];
-
+    const dropDownOptions = [
+      "All",
+      ...uniqueUserFavouritesLocationArray.sort(),
+    ];
+    return dropDownOptions;
+  };
   const handleRemoveFavourites = (card) => {
     const updatedUserFavourites = user.favourites.filter(
       (element) => element._id !== card._id
@@ -40,7 +43,7 @@ const Favourites = () => {
   return (
     <Layout isWithMenu={true}>
       <main className="favourites__container">
-        <DropDown onChange={onChange} options={optionsArr} />
+        <DropDown onChange={onChange} options={getDropDownMenuOptions()} />
 
         <Filter favArray={user.favourites} setAllCardsArr={setAllCardsArr} />
         <Card
