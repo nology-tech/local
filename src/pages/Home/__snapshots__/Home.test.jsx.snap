@@ -217,6 +217,30 @@ exports[`should render the text on the display 1`] = `
       </div>
     </div>
     <div
+      class="home__search--bar-container"
+    >
+      <img
+        alt="an icon of a map marker"
+        class="home__map-icon"
+        src="mapMarkerIcon.svg"
+        type="image/svg+xml"
+      />
+      <div
+        class="text-field text-field--location-search-bar"
+      >
+        <label
+          class="text-field__label text-field__label--location-search-bar"
+          for="location-search-bar"
+        />
+        <input
+          class="text-field__input text-field__input--location-search-bar"
+          id="location-search-bar"
+          placeholder="Search by Postcode"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
       class="home__map-buttons"
     >
       <button

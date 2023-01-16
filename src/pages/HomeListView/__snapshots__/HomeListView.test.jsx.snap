@@ -235,7 +235,7 @@ exports[`should render the text on the display 1`] = `
         <input
           class="text-field__input text-field__input--location-search-bar"
           id="location-search-bar"
-          placeholder="Tooting, London, GB"
+          placeholder="e.g. CH451HE"
           type="text"
         />
       </div>
